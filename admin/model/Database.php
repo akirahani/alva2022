@@ -6,7 +6,7 @@ class Database{
     	try 
     	{
 		    // $this->con=new PDO("mysql:host=localhost;dbname=nhdaxl3s_alva;charset=utf8", "nhdaxl3s_ngaile", "S?S=+^)U~uA!");
-		    $this->con=new PDO("mysql:host=localhost;dbname=nhdaxl3s_alva;charset=utf8", "root", "");
+		    $this->con=new PDO("mysql:host=localhost;dbname=alva;charset=utf8", "root", "");
 		}
 		catch (Exception $e) 
 		{
