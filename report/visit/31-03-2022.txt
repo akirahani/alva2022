@@ -1,0 +1,7 @@
+31/03/2022 17:39:49 | 14.241.101.107 | Windows | Firefox | 98.0 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0 | 17:39:49 || 
+31/03/2022 17:39:49 | 14.241.101.107 | Windows | Firefox | 98.0 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0 | 17:39:49 || 
+31/03/2022 17:39:55 | 14.241.101.107 | Windows | Firefox | 98.0 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0 | 17:39:55 || 
+31/03/2022 17:39:55 | 14.241.101.107 | Windows | Firefox | 98.0 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0 | 17:39:55 || 
+31/03/2022 17:39:58 | 14.241.101.107 | Windows | Firefox | 98.0 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0 | 17:39:58 || 
+31/03/2022 17:39:59 | 14.241.101.107 | Windows | Firefox | 98.0 | Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0 | 17:39:59 || 
+31/03/2022 19:07:03 | 1.53.37.151 | iPhone | Safari | 12.1 | Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1 | 19:07:03 || 

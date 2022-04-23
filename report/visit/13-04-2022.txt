@@ -1,0 +1,4 @@
+13/04/2022 02:17:22 | 74.125.150.40 | iPhone | Safari | 9.0 | Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html) | 02:17:22 || 
+13/04/2022 02:17:37 | 74.125.150.35 |  |  |  | AdsBot-Google (+http://www.google.com/adsbot.html) | 02:17:37 || 
+13/04/2022 03:54:22 | 113.185.45.61 | iPhone | Safari | 12.1 | Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1 | 03:54:22 || 
+13/04/2022 10:09:39 | 14.161.7.101 | Windows | Google Chrome | 100.0.4896.88 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Safari/537.36 | 10:09:39 || 

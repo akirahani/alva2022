@@ -1,0 +1,369 @@
+@import 'color';
+@media all and (min-width: 0)
+{
+	body{
+		background-color: $den;
+	}
+	.dangoc-banner{
+		img.banner{
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+		ul{
+			background-image: url(../image/da-ngoc/da-ngoc-bot.png);
+			background-size: 100% auto;
+			background-position: top center;
+			background-color: transparent;
+			background-repeat: no-repeat;
+			li{
+				padding: 0 15px;
+				list-style: none;
+				h2{
+					color: $trang;
+					text-transform: uppercase;
+					font-size: 20px;
+					text-align: center;
+					&.trai{
+						text-align: left;
+					}
+					&.phai{
+						text-align: right;
+					}
+					span{
+						background-color: #fbdbb3;
+						color: $den;
+						padding: 5px 5px 3px 5px;
+					}
+				}
+				p{
+					color: $trang;
+					padding: 15px 0 0 0;
+					text-align: justify;
+					line-height: 1.7;
+				}
+				img{
+					padding-top: 20px;
+				}
+			}
+			.owl-nav{
+				img{
+					width: 40px;
+					height: auto;
+					display: block;
+				}
+				.owl-next{
+					border-radius: 100%;
+				}
+				.owl-prev{
+					border-radius: 100%;
+				}
+			}
+		}
+	}
+	.luachon{
+		padding: 30px 25px;
+		h2{
+			text-align: center;
+			color: $trang;
+			text-transform: uppercase;
+			font-size: 20px;
+			border-top: 1px solid #463d32;
+			width: calc(100% - 20px);
+			margin: auto;
+			padding: 30px 0 20px 0;
+		}
+		p{
+			text-align: center;
+			color: #FBE2A2;
+			font-style: italic;
+			padding-bottom: 20px;
+			&.hidden{
+				display: none;
+			}
+		}
+		ul{
+			li{
+				img{
+					width: calc(100% - 60px)!important;
+					margin: auto;
+				}
+			}
+			.owl-nav{
+				width: 100%;
+				height: 1px;
+				position: absolute;
+				top: calc(50% - 40px);
+				img{
+					width: 40px;
+					height: auto;
+					display: block;
+				}
+				.owl-next{
+					border-radius: 100%;
+					position: absolute;
+					right: -20px;
+					top: -20px;
+				}
+				.owl-prev{
+					border-radius: 100%;
+					position: absolute;
+					left: -20px;
+					top: -20px;
+				}
+			}
+			.owl-dots{
+				height: 40px;
+				padding: 20px 0 0 0;
+			}
+		}
+	}
+	.lienhe{
+		padding: 0 15px 30px 15px;
+		.form-contact{
+			padding: 15px 0 30px 0;
+			width: 100%;
+			background-image: url(../image/da-ngoc/frame.png);
+			background-size: 100% 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			position: relative;
+		}
+		h2{
+			text-transform: uppercase;
+			color: $trang;
+			text-align: center;
+			font-size: 20px;
+			padding: 30px 0 20px 0;
+		}
+		h3{
+			text-transform: uppercase;
+			color: $trang;
+			text-align: center;
+			font-size: 14px;
+			font-weight: normal;
+		}
+		.name-contact, .dienthoai-contact{
+			width: calc(100% - 80px);
+			margin: auto;
+			display: block;
+			border: none;
+			height: 45px;
+			border-radius: 45px;
+			outline: none;
+			padding: 0 20px;
+			font-family: 'Open Sans';
+			font-size: 18px;
+		}
+		.name-contact{
+			margin: 20px 0 20px 0;
+		}
+		.submit{
+			padding: 0 20px;
+			border-radius: 40px;
+			border: none;
+			text-transform: uppercase;
+			margin: 20px 0;
+			background-color: #FBE2A2;
+			font-family: 'Open Sans';
+			font-size: 18px;
+			height: 45px;
+		}
+	}
+	.hotline{
+		padding: 0 0 50px 0;
+		p{
+			display: flex;
+			justify-content: center;
+			align-items:center;
+			img{
+				height: 40px;
+				margin-right: 10px;
+			}
+			span{
+				color: $trang;
+				font-weight: bold;
+				font-size: 30px;
+			}
+		}
+	}
+	footer{
+		background-color: $trang;
+	}
+}
+@media all and  (min-width: 1200px)
+{
+	body{
+		background-image: url(../image/da-ngoc/bg.png);
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: 100% auto;
+	}
+	.dangoc-banner{
+		padding: 500px 0 0 0;
+		ul{
+			background-image: none;
+			width: 1200px;
+			margin: auto;
+			li{
+				padding: 0;
+				h2{
+					span{
+						padding: 8px 20px 10px 20px;
+						margin-left: 10px;
+					}
+				}
+				&.one{
+					h2{
+						font-size: 25px;
+					}
+					width: 100%;
+					border-bottom: 1px solid #463d32;
+					padding: 0 0 50px 0;
+					margin: 0 0 60px 0;
+					p{
+						text-align: center;
+						line-height: 2.3;
+					}
+				}
+				&.two{
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding: 0 0 50px 0;
+					h2{
+						font-size: 25px;
+						text-align: left;
+					}
+					.trai{
+						width: 510px;
+					}
+					.phai{
+						width: 590px;
+						img{
+							width: 100%;
+							height: auto;
+							display: block;
+						}
+					}
+				}
+				&.three{
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding: 0 0 30px 0;
+					h2{
+						font-size: 25px;
+						text-align: left;
+					}
+					.trai{
+						width: 590px;
+						img{
+							width: 100%;
+							height: auto;
+							display: block;
+						}
+					}
+					.phai{
+						width: 510px;
+					}
+				}
+			}
+		}
+	}
+	.luachon{
+		width: 1200px;
+		margin: auto;
+		padding: 30px 0;
+		h2{
+			font-size: 30px;
+			width: 100%;
+			br{
+				display: none;
+			}
+		}
+		p{
+			font-size: 18px;
+			&.hidden{
+				font-style: normal;
+				display: block;
+				color: $trang;
+			}
+		}
+		ul{
+			li{
+				img{
+					width: 990px!important;
+				}
+			}
+			.owl-nav{
+				top: calc(50% - 40px);
+				img{
+					width: 80px;
+				}
+				.owl-next{
+					right: -20px;
+					top: -40px;
+				}
+				.owl-prev{
+					left: -20px;
+					top: -40px;
+				}
+			}
+		}
+	}
+	.lienhe{
+		width: 1200px;
+		margin: auto;
+		padding: 50px 0 30px 0;
+		border-top: 1px solid #463d32;
+		h3{
+			color: #b59f83;
+			font-size: 45px;
+			&.tren{
+				text-align: left;
+				padding: 0 0 0 100px;
+				span{
+					font-weight: bold;
+				}
+			}
+			&.duoi{
+				text-align: right;
+				padding: 0 100px 50px 0;
+				span{
+					font-weight: bold;
+				}
+			}
+		}
+		.form-contact{
+			width: 880px;
+			margin: auto;
+			background-image: url(../image/da-ngoc/frame-pc.png);
+			h2{
+				font-size: 30px;
+			}
+			h3{
+				font-size: 20px;
+				padding-bottom: 10px;
+				color: $trang;
+				br{
+					display: none;
+				}
+			}
+			.name-contact, .dienthoai-contact{
+				width: 50%;
+			}
+		}
+	}
+	.hotline{
+		p{
+			span{
+				color: $trang;
+				font-weight: bold;
+				font-size: 35px;
+			}
+		}
+	}
+}

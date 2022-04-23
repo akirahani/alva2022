@@ -1,0 +1,396 @@
+@import 'color';
+@media all and (min-width: 0)
+{
+	body{
+		background-color: #0b181f;
+		background-image: url(../image/da-viet/bg-mobile.png);
+		background-size: 120% auto;
+		background-repeat: no-repeat;
+		background-position: top center;
+	}
+	.daviet-top{
+		padding: 0 20px 30px 20px;
+		background-image: url(../image/da-viet/bg-bot.png);
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		h1{
+			text-transform: uppercase;
+			font-size: 22px;
+			padding:  40px 0 15px 0;
+		}
+		h2{
+			&.hoitu{
+				text-transform: uppercase;
+				font-size: 18px;
+			}
+			&.thonhuong{
+				text-transform: uppercase;
+				padding-left: 50px;
+				font-size: 18px;
+			}
+			&.hinhthanh{
+				color: $trang;
+				text-transform: uppercase;
+				font-size: 18px;
+			}
+		}
+		h3{
+			color: $trang;
+			text-transform: uppercase;
+			font-size: 18px;
+			padding: 10px 0 0 0;
+			span{
+				position: relative;
+				background-position: center center;
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				padding: 10px 30px;
+				background-image: url(../image/da-viet/bg-tit.png);
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+			&.tinhte{
+				color: #a3876f;
+			}
+		}
+		h4{
+			text-transform: uppercase;
+			&.top{
+				color: $trang;
+				padding: 20px 0 20px 0;
+				font-size: 16px;
+				font-weight: normal;
+			}
+			&.bot{
+				color: #6b7079;
+			}
+		}
+		p{
+			color: $trang;
+			text-align: justify;
+			line-height: 1.7;
+		}
+		img{
+			&.three-slide{
+				width: 100%;
+				height: auto;
+				display: block;
+				padding: 70px 0 0 0;
+			}
+			&.hoan-hao{
+				width: 90%;
+				height: auto;
+				display: block;
+				padding: 20px 0;
+			}
+		}
+	}
+	.daviet-slide{
+		background-color: #16252c;
+		padding: 30px 0;
+		ul{
+			li{
+				list-style: none;
+				padding: 0 20px;
+				.tit{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					h2{
+						text-align: center;
+						color: $trang;
+						text-transform: uppercase;
+						font-weight: normal;
+						font-size: 18px;
+						padding: 10px 0 0 0;
+						&.tren{
+							span{
+								position: relative;
+								background-position: center center;
+								background-size: 100% 100%;
+								background-repeat: no-repeat;
+								padding: 10px 30px;
+								background-image: url(../image/da-viet/bg-tit.png);
+								background-size: 100% 100%;
+								background-repeat: no-repeat;
+								background-position: center center;
+							}
+						}
+						&.duoi{
+							padding: 20px 0 20px 0;
+						}
+					}
+				}
+				p{
+					color: $trang;
+					text-align: justify;
+					line-height: 1.7;
+					padding: 0 0 10px 0;
+				}
+			}
+			.owl-nav{
+				img{
+					width: 40px;
+					height: auto;
+					display: block;
+				}
+				.owl-next{
+					border-radius: 100%;
+				}
+				.owl-prev{
+					border-radius: 100%;
+				}
+			}
+		}
+	}
+	.lienhe{
+		padding: 50px 15px 30px 15px;
+		background-color: #0b181f;
+		.form-contact{
+			padding: 15px 0 30px 0;
+			width: 100%;
+			background-image: url(../image/da-ngoc/frame.png);
+			background-size: 100% 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			position: relative;
+		}
+		h2{
+			text-transform: uppercase;
+			color: $trang;
+			text-align: center;
+			font-size: 20px;
+			padding: 30px 0 20px 0;
+		}
+		h3{
+			text-transform: uppercase;
+			color: $trang;
+			text-align: center;
+			font-size: 14px;
+			font-weight: normal;
+		}
+		.name-contact, .dienthoai-contact{
+			width: calc(100% - 80px);
+			margin: auto;
+			display: block;
+			border: none;
+			height: 45px;
+			border-radius: 45px;
+			outline: none;
+			padding: 0 20px;
+			font-family: 'Open Sans';
+			font-size: 18px;
+		}
+		.name-contact{
+			margin: 20px 0 20px 0;
+		}
+		.submit{
+			padding: 0 20px;
+			border-radius: 40px;
+			border: none;
+			text-transform: uppercase;
+			margin: 20px 0;
+			background-color: #FBE2A2;
+			font-family: 'Open Sans';
+			font-size: 18px;
+			height: 45px;
+		}
+	}
+	.hotline{
+		padding: 0 0 50px 0;
+		background-color: #0b181f;
+		p{
+			display: flex;
+			justify-content: center;
+			align-items:center;
+			img{
+				height: 40px;
+				margin-right: 10px;
+			}
+			span{
+				color: $trang;
+				font-weight: bold;
+				font-size: 30px;
+			}
+		}
+	}
+}
+@media all and (min-width: 1200px)
+{
+	body{
+		background-color: #08181F;
+		background-image: url(../image/da-viet/bg-pc.png);
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-position: top -200px center;
+	}
+	.daviet-top{
+		width: 1200px;
+		margin: auto;
+		background-image: none;
+		background-color: transparent;
+		padding: 0 0 30px 0;
+		h1{
+			font-size: 60px;
+			padding: 60px 0 20px 0;
+		}
+		h2{
+			&.hoitu{
+				font-size: 45px;
+				font-weight: normal;
+			}
+			&.hinhthanh{
+				font-size: 30px;
+				font-weight: normal;
+			}
+		}
+		h3{
+			font-size: 30px;
+			font-weight: normal;
+			color: $den;
+			&.tinhte{
+				text-align: center;
+				color: #6b7079;
+			}
+		}
+		h4{
+			&.top{
+				font-size: 30px;
+				font-weight: normal;
+			}
+		}
+		.frame{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 40px 0;
+			.trai{
+				width: 650px;
+			}
+			.phai{
+				width: 525px;
+			}
+		}
+		.picture{
+			display: flex;
+			justify-content: flex-end;
+		}
+		img{
+			&.three-slide{
+				width: 65%;
+				padding: 100px 0 30px 0;
+			}
+			&.hoan-hao{
+				width: 600px;
+				padding: 50px 0 0 70px;
+			}
+		}
+		p{
+			font-size: 20px;
+		}
+	}
+	.daviet-slide{
+		width: 1200px;
+		margin: auto;
+		background-color: transparent;
+		padding-bottom: 50px;
+		ul{
+			li{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0;
+				&:last-child{
+					margin-top: 150px;
+				}
+				&:first-child{
+					margin-top: 50px;
+				}
+				.trai{
+					width: 490px;
+					p{
+						font-size: 20px;
+					}
+				}
+				.phai{
+					width: 570px;
+					img{
+						width: 100%;
+						height: auto;
+						display: block;
+					}
+					.owl-dots{
+						position: absolute;
+						width: 100%;
+						bottom: -40px;
+					}
+				}
+				.small{
+					width: 450px;
+				}
+				p{
+					padding: 15px 30px;
+				}
+				.tit{
+					justify-content: flex-start;
+					h2{
+						&.duoi{
+							text-align: left;
+							padding: 5px 0 5px 55px;
+							font-size: 26px;
+						}
+						&.tren{
+							margin-bottom: 20px;
+							font-size: 26px;
+							text-align: left;
+							span{
+								padding: 10px 55px;
+								color: $den;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.lienhe{
+		width: 1200px;
+		margin: auto;
+		padding: 70px 0 30px 0;
+		border-top: none;
+		background-color: transparent;
+		.form-contact{
+			width: 880px;
+			margin: auto;
+			background-image: url(../image/da-viet/frame-pc.png);
+			h2{
+				font-size: 30px;
+			}
+			h3{
+				font-size: 20px;
+				padding-bottom: 10px;
+				color: $trang;
+				br{
+					display: none;
+				}
+			}
+			.name-contact, .dienthoai-contact{
+				width: 50%;
+			}
+		}
+	}
+	.hotline{
+		background-color: transparent;
+		p{
+			span{
+				color: $trang;
+				font-weight: bold;
+				font-size: 35px;
+			}
+		}
+	}
+}

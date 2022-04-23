@@ -1,0 +1,7 @@
+15/04/2022 12:24:38 | 190.5.159.196 | Windows | Google Chrome | 99.0.4844.84 | Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36 | 12:24:38 || 
+15/04/2022 15:50:37 | 173.252.107.5 |  |  |  | facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php) | 15:50:37 || 
+15/04/2022 15:50:37 | 173.252.107.9 |  |  |  | facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php) | 15:50:37 || 
+15/04/2022 15:50:37 | 173.252.107.11 |  |  |  | facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php) | 15:50:37 || 
+15/04/2022 18:30:28 | 72.14.199.99 | iPhone | Safari | 9.0 | Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 (compatible; AdsBot-Google-Mobile; +http://www.google.com/mobile/adsbot.html) | 18:30:28 || 
+15/04/2022 22:15:58 | 113.23.104.159 | iPhone | Safari | 12.1 | Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1 | 22:15:58 || 
+15/04/2022 22:40:10 | 113.23.104.159 | iPhone | Safari | 12.1 | Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Mobile/15E148 Safari/604.1 | 22:40:10 || 
