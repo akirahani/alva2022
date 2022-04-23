@@ -58,8 +58,23 @@
 				</p>
 				<?php if(isset($_SESSION['fullname'])){ 
 					echo'<p>
-						<span style="color: red; white-space: nowrap;">Số lượng: '.$data_da->soluong.' tấm = '.$data_da->ngang * $data_da->doc. ' m2 </span>
+						<span style="color: red; ">Số lượng: '.$data_da->soluong.' tấm = '.$data_da->ngang * $data_da->doc. ' m2 </span>
 					</p>';
+					echo'
+					<p>
+						<span style="color: red; ">Giá NY: '.number_format($data_da->niemyet).'VNĐ</span>
+					</p>
+					';
+					echo'
+					<p>
+						<span style="color: red; ">Giá báo khách: '.number_format($data_da->baokhach).'VNĐ</span>
+					</p>
+					';
+					echo'
+					<p>
+						<span style="color: red; ">Giá Chiết khấu: '.number_format($data_da->chietkhau).'VNĐ</span>
+					</p>
+					';
 				} ?>
 			</div>
 			<div class="button">

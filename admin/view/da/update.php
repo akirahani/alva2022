@@ -5,13 +5,14 @@
 		<div class="clear"></div>
 	</div>
 	<div class="form">
+		<p>Tên đá</p>
 		<input class="input-text text-product" type="text">
 	</div>
 	<div class="load-product">
 	</div>
 	<button class="get-product"><a>Lấy thông tin sản phẩm</a></button>
 </div>
-<script type="text/javascript">
+<script>
 	$('.get-product').click(function(){
 		var info = $('.text-product').val();
 		var processing = info.split(' '); 

@@ -303,13 +303,13 @@
 
         <div class="tab-item" id="gia">
             <p class="tit-label">Giá niêm yết</p>
-            <input type="text" name="niemyet" required spellcheck="false" autocomplete="off" class="input-text" value="<?=$data_da_chitiet->niemyet ?>" />
+            <input type="text" name="niemyet" spellcheck="false" autocomplete="off" class="input-text" value="<?=$data_da_chitiet->niemyet ?>" />
         
             <p class="tit-label">Giá báo khách</p>
-            <input type="text" name="baokhach" required spellcheck="false" autocomplete="off" class="input-text" value="<?=$data_da_chitiet->baokhach ?>" />
+            <input type="text" name="baokhach" spellcheck="false" autocomplete="off" class="input-text" value="<?=$data_da_chitiet->baokhach ?>" />
 
             <p class="tit-label">Giá chiết khấu</p>
-            <input type="text" name="chietkhau" required spellcheck="false" autocomplete="off" class="input-text" value="<?=$data_da_chitiet->chietkhau ?>" />
+            <input type="text" name="chietkhau" spellcheck="false" autocomplete="off" class="input-text" value="<?=$data_da_chitiet->chietkhau ?>" />
         </div>
 
         <div class="tab-item" id="hinhanh">
