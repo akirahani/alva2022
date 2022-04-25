@@ -198,7 +198,7 @@
 					display: flex;
 					align-items: center;
 					width: 100%;
-					padding: 0 22px 10px 22px;
+					padding: 14px 22px 10px 22px;
 					font-family: "Open Sans";
 					img{
 						margin-right: 15px;
@@ -213,7 +213,7 @@
 					line-height: 23px;
 					font-family: "Open Sans";
 					text-align: justify;
-					padding: 0 22px;
+					padding: 11px 22px;
 				}
 			}
 		}
@@ -299,40 +299,33 @@
 		}
 		ul{
 			list-style: none;
+			display: flex;
 			li{
-				display: flex;
-				justify-content: space-between;
-				div{
-					width: calc(50% - 3px);
-					border: 1px solid #E5E5E5;
-					padding: 11px 11px 20px 11px;
-					img{
-						display: block;
-						margin: auto;
-						&.nga{
-							width: 16px!important;
-							height: 7px!important;
-						}
+				border: 1px solid #E5E5E5;
+				padding: 11px 11px 20px 11px;
+				img{
+					display: block;
+					margin: auto;
+				}
+				h3{
+					font-family: "Open Sans";
+					font-size: 14px;
+					line-height: 23px;
+					text-align: center;
+					font-weight: 700px;
+					padding: 14px 0 10px 0;
+					a{
+						text-decoration: none;
+						color: #EE6B01;
+						text-transform: uppercase;
 					}
-					h3{
-						font-family: "Open Sans";
-						font-size: 14px;
-						line-height: 23px;
-						text-align: center;
-						padding: 15px 0 10px 0;
-						a{
-							text-decoration: none;
-							color: #EE6B01;
-							text-transform: uppercase;
-						}
-					}
-					p{
-						font-family: "Open Sans";
-						font-size: 12px;
-						line-height: 18px;
-						text-align: center;
-						padding-bottom: 10px;
-					}
+				}
+				p{
+					font-family: "Open Sans";
+					font-size: 12px;
+					line-height: 18px;
+					text-align: center;
+					padding: 11px auto;
 				}
 			}
 			.owl-dots{
@@ -705,8 +698,10 @@
 			li{
 				flex-direction: column;
 				background: #FFFFFF;
-				border: 1px solid #F4F4F4;
 				padding: 18px 18px 20px 18px;
+				div{
+					border: none;
+				}
 				h3{
 					font-size: 14px;
 					line-height: 23px;
