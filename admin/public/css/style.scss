@@ -259,12 +259,33 @@ $chu:#000;
 			border-radius: 4px;
 			margin-top: 15px;
 			background-color: #5cb12d;	
+			cursor: pointer;
 			a{
 				text-decoration: none;
 				color: $white;
 				font-weight: bold;
 				text-transform: uppercase;
 			}
+		}
+		.file-upload{
+			border: none;
+		    position:relative;
+			padding: 7px 15px;
+			margin-top: 15px;
+			border-radius: 4px;
+		    background-color: #2590EB;
+		    color: $white;
+		    cursor: pointer;
+			font-weight: bold;
+			text-transform: uppercase;
+		    input[type='file']{
+		      position:absolute;
+		      top:0;
+		      left:0;
+		      opacity:0;
+		      cursor:pointer;
+
+		    }
 		}
 		// Table
 		.table{

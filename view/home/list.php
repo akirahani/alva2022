@@ -171,7 +171,15 @@
 
 <section class="san-pham">
 	<h2>SẢN PHẨM ĐÁ NGỌC NỔI BẬT <br>TẠI ALVA</h2>
-	<ul class="owl-carousel owl-theme"></ul>
+	<ul class="owl-carousel owl-theme">
+		<?php foreach ($arr_sanpham as $key => $value) { ?>
+			<li>
+				<a href="<?=$process_danhmuc[$value->danhmuc].'/'.$value->slug?>"><img class="owl-lazy" src="uploads/lazy/da.svg" data-src="uploads/van-da/<?=$value->vuong?>" alt="<?=$value->ten?>" /></a>
+				<h3><a href="<?=$process_danhmuc[$value->danhmuc].'/'.$value->slug?>"><?=$value->ten?></a></h3>
+				<p><?=$value->mota?></p>
+			</li>
+		<?php } ?>
+	</ul>
 </section>
 
 <section class="cong-trinh">
@@ -214,126 +222,6 @@
 </section>
 
 <script>
-	let sanpham = '';
-	if($(document).width()<1200)
-	{
-		<?php
-		$count_sanpham = count($arr_sanpham);
-		$total_sanpham = ceil($count_sanpham/2);
-		$arr_top = [];
-		$arr_bot = [];
-		foreach ($arr_sanpham as $key => $value) 
-		{
-			if($key < $total_sanpham)
-			{
-				array_push($arr_top, $value);
-			}
-			else
-			{
-				array_push($arr_bot, $value);
-			}
-		}
-		for ($i=0; $i < $total_sanpham; $i++) 
-		{
-		?>
-		sanpham += `<li>`;
-			<?php
-			$str_danhmuc = explode(",", $arr_top[$i]->danhmuc);
-			$one_danhmuc = $str_danhmuc[0];
-			if(isset($arr_top[$i]))
-			{
-				$tmp_pic = (array) json_decode($arr_top[$i]->vuong);
-				if(array_key_exists("dm-1", $tmp_pic))
-				{
-					$pic = $tmp_pic["dm-1"];
-				}
-				else if(array_key_exists("dm-2", $tmp_pic))
-				{
-					$pic = $tmp_pic["dm-2"];
-				}
-				else if(array_key_exists("dm-4", $tmp_pic))
-				{
-					$pic = $tmp_pic["dm-4"];
-				}
-			 	else
-			 	{
-			 		$pic = $tmp_pic["dm-5"];
-			 	}
-			?>
-			sanpham += `<div>`;
-				sanpham += `<a href="<?=$process_danhmuc[$one_danhmuc].'/'.$arr_top[$i]->slug?>"><img class="owl-lazy" src="uploads/lazy/da.svg" data-src="uploads/van-da/<?=$pic?>" alt="<?=$arr_top[$i]->ten?>" /></a>`;
-				sanpham += `<h3><a href="<?=$process_danhmuc[$one_danhmuc].'/'.$arr_top[$i]->slug?>"><?=$arr_top[$i]->ten?></a></h3>`;
-				sanpham += `<p><?=$arr_top[$i]->mota?></p>`;
-			sanpham += `</div>`;
-			<?php
-			}
-			if(isset($arr_bot[$i]))
-			{
-				$tmp_pic = (array) json_decode($arr_bot[$i]->vuong);
-				if(array_key_exists("dm-1", $tmp_pic))
-				{
-					$pic = $tmp_pic["dm-1"];
-				}
-				else if(array_key_exists("dm-2", $tmp_pic))
-				{
-					$pic = $tmp_pic["dm-2"];
-				}
-				else if(array_key_exists("dm-4", $tmp_pic))
-				{
-					$pic = $tmp_pic["dm-4"];
-				}
-			 	else
-			 	{
-			 		$pic = $tmp_pic["dm-5"];
-			 	}
-			?>
-			sanpham += `<div>`;
-				sanpham += `<a href="<?=$process_danhmuc[$one_danhmuc].'/'.$arr_bot[$i]->slug?>"><img class="owl-lazy" src="uploads/lazy/da.svg" data-src="uploads/van-da/<?=$pic?>" alt="<?=$arr_bot[$i]->ten?>" /></a>`;
-				sanpham += `<h3><a href="<?=$process_danhmuc[$one_danhmuc].'/'.$arr_bot[$i]->slug?>"><?=$arr_bot[$i]->ten?></a></h3>`;
-				sanpham += `<p><?=$arr_bot[$i]->mota?></p>`;
-			sanpham += `</div>`;
-			<?php
-			}
-			?>
-		sanpham += `</li>`;
-		<?php
-		}
-		?>
-	}
-	else
-	{
-		<?php 
-		foreach ($arr_sanpham as $key => $value) 
-		{
-			$tmp_pic = (array) json_decode($value->vuong);
-			if(array_key_exists("dm-1", $tmp_pic))
-			{
-				$pic = $tmp_pic["dm-1"];
-			}
-			else if(array_key_exists("dm-2", $tmp_pic))
-			{
-				$pic = $tmp_pic["dm-2"];
-			}
-			else if(array_key_exists("dm-4", $tmp_pic))
-			{
-				$pic = $tmp_pic["dm-4"];
-			}
-		 	else
-		 	{
-		 		$pic = $tmp_pic["dm-5"];
-		 	}
-		 	$str_danhmuc = explode(",", $value->danhmuc);
-			$one_danhmuc = $str_danhmuc[0];
-		?>
-		sanpham += `<li>`;
-			sanpham += `<a href="<?=$process_danhmuc[$one_danhmuc]?>/<?=$value->slug?>"><img class="thumbs owl-lazy" src="uploads/lazy/da.svg" data-src="uploads/van-da/<?=$pic?>" alt="<?=$value->ten?>" /></a>`;
-			sanpham += `<h3><a href="<?=$process_danhmuc[$one_danhmuc]?>/<?=$value->slug?>"><?=$value->ten?></a></h3>`;
-			sanpham += `<p><?=$value->mota?></p>`;
-		sanpham += `</li>`;
-		<?php
-		}
-		?>
-	}
 	$(".banner ul.slide").owlCarousel({
 		nav: false,
 		lazyLoad: true,
@@ -355,7 +243,6 @@
 			dots: true
 		});
 	}
-	$(".san-pham ul").html(sanpham);
 	$(".san-pham ul").owlCarousel({
 		nav: false,
 		lazyLoad: true,
@@ -363,7 +250,9 @@
 		loop: true,
 		responsive:{
 	        0:{
-	          	items: 1
+	          	items: 2,
+	          	margin: 10
+
 	        },
 	        1200:{
 	        	items: 3,

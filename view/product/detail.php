@@ -67,12 +67,12 @@
 					';
 					echo'
 					<p>
-						<span style="color: red; ">Giá báo khách: '.number_format($data_da->baokhach).'VNĐ</span>
+						<span style="color: red; ">Giá BK: '.number_format($data_da->baokhach).'VNĐ</span>
 					</p>
 					';
 					echo'
 					<p>
-						<span style="color: red; ">Giá Chiết khấu: '.number_format($data_da->chietkhau).'VNĐ</span>
+						<span style="color: red; ">Giá CK: '.number_format($data_da->chietkhau).'VNĐ</span>
 					</p>
 					';
 				} ?>
