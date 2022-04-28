@@ -113,23 +113,23 @@
 	<div class="mobile">
 		<ul class="owl-carousel owl-theme">
 			<li>
-				<a href=""><img class="owl-lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/1.png" alt="<?=$data_company->ten?>" /></a>
+				<a href="tranh-da-tu-nhien"><img class="owl-lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/1.png" alt="<?=$data_company->ten?>" /></a>
 				<h3>TRANH ĐÁ TỰ NHIÊN XUYÊN SÁNG</h3>
 			</li>
 			<li>
-				<a href="cau-thang-da-tu-nhien"><img class="owl-lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/2.png" alt="<?=$data_company->ten?>" /></a>
+				<a href="cau-thang"><img class="owl-lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/2.png" alt="<?=$data_company->ten?>" /></a>
 				<h3>ỐP LÁT CẦU THANG ĐÁ TỰ NHIÊN</h3>
 			</li>
 			<li>
-				<a href=""><img class="owl-lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/3.png" alt="<?=$data_company->ten?>" /></a>
+				<a href="lavabo-da-tu-nhien"><img class="owl-lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/3.png" alt="<?=$data_company->ten?>" /></a>
 				<h3>LAVABO ĐÁ TỰ NHIÊN</h3>
 			</li>
 			<li>
-				<a href=""><img class="owl-lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/4.png" alt="<?=$data_company->ten?>" /></a>
+				<a href="tru-cot-da"><img class="owl-lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/4.png" alt="<?=$data_company->ten?>" /></a>
 				<h3>ỐP LÁT TRỤ CỘT ĐÁ TỰ NHIÊN</h3>
 			</li>
 			<li>
-				<a href=""><img class="owl-lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/5.png" alt="<?=$data_company->ten?>" /></a>
+				<a href="lat-nen"><img class="owl-lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/5.png" alt="<?=$data_company->ten?>" /></a>
 				<h3>LÁT NỀN ĐÁ TỰ NHIÊN</h3>
 			</li>
 			<li>
@@ -150,19 +150,19 @@
 				<h3>LAVABO ĐÁ TỰ NHIÊN</h3>
 			</li>
 			<li>
-				<a href="cau-thang-da-tu-nhien"><img class="lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/2.png" alt="<?=$data_company->ten?>" /></a>
+				<a href="cau-thang"><img class="lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/2.png" alt="<?=$data_company->ten?>" /></a>
 				<h3>ỐP LÁT CẦU THANG ĐÁ TỰ NHIÊN</h3>
 			</li>
 			<li>
-				<a href="tru-cot-da-tu-nhien"><img class="lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/4.png" alt="<?=$data_company->ten?>" /></a>
+				<a href="tru-cot-da"><img class="lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/4.png" alt="<?=$data_company->ten?>" /></a>
 				<h3>ỐP LÁT TRỤ CỘT ĐÁ TỰ NHIÊN</h3>
 			</li>
 			<li>
-				<a href="da-lat-san-tu-nhien"><img class="lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/5.png" alt="<?=$data_company->ten?>" /></a>
+				<a href="da-lat-nen"><img class="lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/5.png" alt="<?=$data_company->ten?>" /></a>
 				<h3>LÁT NỀN ĐÁ TỰ NHIÊN</h3>
 			</li>
 			<li>
-				<a href="phong-tam-voi-da-tu-nhien"><img class="lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/6.png" alt="<?=$data_company->ten?>" /></a>
+				<a href="nha-tam"><img class="lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/6.png" alt="<?=$data_company->ten?>" /></a>
 				<h3>ỐP LÁT PHÒNG TẮM ĐÁ TỰ NHIÊN</h3>
 			</li>
 		</ul>

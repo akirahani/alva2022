@@ -62,17 +62,17 @@
 					</p>';
 					echo'
 					<p>
-						<span style="color: red; ">Giá NY: '.number_format($data_da->niemyet).'VNĐ</span>
+						<span style="color: red; ">Giá NY: '.$data_da->niemyet.'VNĐ</span>
 					</p>
 					';
 					echo'
 					<p>
-						<span style="color: red; ">Giá BK: '.number_format($data_da->baokhach).'VNĐ</span>
+						<span style="color: red; ">Giá BK: '.$data_da->baokhach.'VNĐ</span>
 					</p>
 					';
 					echo'
 					<p>
-						<span style="color: red; ">Giá CK: '.number_format($data_da->chietkhau).'VNĐ</span>
+						<span style="color: red; ">Giá CK: '.$data_da->chietkhau.'VNĐ</span>
 					</p>
 					';
 				} ?>
