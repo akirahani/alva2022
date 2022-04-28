@@ -1,6 +1,6 @@
 
 <link rel="stylesheet" type="text/css" href="public/css/style.css?v=230422">
-<div class="blog medium">
+<div class="blog mini">
 	<div class="bread">
 		<h1>Đá tự nhiên <span>| Cập nhật giá nhiều sản phẩm</span></h1>
 		<div class="clear"></div>
@@ -28,7 +28,7 @@
 		        $sheetData = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
 		        $arrayCount = count($sheetData);
 
-		        echo '<form action="" method="POST" style="display: grid; grid-template-columns: auto auto auto">';
+		        echo '<form action="" method="POST">';
 		        for($i=2;$i<=$arrayCount;$i++)
         		{
 		        	$model = trim(strtoupper($sheetData[$i]["A"]));
@@ -42,7 +42,7 @@
 			        $get_id = $query->DanhSach('da',['id'],['ma'=>'='],[],[],['ma'=>$number]);
 			        if($number != ''){
 			        	if(!empty($get_id)){
-			        	echo '<div class="load-product">';
+			        	echo '<div class="load-product" style="padding-top: 2%; margin: 0 auto; width: 350px;">';
 					       	foreach ($get_id as $key => $val) {
 				    			echo '<b>'.$number.'</b>';
 								echo '<input class="capnhat_da" type="hidden" value="'.$val->id.'" name="id[]">';
@@ -54,7 +54,7 @@
 				      		echo '</div>';	
 				        }
 				        else{
-				        	echo '<div class="load-product">';
+				        	echo '<div class="load-product" style="padding-top: 2%; margin: 0 auto; width: 350px;">';
 							echo '<p style="color: red">Không có mã'.$number.'</p>';
 				      		echo '</div>';	
 				        }

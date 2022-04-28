@@ -10,7 +10,7 @@
 		<input type="text" name="tenreg" placeholder="Tên của bạn *" spellcheck="false" autocomplete="off"/>
 		<input type="text" name="dienthoaireg" placeholder="Điện thoại *" spellcheck="false" autocomplete="off"/>
 		<textarea name="noidungreg" placeholder="Ghi chú" spellcheck="false" autocomplete="off"></textarea>
-		<input type="button" name="sentreg" value="Gửi yêu cầu" vanda="<?=$_POST['vanda']?>" />
+		<input type="button" name="sentreg" value="Gửi yêu cầu" vanda="<?=$_POST['vanda']?>" page="<?=$p?>" />
 	</form>
 </div>
 <script>
