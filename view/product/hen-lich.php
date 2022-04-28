@@ -20,7 +20,7 @@
 		let ten = $('input[name="tenreg"]').val();
 		let dienthoai = $('input[name="dienthoaireg"]').val();
 		let diachi = $('input[name="diachireg"]').val();
-		let khoda = $('input[type="radio"]').val();
+		let khoda = $("input[type='radio'][name='vitri']:checked").val();
 		let vanda = $(this).attr("vanda");
 		if(ten!='')
 		{
