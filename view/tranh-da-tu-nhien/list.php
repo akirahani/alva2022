@@ -7,7 +7,7 @@
 ?>
 <link rel="stylesheet" type="text/css" href="public/css/tranh-da.css?v=28042022">
 <section class="bg-head">
-    <img src="public/image/logo.svg" alt="logo-alva">
+    <img src="public/image/logo.svg" alt="Logo Alva">
     <h1>Tranh đá xuyên sáng vẻ đẹp kì bí từ thiên nhiên</h1>
 </section>
 <section class="bg-two">
@@ -27,7 +27,7 @@
 <script>
     $('.slide1').owlCarousel({
         loop:true,
-        margin: 10,
+        margin: -50,
         nav:false,
         autoplay: true,
         autoplayTimeout:5000,

@@ -23,6 +23,13 @@
 			line-height: 33px;
 			text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.25);
 			padding: 207px 20px 14px 20px;
+			&:after{
+					content:"";
+					border-bottom: 1px solid #542B1C;
+					width: 151px;
+					display: block;
+					margin: auto;				
+			}
 		}
 	}
 	.bg-two{
@@ -50,17 +57,12 @@
 		}
 		.slide1{
 			list-style: none;
-			padding-left: 56px;
+			padding-left: 76px;
 			margin-top: 20px;
-			position: relative;
 			.owl-item{
-				left: -2%;
-				position: relative;
 				li{
-					margin-left: 32px;
 					img{
-						width: 100%;
-						height: auto;
+						width: 80%;
 					}
 				}
 			}
