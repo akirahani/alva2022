@@ -6,9 +6,8 @@
     $mail = new PHPMailer(true);
 ?>
 <link rel="stylesheet" type="text/css" href="public/css/tru-cot.css?v=28042022">
-<div class="tru-cot-da-all">
+<main class="tru-cot-da-all">
     <section class="tru-cot-da">
-        <img src="public/image/logo.svg" class="logo" alt="Logo Alva">
         <div class="bg-extand">
             <h1>
                 Đá tự nhiên ốp cột trụ
@@ -21,7 +20,7 @@
         <p>
             Cột trụ nhà được ví như nốt nhạc hay nhất trong một bài nhạc. Cột nhà có vai trò cực kỳ quan trọng trong việc tô điểm thêm cho vẻ đẹp ngôi nhà. Chính vì vậy việc sử dụng đá ốp cột là rất cần thiết giúp tô điểm cho cột nhà thêm sang trọng hơn.
         </p>
-    </article>
+    </article>`
     <ul class="img-list owl-carousel owl-theme">
         <li><img src="view/tru-cot-da/upload/owl-tru-cot.png" alt="Trụ cột đá tự nhiên"></li>
         <li><img src="view/tru-cot-da/upload/owl-tru-cot.png" alt="Trụ cột đá tự nhiên"></li>
@@ -67,31 +66,67 @@
         <div class="service">
             <div class="detail-service">
                 <div class="icon">
-                    <img src="" alt="">
+                    <img src="view/tru-cot-da/upload/icon1.png" alt="icon service">
                 </div>
-                <p>a</p>
+                <p>
+                    Miễn phí 
+                    <br>
+                    Tư vấn, thiết kế
+                </p>
             </div>
             <div class="detail-service">
                 <div class="icon">
-                    <img src="">
-                    <p>a</p>
+                    <img src="view/tru-cot-da/upload/icon2.png" alt="icon service">
                 </div>
+                 <p>
+                    Lắp đặt
+                    <br>
+                    hoàn thiện 2 ngày
+                </p>
             </div>
             <div class="detail-service">
                 <div class="icon">
-                    <img src="">
-                    <p>a</p>
+                    <img src="view/tru-cot-da/upload/icon3.png" alt="icon service">
                 </div>
+                <p>
+                    Bảo hành Đá
+                    <br>
+                    01 năm
+                </p>
             </div>
             <div class="detail-service">
                 <div class="icon">
-                    <img src="">
-                    <p>a</p>
+                    <img src="view/tru-cot-da/upload/icon4.png" alt="icon service">
                 </div>
+                <p>
+                    Bảo hành đèn led
+                    <br>
+                    Samsung 05 năm
+                </p>
             </div>
         </div>
+        <ul class="company-info">
+            <li><img src="view/tru-cot-da/upload/place.png" alt="Showroom" /> <p>Showroom: Số 2 Mạc Đăng Doanh, Dương Kinh, Hải Phòng</p></li>
+            <li><img src="view/tru-cot-da/upload/tel.png" alt="Hotline" /><p>Hotline: 1900 669 996</p></li>
+            <li><img src="view/tru-cot-da/upload/fb.png" alt="Fanpage" /><p>Fanpage: Đá Tự Nhiên Titan Stone</p></li>
+            <li><img src="view/tru-cot-da/upload/mail.png" alt="Email" /><p>Email: Titanstone@gmail.com</p></li>
+        </ul>
     </section>
-</div>
+    <section class="contact">
+        <h1>
+            Gửi thông tin của bạn cho chúng tôi 
+            <br>
+            Để được tư vấn miễn phí tốt nhất
+        </h1>
+        <form action="" method="POST">
+            <input type="text" name="" placeholder="Tên của bạn (*)" />
+            <input type="text" name="" placeholder="Email (*)">
+            <input type="text" name="" placeholder="Số điện thoại (*)" />
+            <input type="text" class="message" name="" placeholder="Tin nhắn" />
+            <input type="button" name="" value="Gửi liên hệ" />
+        </form>
+    </section>
+</main>
 <script type="text/javascript">
     $('.img-list').owlCarousel({
         loop:true,

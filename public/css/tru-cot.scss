@@ -11,12 +11,6 @@
 			display: block;
 			position: relative;
 			z-index: 1;
-			.logo{
-				width: 96px;
-			    margin: auto;
-			    padding-top: 53px;
-			    display: block;
-			}
 			.bg-extand{
 				background-image: url('../../view/tru-cot-da/upload/bg-extand.png');
 				height: 200px;
@@ -78,7 +72,7 @@
 					left: 0;
 					width: 49px;
 					height: 49px;
-					top: 135px;
+					top: 137px;
 					span{
 						display: none;
 					}
@@ -86,7 +80,7 @@
 				.owl-next{
 					background-image: url(../../public/image/next.png)!important;
 					position: absolute;
-					top:135px;
+					top: 137px;
 					right: 0;
 					width: 49px;
 					height: 49px;
@@ -245,11 +239,94 @@
 						border-radius: 50%;
 						height: 86px;
 						width: 86px;
+						margin: 33px auto 0 auto;
 						background: linear-gradient(180deg, #FEE7B5 0%, #E5B15C 100%);
 						box-shadow: 0px 0px 20px rgba(249, 220, 164, 0.51);
+						img{
+							margin: 23px 0 0 17px;
+						}
+					}
+					p{
+						text-align: center;
+						height: 48px;
 					}
 				}
 			}
+			.company-info{
+				list-style: none;
+				padding-left: 22px;
+				padding-bottom: 35px;
+				padding-top: 46px;
+				li{
+					display: flex;
+					justify-content: justify;
+					align-items:center;
+					img{
+						width: 20px;
+						padding-top: 12px;
+					}
+					p{
+						font-family: 'SVN-Aptima';
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 20px;
+						text-align: justify;
+						letter-spacing: 0.875px;
+						color: #FFFFFF;
+					}
+				}
+			}
+		}
+		.contact{
+			h1{
+				text-align: center;
+				font-family: 'SVN-Aptima';
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 25px;
+				text-transform: uppercase;
+				/*padding-top: 31px;*/
+			}
+			form{
+				padding: 20px 24px 56px 24px;
+				display: block;
+				input[type="text"]{
+					color: #000;
+					background: rgba(211, 211, 211, 0.5);
+					outline: none;
+					mix-blend-mode: normal;
+					border: none;
+					padding: 16px 0 20px 16px;
+					margin-top: 12px;
+					backdrop-filter: blur(4px);
+					width: 100%;
+					border-radius: 16px;
+					height: 55px;
+					&.message{
+						height: 147px;
+						padding-bottom: 115px;
+					}
+				}
+				input[type="button"]{
+					outline: none;
+					border: none;
+					margin: 28px auto;
+					display: block;
+					width: 180px;
+					height: 42px;
+					background: linear-gradient(180deg, #FEE7B5 0%, #E5B15C 100%);
+					box-shadow: 0px 0px 20px rgba(249, 220, 164, 0.51);
+					border-radius: 100px;
+					font-family: 'SVN-Aptima';
+					font-weight: 700;
+					font-size: 16px;
+					line-height: 22px;
+					letter-spacing: 0.875px;
+					text-transform: uppercase;
+					color: #0B1D26
+				}
+			}
+
 		}
 	}
 }
