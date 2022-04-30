@@ -15,6 +15,7 @@
 		h1{
 			font-family: 'SVN-Aptima';
 			text-align: center;
+			text-transform: uppercase;
 			background: linear-gradient(90deg, #CAA090 0%, #D5CDC2 49.01%, #CAA090 100%);
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
@@ -29,6 +30,7 @@
 		background-image: url('../../view/tranh-da-tu-nhien/upload/bg-2.png');
 		margin-top: -10px; 
 		width: 100%;
+		height: auto;
 		background-repeat: no-repeat;
 		background-position: center;
 		.line{
@@ -50,19 +52,87 @@
 		}
 		.slide1{
 			list-style: none;
-			padding-left: 56px;
 			margin-top: 20px;
-			position: relative;
+			padding-left: 76px;
 			.owl-item{
-				left: -2%;
-				position: relative;
 				li{
-					margin-left: 32px;
 					img{
-						width: 100%;
-						height: auto;
+						padding-right: 30px;
+						width: 80%;
 					}
 				}
+			}
+			.owl-dots{
+				margin-right: 80px;
+				.owl-dot{
+					&.active{
+						span{
+							width: 18px!important;
+							height: 6px!important;
+						}
+					}
+				} 
+			}
+		}
+		h1{
+			font-family: 'SVN-Aptima';
+			text-align: center;
+			background: linear-gradient(90deg, #CAA090 0%, #D5CDC2 49.01%, #CAA090 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-weight: 700;
+			font-size: 23px;
+			line-height: 33px;
+			text-transform: uppercase;
+			text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.25);
+			padding: 31px 20px 14px 20px;
+		}
+		.line{
+			width: 151px;
+			height:1px;
+			background: linear-gradient(90deg, #CAA090 0%, #D5CDC2 49.01%, #CAA090 100%);
+			margin: auto;
+			display: block;
+		}
+		p{
+			font-family: 'SVN-Aptima';
+			font-weight: 400;
+			font-size: 16px;
+			padding: 14px 20px 0 20px;
+			line-height: 22px;
+			text-align: justify;
+			letter-spacing: 0.875px;
+			color: #FFFFFF;
+		}
+		.info1{
+			img{
+				width: 100%;
+				margin-top: 3%;
+			}
+			.text-in-image{
+				margin-top: -75px;
+			}
+		}
+		.slide2{
+			list-style: none;
+			padding: 20px 0 0 27px;
+			.owl-item{
+				li{
+					img{
+						padding-right: 20px;
+						width: 100%;
+					}
+				}
+			}
+			.owl-dots{
+				.owl-dot{
+					&.active{
+						span{
+							width: 18px!important;
+							height: 6px!important;
+						}
+					}
+				} 
 			}
 		}
 	}
