@@ -24,6 +24,13 @@
 			line-height: 33px;
 			text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.25);
 			padding: 207px 20px 14px 20px;
+			&:after{
+					content:"";
+					border-bottom: 1px solid #542B1C;
+					width: 151px;
+					display: block;
+					margin: auto;				
+			}
 		}
 	}
 	.bg-two{
