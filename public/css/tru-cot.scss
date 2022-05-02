@@ -59,7 +59,7 @@
 			position: relative;
 			li{
 				img{
-					padding:  0 28px 0 28px;
+					padding:  130px 28px 0 28px;
 					width: 100%;
 					display: block;
 					margin: 0 auto;
@@ -72,7 +72,7 @@
 					left: 0;
 					width: 49px;
 					height: 49px;
-					top: 40%;
+					top: 50%;
 					span{
 						display: none;
 					}
@@ -80,7 +80,7 @@
 				.owl-next{
 					background-image: url(../../public/image/next.png)!important;
 					position: absolute;
-					top: 40%;
+					top: 50%;
 					right: 0;
 					width: 49px;
 					height: 49px;
@@ -151,9 +151,10 @@
 					text-align: center;
 					font-weight: 700;
 					color: #542B1C;
-					line-height: 32px;
-					font-size: 23px;
-					padding-top: 200px;
+					line-height: 24px;
+					font-size: 18px;
+					padding: 148px 42px 0 42px;
+
 					text-transform: uppercase;
 					&:after{
 						content:"";
@@ -167,11 +168,10 @@
 				.img-list-2{
 					list-style: none;
 					margin-top: 28px;
-					padding-left: 35px;
+					padding-left: 56px;
 					li{
 						img{
-							padding-right: 30px;
-							width: 80%;
+							width: 70%;
 							display: block;
 						}
 					}
@@ -185,6 +185,31 @@
 									background-color: #fff;
 								}
 							}
+						}
+					}
+					.owl-nav{
+						.owl-prev{
+							position: absolute;
+							background-image: url(../../public/image/prev.png)!important;
+							left: 0;
+							width: 49px;
+							height: 49px;
+							top: 50%;
+							span{
+								display: none;
+							}
+						}
+						.owl-next{
+							background-image: url(../../public/image/next.png)!important;
+							position: absolute;
+							top: 50%;
+							right: 0;
+							width: 49px;
+							height: 49px;
+							span{
+								display: none;
+							}
+
 						}
 					}
 				}
@@ -203,7 +228,7 @@
 		.social{
 			background-image: url('../../view/tru-cot-da/upload/social.png');
 			width: 100%;
-			background-size: 100% auto;
+			height: auto;
 			background-repeat: no-repeat;
 			background-position: top center;
 			margin: auto;
@@ -356,15 +381,105 @@
 		}
 	}
 }
-@media all and (min-width: 521px){
+@media all and (min-width: 520px){
 	.tru-cot-da-all{
 		width: 480px;
 		margin: 0 auto;
+		.social{
+			background-size: 100% auto;
+		}
 	}
 }
-/*@media all and (min-width: 1201px){
+@media all and (min-width: 1201px){
 	.tru-cot-da-all{
-		width: 1200px;
-		margin: 0 auto;
+		width: 100%;
+		height: auto;
+		.tru-cot-da{
+			background-image: url('../../view/tru-cot-da/upload/desktop_trucotda.png');
+			background-size: 100% auto;
+			.bg-extand{
+				h1{
+					font-size: 30px;
+					line-height: 50px;
+					margin-top: -135px;
+				}
+			}
+		}
+		.content-first{
+			p{
+				text-align: center;
+				padding-left: 559px;
+				padding-right: 559px; 
+			}
+		}
+		.img-list{
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.description1{
+			.content-second{
+				p{
+					text-align: center;
+					padding-left: 400px;
+					padding-right: 400px; 
+				}
+			}
+			.content-third{
+				p{
+					text-align: center;
+					padding-left: 400px;
+					padding-right: 400px; 
+				}
+			}
+			.img-2{
+				padding-left: 360px;
+				padding-right: 360px;
+			}
+			.group-tru-cot{
+				display: flex;
+				flex-direction: column;
+				h1{
+					order: 2;
+					margin-top: -100px;
+					font-size: 30px;
+					line-height: 50px;
+					color: #fff;
+					&:after{
+						display:none;
+					}
+				}
+				.img-list-2{
+					order: 1;
+					padding-left: 360px;
+					padding-right: 360px;
+				}
+				p{
+					order: 3;
+					text-align: center;
+					&:after{
+						content: "";
+						border-bottom: 1px solid linear-gradient(90deg, #CAA090 0%, #D5CDC2 49.01%, #CAA090 100%);
+						width: 304px;
+						display: block;
+						margin: auto;				
+						padding-top: 13px;
+					}
+				}
+			}
+		}	
+		.social{
+			width: 1200px;
+			.service{
+				display: flex;
+				flex-wrap: nowrap;
+			}
+		}
+		.contact{
+			width: 370px;
+			h1{
+				font-size: 16px;
+				line-height: 25px;
+			}
+		}
 	}
-}*/
+}

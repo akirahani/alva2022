@@ -14,13 +14,13 @@
                 <br>
                 sang trọng, hiện đại
             </h1>
+            <article class="content-first">
+                <p>
+                    Cột trụ nhà được ví như nốt nhạc hay nhất trong một bài nhạc. Cột nhà có vai trò cực kỳ quan trọng trong việc tô điểm thêm cho vẻ đẹp ngôi nhà. Chính vì vậy việc sử dụng đá ốp cột là rất cần thiết giúp tô điểm cho cột nhà thêm sang trọng hơn.
+                </p>
+            </article>
         </div>
     </section>
-    <article class="content-first">
-        <p>
-            Cột trụ nhà được ví như nốt nhạc hay nhất trong một bài nhạc. Cột nhà có vai trò cực kỳ quan trọng trong việc tô điểm thêm cho vẻ đẹp ngôi nhà. Chính vì vậy việc sử dụng đá ốp cột là rất cần thiết giúp tô điểm cho cột nhà thêm sang trọng hơn.
-        </p>
-    </article>
     <ul class="img-list owl-carousel owl-theme">
         <li><img src="view/tru-cot-da/upload/owl-tru-cot.png" alt="Trụ cột đá tự nhiên"></li>
         <li><img src="view/tru-cot-da/upload/owl-tru-cot.png" alt="Trụ cột đá tự nhiên"></li>
@@ -36,9 +36,7 @@
         <article class="content-third">
             <p>
                 Cột đã tự nhiên có nhiều ưu điểm vượt trội so với vật liệu ốp cột thông thường.
-                <br><br>
                 Những công trình sử dụng đá tự nhiên thì bạn sẽ yên tâm hơn về độ bền của chúng.
-                <br><br>
                 Được sử dụng phải chống chịu được các điều kiện về thời tiết, sức nặng và các lực tác động.
             </p>
         </article>
@@ -55,7 +53,7 @@
             </ul>
             <p>
                 Trụ cột ốp lát đá tự nhiên thiết kế nổi tiếng từ xưa tới giờ, luôn được sử dụng khá phổ biến trong nhiều thiết kế nhà cổ điển hay hiện đại.
-                <br><br>
+                <br><br>    
                 Để công trình đá ốp cột được toàn diện hơn bạn nên chọn được đơn vị thi công chất lượng, uy tín, chuyên nghiệp.
             </p>
         </div>
@@ -150,15 +148,30 @@
         nav:true,
         autoplay: false,
         autoplayTimeout:5000,
-        items: 1,
+        responsive:{
+            0:{
+                items: 1,                
+            },
+            1200:{
+                items: 5,
+                margin: -25
+            }
+        }
     })
 
     $('.img-list-2').owlCarousel({
-        loop:true,
-        margin: -70,
-        nav:false,
         autoplay: true,
         autoplayTimeout:5000,
-        items: 1
+        responsive:{
+            0:{
+                items: 1,
+                nav:false,
+                margin: -70,                
+            },
+            1200:{
+                items: 5,
+                nav:true,
+            }
+        }
     })
 </script>
