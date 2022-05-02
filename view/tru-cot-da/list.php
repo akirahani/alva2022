@@ -20,7 +20,7 @@
         <p>
             Cột trụ nhà được ví như nốt nhạc hay nhất trong một bài nhạc. Cột nhà có vai trò cực kỳ quan trọng trong việc tô điểm thêm cho vẻ đẹp ngôi nhà. Chính vì vậy việc sử dụng đá ốp cột là rất cần thiết giúp tô điểm cho cột nhà thêm sang trọng hơn.
         </p>
-    </article>`
+    </article>
     <ul class="img-list owl-carousel owl-theme">
         <li><img src="view/tru-cot-da/upload/owl-tru-cot.png" alt="Trụ cột đá tự nhiên"></li>
         <li><img src="view/tru-cot-da/upload/owl-tru-cot.png" alt="Trụ cột đá tự nhiên"></li>
@@ -100,7 +100,6 @@
                 </div>
                 <p>
                     Bảo hành đèn led
-                    <br>
                     Samsung 05 năm
                 </p>
             </div>
@@ -118,13 +117,30 @@
             <br>
             Để được tư vấn miễn phí tốt nhất
         </h1>
-        <form action="" method="POST">
-            <input type="text" name="" placeholder="Tên của bạn (*)" />
-            <input type="text" name="" placeholder="Email (*)">
-            <input type="text" name="" placeholder="Số điện thoại (*)" />
-            <input type="text" class="message" name="" placeholder="Tin nhắn" />
-            <input type="button" name="" value="Gửi liên hệ" />
-        </form>
+        <div class="form-contact-box" id="form-contact">
+            <form class="form-area" method="post">
+                <div class="input-placeholder">
+                    <input type="text" name="name" required spellcheck="false" autocomplete="off">
+                    <div class="placeholder-ct">
+                        Tên của bạn (<span>*</span>)
+                    </div>
+                </div>
+                <div class="input-placeholder">
+                    <input type="text" name="email" required spellcheck="false" autocomplete="off">
+                    <div class="placeholder-ct">
+                        Email (<span>*</span>)
+                    </div>
+                </div>
+                <div class="input-placeholder">
+                    <input type="text" name="phone" required spellcheck="false" autocomplete="off">
+                    <div class="placeholder-ct">
+                        Số điện thoại (<span>*</span>)
+                    </div>
+                </div>
+                <textarea type="text" name="note" placeholder="Tin nhắn"></textarea>
+                <button type="sumbit" name="submit">Gửi liên hệ</button>
+            </form>            
+        </div>
     </section>
 </main>
 <script type="text/javascript">
@@ -139,7 +155,7 @@
 
     $('.img-list-2').owlCarousel({
         loop:true,
-        margin:-100,
+        margin: -70,
         nav:false,
         autoplay: true,
         autoplayTimeout:5000,
