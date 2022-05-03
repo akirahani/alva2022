@@ -129,11 +129,11 @@
 				<h3>ỐP LÁT TRỤ CỘT ĐÁ TỰ NHIÊN</h3>
 			</li>
 			<li>
-				<a href="lat-nen"><img class="owl-lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/5.png" alt="<?=$data_company->ten?>" /></a>
+				<a href="da-lat-nen"><img class="owl-lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/5.png" alt="<?=$data_company->ten?>" /></a>
 				<h3>LÁT NỀN ĐÁ TỰ NHIÊN</h3>
 			</li>
 			<li>
-				<a href=""><img class="owl-lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/6.png" alt="<?=$data_company->ten?>" /></a>
+				<a href="nha-tam"><img class="owl-lazy" src="uploads/lazy/vuong.svg" data-src="public/image/dich-vu/6.png" alt="<?=$data_company->ten?>" /></a>
 				<h3>ỐP LÁT PHÒNG TẮM ĐÁ TỰ NHIÊN</h3>
 			</li>
 		</ul>
