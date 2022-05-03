@@ -50,6 +50,8 @@
                 <li><img src="view/tru-cot-da/upload/owl-tru-cot.png" alt="Trụ cột đá tự nhiên"></li>
                 <li><img src="view/tru-cot-da/upload/owl-tru-cot.png" alt="Trụ cột đá tự nhiên"></li>
                 <li><img src="view/tru-cot-da/upload/owl-tru-cot.png" alt="Trụ cột đá tự nhiên"></li>
+                <li><img src="view/tru-cot-da/upload/owl-tru-cot.png" alt="Trụ cột đá tự nhiên"></li>
+                <li><img src="view/tru-cot-da/upload/owl-tru-cot.png" alt="Trụ cột đá tự nhiên"></li>
             </ul>
             <p>
                 Trụ cột ốp lát đá tự nhiên thiết kế nổi tiếng từ xưa tới giờ, luôn được sử dụng khá phổ biến trong nhiều thiết kế nhà cổ điển hay hiện đại.
@@ -171,6 +173,7 @@
             1200:{
                 items: 5,
                 nav:true,
+                // margin: -25
             }
         }
     })
