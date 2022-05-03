@@ -158,8 +158,7 @@
         autoplayTimeout:5000,
         items: 1,
     })
-
-    $('.img-list-2').owlCarousel({
+    $('.slide2').owlCarousel({
         loop:true,
         margin: -70,
         nav:true,
