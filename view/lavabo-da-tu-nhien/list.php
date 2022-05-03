@@ -40,7 +40,10 @@
         </article>
         <img src="view/lavabo-da-tu-nhien/upload/bg-3.png" alt="Trụ cột đá tự nhiên" class="img-2" />
         <article class="content-third">
-            <p class="noibat">Ưu điểm: Chống thấm và đánh bóng, loại trừ được rêu, nấm mốc hay vi khuẩn có hại.</p>
+            <div class="text-noibat">
+                <span class="active"></span>
+                <p class="noibat">Ưu điểm: Chống thấm và đánh bóng, loại trừ được rêu, nấm mốc hay vi khuẩn có hại.</p>
+            </div>
             <p>
               Ngoài ra, đá tự nhiên không chứa bất cứ một loại hóa chất độc hại nào, do đó, sức khỏe của các thành viên trong gia đình bạn sẽ được bảo vệ tốt hơn khi sử dụng đá tự nhiên làm lavabo.
             </p>

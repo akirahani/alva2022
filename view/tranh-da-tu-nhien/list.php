@@ -5,28 +5,32 @@
     use PHPMailer\PHPMailer\Exception;
     $mail = new PHPMailer(true);
 ?>
-<link rel="stylesheet" type="text/css" href="public/css/tru-cot.css?v=28042022">
-<main class="tru-cot-da-all">
-    <section class="tru-cot-da">
+<link rel="stylesheet" type="text/css" href="public/css/tranh-da.css?v=28042022">
+<!--  -->
+<main class="tranh-da-tu-nhien-all">
+    <section class="tranh-da-tu-nhien">
         <div class="bg-extand">
             <h1>
-                Đá tự nhiên ốp cột trụ
+                Tranh đá xuyên sáng 
                 <br>
-                sang trọng, hiện đại
+                vẻ đẹp kì bí từ thiên nhiên
             </h1>
         </div>
     </section>
     <article class="content-first">
         <p>
-            Cột trụ nhà được ví như nốt nhạc hay nhất trong một bài nhạc. Cột nhà có vai trò cực kỳ quan trọng trong việc tô điểm thêm cho vẻ đẹp ngôi nhà. Chính vì vậy việc sử dụng đá ốp cột là rất cần thiết giúp tô điểm cho cột nhà thêm sang trọng hơn.
+            Tranh đá tự nhiên xuyên sáng có vẻ đẹp xuất sắc và mang nhiều ý nghĩa. Với khả năng xuyên sáng đặc biệt, đá tự nhiên xuyên sáng được ưu ái ứng dụng trong các công trình kiến trúc nội ngoại thất như ốp mặt tiền, đại sảnh, lát hành lang, quầy lễ tân, …
+        </p>
+        <p>
+            Giúp cho các thiết kế tăng thêm độ sang trọng, lung linh. Tranh Đá tự nhiên xuyên sáng chính là làn gió mới mà rất nhiều các nhà thiết kế kiến trúc ưa chuộng để tạo nên nét đặc biệt, sự nổi bật, chút xa hoa và sự tinh tế cần thiết cho không gian.
         </p>
     </article>
     <ul class="img-list owl-carousel owl-theme">
-        <li><img src="view/tru-cot-da/upload/owl-tru-cot.png" alt="Trụ cột đá tự nhiên"></li>
-        <li><img src="view/tru-cot-da/upload/tru-cot1.2.png" alt="Trụ cột đá tự nhiên"></li>
-        <li><img src="view/tru-cot-da/upload/tru-cot1.3.png" alt="Trụ cột đá tự nhiên"></li>
-        <li><img src="view/tru-cot-da/upload/tru-cot1.4.png" alt="Trụ cột đá tự nhiên"></li>
-        <li><img src="view/tru-cot-da/upload/tru-cot1.5.png" alt="Trụ cột đá tự nhiên"></li>
+        <li><img src="view/tranh-da-tu-nhien/upload/slide1.1.png" alt="Tranh đá tự nhiên slide1.1"></li>
+        <li><img src="view/tranh-da-tu-nhien/upload/slide1.2.png" alt="Tranh đá tự nhiên slide1.2"></li>
+        <li><img src="view/tranh-da-tu-nhien/upload/slide1.3.png" alt="Tranh đá tự nhiên slide1.3"></li>
+        <li><img src="view/tranh-da-tu-nhien/upload/slide1.4.png" alt="Tranh đá tự nhiên slide1.4"></li>
+        <li><img src="view/tranh-da-tu-nhien/upload/slide1.5.png" alt="Tranh đá tự nhiên slide1.5"></li>
     </ul>
     <section class="description1">
         <article class="content-second">
@@ -35,28 +39,27 @@
                Ngoài ra, hình dáng tròn mềm mại hay vuông vững chãi cũng tạo ra nhiều lựa chọn cho bạn.
             </p>
         </article>
-        <img src="view/tru-cot-da/upload/tru-cot-da2.png" alt="Trụ cột đá tự nhiên" class="img-2" />
+        <img src="view/tranh-da-tu-nhien/upload/tranh-da-tu-nhien2.png" alt="Trụ cột đá tự nhiên" class="img-2" />
         <article class="content-third">
-            <p>
-                Cột đã tự nhiên có nhiều ưu điểm vượt trội so với vật liệu ốp cột thông thường.
-                <br><br>
-                Những công trình sử dụng đá tự nhiên thì bạn sẽ yên tâm hơn về độ bền của chúng.
-                <br><br>
-                Được sử dụng phải chống chịu được các điều kiện về thời tiết, sức nặng và các lực tác động.
+            <img src="view/tranh-da-tu-nhien/upload/image-tranh-da1.png" alt="Ảnh tranh đá">
+            <p class="text-in-image">
+                Trong phong thủy, đá tự nhiên đá xuyên sáng onyx mang rất nhiều năng lượng tích cực có tác dụng giúp con người được mạnh mẽ hơn về thể chất lẫn tinh thần.
             </p>
         </article>
         <div class="group-tru-cot">
             <h1>
-                được nhiều gia chủ lựa chọn 
+                mang vẻ đẹp thần bí
+                <br>
+                được nhiều gia chủ lựa chọn
                 <br>
                 đưa vào không gian sống
             </h1>
             <ul class="img-list-2 owl-carousel owl-theme">
-                <li><img src="view/tru-cot-da/upload/tru-cot2.1.png" alt="Trụ cột đá tự nhiên"></li>
-                <li><img src="view/tru-cot-da/upload/tru-cot2.2.png" alt="Trụ cột đá tự nhiên"></li>
-                <li><img src="view/tru-cot-da/upload/tru-cot2.3.png" alt="Trụ cột đá tự nhiên"></li>
-                <li><img src="view/tru-cot-da/upload/tru-cot2.4.png" alt="Trụ cột đá tự nhiên"></li>
-                <li><img src="view/tru-cot-da/upload/tru-cot2.5.png" alt="Trụ cột đá tự nhiên"></li>
+                <li><img src="view/tranh-da-tu-nhien/upload/slide1.1.png" alt="Tranh đá tự nhiên slide1.1"></li>
+                <li><img src="view/tranh-da-tu-nhien/upload/slide1.2.png" alt="Tranh đá tự nhiên slide1.2"></li>
+                <li><img src="view/tranh-da-tu-nhien/upload/slide1.3.png" alt="Tranh đá tự nhiên slide1.3"></li>
+                <li><img src="view/tranh-da-tu-nhien/upload/slide1.4.png" alt="Tranh đá tự nhiên slide1.4"></li>
+                <li><img src="view/tranh-da-tu-nhien/upload/slide1.5.png" alt="Tranh đá tự nhiên slide1.5"></li>
             </ul>
             <p>
                 Trụ cột ốp lát đá tự nhiên thiết kế nổi tiếng từ xưa tới giờ, luôn được sử dụng khá phổ biến trong nhiều thiết kế nhà cổ điển hay hiện đại.
@@ -72,7 +75,7 @@
         <div class="service">
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/tru-cot-da/upload/icon1.png" alt="icon service">
+                    <img src="view/tranh-da-tu-nhien/upload/icon1.png" alt="icon service">
                 </div>
                 <p>
                     Miễn phí 
@@ -82,7 +85,7 @@
             </div>
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/tru-cot-da/upload/icon2.png" alt="icon service">
+                    <img src="view/tranh-da-tu-nhien/upload/icon2.png" alt="icon service">
                 </div>
                  <p>
                     Lắp đặt
@@ -92,7 +95,7 @@
             </div>
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/tru-cot-da/upload/icon3.png" alt="icon service">
+                    <img src="view/tranh-da-tu-nhien/upload/icon3.png" alt="icon service">
                 </div>
                 <p>
                     Bảo hành Đá
@@ -102,7 +105,7 @@
             </div>
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/tru-cot-da/upload/icon4.png" alt="icon service">
+                    <img src="view/tranh-da-tu-nhien/upload/icon4.png" alt="icon service">
                 </div>
                 <p>
                     Bảo hành đèn led
@@ -111,10 +114,10 @@
             </div>
         </div>
         <ul class="company-info">
-            <li><img src="view/tru-cot-da/upload/place.svg" alt="Showroom" /> <p>Showroom: Số 2 Mạc Đăng Doanh, Dương Kinh, Hải Phòng</p></li>
-            <li><img src="view/tru-cot-da/upload/tel.svg" alt="Hotline" /><p>Hotline: 1900 669 996</p></li>
-            <li><img src="view/tru-cot-da/upload/fb.svg" alt="Fanpage" /><p>Fanpage: Đá Tự Nhiên Titan Stone</p></li>
-            <li><img src="view/tru-cot-da/upload/mail.svg" alt="Email" /><p>Email: Titanstone@gmail.com</p></li>
+            <li><img src="view/tranh-da-tu-nhien/upload/place.svg" alt="Showroom" /> <p>Showroom: Số 2 Mạc Đăng Doanh, Dương Kinh, Hải Phòng</p></li>
+            <li><img src="view/tranh-da-tu-nhien/upload/tel.svg" alt="Hotline" /><p>Hotline: 1900 669 996</p></li>
+            <li><img src="view/tranh-da-tu-nhien/upload/fb.svg" alt="Fanpage" /><p>Fanpage: Đá Tự Nhiên Titan Stone</p></li>
+            <li><img src="view/tranh-da-tu-nhien/upload/mail.svg" alt="Email" /><p>Email: Titanstone@gmail.com</p></li>
         </ul>
     </section>
     <section class="contact">
@@ -149,18 +152,19 @@
         </div>
     </section>
 </main>
-<script type="text/javascript">
+
+<script>
     $('.img-list').owlCarousel({
         loop:true,
-        margin:10,
-        nav:true,
-        autoplay: false,
+        margin: -50,
+        nav:false,
+        autoplay: true,
         autoplayTimeout:5000,
-        items: 1,
+        items: 1
     })
-    $('.slide2').owlCarousel({
+    $('.img-list-2').owlCarousel({
         loop:true,
-        margin: -70,
+        margin: -10,
         nav:true,
         autoplay: true,
         autoplayTimeout:5000,

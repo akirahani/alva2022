@@ -1,8 +1,8 @@
 @media all and (min-width: 0){
-	.tru-cot-da-all{
-		background-color: #C2AC9E;
-		.tru-cot-da{
-			background-image: url('../../view/tru-cot-da/upload/bg-start.png');
+	.tranh-da-tu-nhien-all{
+		background-color: #423B3B;;
+		.tranh-da-tu-nhien{
+			background-image: url('../../view/tranh-da-tu-nhien/upload/bg-start.png');
 			background-size: 100% auto;
 			background-repeat: no-repeat;
 			height: 450px;
@@ -12,7 +12,7 @@
 			position: relative;
 			z-index: 1;
 			.bg-extand{
-				background-image: url('../../view/tru-cot-da/upload/bg-extand.png');
+				background-image: url('../../view/tranh-da-tu-nhien/upload/bg-extand.png');
 				height: 200px;
 				background-position: top center;
 				margin: auto;
@@ -68,7 +68,7 @@
 			.owl-nav{
 				.owl-prev{
 					position: absolute;
-					background-image: url(../../view/tru-cot-da/upload/prev.png)!important;
+					background-image: url(../../view/tranh-da-tu-nhien/upload/prev.png)!important;
 					left: 0;
 					width: 49px;
 					height: 49px;
@@ -78,7 +78,7 @@
 					}
 				}
 				.owl-next{
-					background-image: url(../../view/tru-cot-da/upload/next.png)!important;
+					background-image: url(../../view/tranh-da-tu-nhien/upload/next.png)!important;
 					position: absolute;
 					top: 40%;
 					right: 0;
@@ -140,7 +140,7 @@
 				z-index: 1
 			}
 			.group-tru-cot{
-				background-image: url('../../view/tru-cot-da/upload/tru-cot-da3.png');
+				background-image: url('../../view/tranh-da-tu-nhien/upload/tranh-da-tu-nhien3.png');
 				width: 100%;
 				background-size: 100% auto;
 				background-repeat: no-repeat;
@@ -190,7 +190,7 @@
 					.owl-nav{
 						.owl-prev{
 							position: absolute;
-							background-image: url(../../view/tru-cot-da/upload/prev.png)!important;
+							background-image: url(../../view/tranh-da-tu-nhien/upload/prev.png)!important;
 							left: 0;
 							width: 49px;
 							height: 49px;
@@ -200,7 +200,7 @@
 							}
 						}
 						.owl-next{
-							background-image: url(../../view/tru-cot-da/upload/next.png)!important;
+							background-image: url(../../view/tranh-da-tu-nhien/upload/next.png)!important;
 							position: absolute;
 							top: 40%;
 							right: 0;
@@ -226,7 +226,7 @@
 			}
 		}
 		.social{
-			background-image: url('../../view/tru-cot-da/upload/social.png');
+			background-image: url('../../view/tranh-da-tu-nhien/upload/social.png');
 			width: 100%;
 			background-size: 100% auto;
 			background-repeat: no-repeat;
@@ -382,101 +382,11 @@
 	}
 }
 @media all and (min-width: 521px){
-	.tru-cot-da-all{
+	.tranh-da-tu-nhien-all{
 		width: 480px;
 		margin: 0 auto;
 	}
 }
 @media all and (min-width: 1201px){
-	.tru-cot-da-all{
-		width: 100%;
-		height: auto;
-		.tru-cot-da{
-			background-image: url('../../view/tru-cot-da/upload/desktop_trucotda.png');
-			background-size: 100% auto;
-			.bg-extand{
-				h1{
-					font-size: 30px;
-					line-height: 50px;
-					margin-top: -135px;
-				}
-			}
-		}
-		.content-first{
-			p{
-				text-align: center;
-				padding-left: 559px;
-				padding-right: 559px; 
-			}
-		}
-		.img-list{
-			width: 1200px;
-			margin: 0 auto;
-		}
-		.description1{
-			.content-second{
-				p{
-					text-align: center;
-					padding-left: 400px;
-					padding-right: 400px; 
-				}
-			}
-			.content-third{
-				p{
-					text-align: center;
-					padding-left: 400px;
-					padding-right: 400px; 
-				}
-			}
-			.img-2{
-				padding-left: 360px;
-				padding-right: 360px;
-			}
-			.group-tru-cot{
-				display: flex;
-				flex-direction: column;
-				h1{
-					order: 2;
-					margin-top: -100px;
-					font-size: 30px;
-					line-height: 50px;
-					color: #fff;
-					&:after{
-						display:none;
-					}
-				}
-				.img-list-2{
-					order: 1;
-					padding-left: 360px;
-					padding-right: 360px;
-				}
-				p{
-					order: 3;
-					text-align: center;
-					&:after{
-						content: "";
-						border-bottom: 1px solid linear-gradient(90deg, #CAA090 0%, #D5CDC2 49.01%, #CAA090 100%);
-						width: 304px;
-						display: block;
-						margin: auto;				
-						padding-top: 13px;
-					}
-				}
-			}
-		}	
-		.social{
-			width: 1200px;
-			.service{
-				display: flex;
-				flex-wrap: nowrap;
-			}
-		}
-		.contact{
-			width: 370px;
-			h1{
-				font-size: 16px;
-				line-height: 25px;
-			}
-		}
-	}
+
 }

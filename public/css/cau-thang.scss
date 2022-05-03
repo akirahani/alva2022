@@ -1,8 +1,8 @@
 @media all and (min-width: 0){
-	.tru-cot-da-all{
-		background-color: #C2AC9E;
-		.tru-cot-da{
-			background-image: url('../../view/tru-cot-da/upload/bg-start.png');
+	.cau-thang-all{
+		background-color: rgba(249, 239, 229, 0.7);
+		.cau-thang{
+			background-image: url('../../view/cau-thang/upload/bg-start.png');
 			background-size: 100% auto;
 			background-repeat: no-repeat;
 			height: 450px;
@@ -12,14 +12,14 @@
 			position: relative;
 			z-index: 1;
 			.bg-extand{
-				background-image: url('../../view/tru-cot-da/upload/bg-extand.png');
+				background-image: url('../../view/cau-thang/upload/bg-extand.png');
 				height: 200px;
 				background-position: top center;
 				margin: auto;
 				display: block;
 				position: absolute;
 				z-index: 2;
-				top: 250px;
+				top: 265px;
 				width: 100%;
 				h1{
 					font-family: 'SVN-Aptima';
@@ -41,69 +41,9 @@
 				}
 			}
 		}	
-		.content-first{
-			p{
-				font-family: 'SVN-Aptima';
-				font-weight: 400;
-				font-size: 16px;
-				line-height: 22px;
-				text-align: justify;
-				letter-spacing: 0.875px;
-				color: #000000;
-				padding: 14px 21px 0 21px;
-			}
-		}
-		.img-list{
-			margin-top: 8px;
-			list-style: none;
-			position: relative;
-			li{
-				img{
-					padding:  0 28px 0 28px;
-					width: 100%;
-					display: block;
-					margin: 0 auto;
-				}
-			}
-			.owl-nav{
-				.owl-prev{
-					position: absolute;
-					background-image: url(../../view/tru-cot-da/upload/prev.png)!important;
-					left: 0;
-					width: 49px;
-					height: 49px;
-					top: 40%;
-					span{
-						display: none;
-					}
-				}
-				.owl-next{
-					background-image: url(../../view/tru-cot-da/upload/next.png)!important;
-					position: absolute;
-					top: 40%;
-					right: 0;
-					width: 49px;
-					height: 49px;
-					span{
-						display: none;
-					}
 
-				}
-			}
-			.owl-dots{
-				padding-top: 48px;
-				.owl-dot{
-					&.active{
-						span{
-							width: 18px;
-							height: 6px;
-						}
-					}
-				}
-			}
-		}
-		.description1{
-			.content-second{
+		.carousel1{
+			.content-first{
 				p{
 					font-family: 'SVN-Aptima';
 					font-weight: 400;
@@ -112,9 +52,126 @@
 					text-align: justify;
 					letter-spacing: 0.875px;
 					color: #000000;
-					padding: 28px 21px 0 21px;
-					position: absolute;
-					z-index: 8;
+					padding: 0 21px 0 21px;
+				}
+			}
+			.bg-second{
+				background-image: url('../../view/cau-thang/upload/bg-second.png');
+				background-size: 100% auto;
+				height: 560px;
+				background-repeat: no-repeat;
+				.text-noibat{
+					padding-top: 34px;
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+					h1{
+						color: #0D113B;
+						font-family: 'SVN-Aptima';
+						font-weight: 700;
+						font-size: 18px;
+						padding-right: 22px;
+						line-height: 30px;
+						text-align: right;
+						letter-spacing: 0.875px;
+						text-transform: uppercase;
+					}
+					.noibat{
+						width: 5px;
+						height: 51px;
+						background-color: rgba(13,17,59,0.8);
+					}
+				}
+				.img-list{
+					list-style: none;
+					margin-top: 8px;
+					padding-left: 56px;
+					margin-top: 30px;
+					li{
+						img{
+							padding-right: 35px;
+							width: 70%;
+							display: block;
+						}
+					}
+					.owl-nav{
+						.owl-prev{
+							position: absolute;
+							background-image: url(../../view/cau-thang/upload/prev.png)!important;
+							left: 0;
+							width: 49px;
+							height: 49px;
+							top: 40%;
+							span{
+								display: none;
+							}
+						}
+						.owl-next{
+							background-image: url(../../view/cau-thang/upload/next.png)!important;
+							position: absolute;
+							top: 40%;
+							right: 0;
+							width: 49px;
+							height: 49px;
+							span{
+								display: none;
+							}
+
+						}
+					}
+					.owl-dots{
+						padding-top: 17px;
+						.owl-dot{
+							&.active{
+								span{
+									width: 18px;
+									height: 6px;
+									background-color: #0D113B;
+								}
+							}
+						}
+					}
+				}
+				.content-second{
+					p{
+						font-family: 'SVN-Aptima';
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 22px;
+						text-align: justify;
+						letter-spacing: 0.875px;
+						color: #000000;
+						padding: 0 21px 17px 21px;
+						position: absolute;
+						z-index: 8;
+					}
+				}
+			}
+		
+		}
+		.description1{
+			.text-noibat2{
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				padding-top: 17px;
+				position: absolute;
+				z-index: 3;
+				.noibat2{
+					width: 5px;
+					height: 51px;
+					background-color: rgba(13,17,59,0.8);
+				}
+				h1{
+					color: #0D113B;
+					font-family: 'SVN-Aptima';
+					font-weight: 700;
+					font-size: 18px;
+					padding-left: 22px;
+					line-height: 30px;
+					text-align: left;
+					letter-spacing: 0.875px;
+					text-transform: uppercase;
 				}
 			}
 			.content-third{
@@ -134,16 +191,17 @@
 			.img-2{
 				width: 100%;
 				margin: 18px auto;
-				top: 100px;
+				padding-top: 15px;
 				display: block;
 				position: relative;
 				z-index: 1
 			}
-			.group-tru-cot{
-				background-image: url('../../view/tru-cot-da/upload/tru-cot-da3.png');
+			.group-cau-thang{
+				background-image: url('../../view/cau-thang/upload/bg-third.png');
 				width: 100%;
 				background-size: 100% auto;
 				background-repeat: no-repeat;
+				height: 790px;
 				margin: 70px auto 20px auto;
 				display: block;
 				h1{
@@ -165,14 +223,16 @@
 					}
 				}
 				.img-list-2{
+					padding-top: 80px;
 					list-style: none;
-					margin-top: 28px;
-					padding-left: 35px;
+					position: relative;
 					li{
+
 						img{
-							padding-right: 30px;
-							width: 80%;
+							padding:  0 45px 0 18px;
+							width: 100%;
 							display: block;
+							margin: 0 auto;
 						}
 					}
 					.owl-dots
@@ -182,7 +242,7 @@
 								span{
 									width: 18px;
 									height: 6px;
-									background-color: #fff;
+									background-color: #0D113B
 								}
 							}
 						}
@@ -190,19 +250,19 @@
 					.owl-nav{
 						.owl-prev{
 							position: absolute;
-							background-image: url(../../view/tru-cot-da/upload/prev.png)!important;
+							background-image: url(../../view/cau-thang/upload/prev.png)!important;
 							left: 0;
 							width: 49px;
 							height: 49px;
-							top: 40%;
+							top: 53%;
 							span{
 								display: none;
 							}
 						}
 						.owl-next{
-							background-image: url(../../view/tru-cot-da/upload/next.png)!important;
+							background-image: url(../../view/cau-thang/upload/next.png)!important;
 							position: absolute;
-							top: 40%;
+							top: 53%;
 							right: 0;
 							width: 49px;
 							height: 49px;
@@ -226,7 +286,7 @@
 			}
 		}
 		.social{
-			background-image: url('../../view/tru-cot-da/upload/social.png');
+			background-image: url('../../view/cau-thang/upload/social.png');
 			width: 100%;
 			background-size: 100% auto;
 			background-repeat: no-repeat;
@@ -266,7 +326,7 @@
 						height: 86px;
 						width: 86px;
 						margin: 33px auto 0 auto;
-						background: linear-gradient(180deg, #FEE7B5 0%, #E5B15C 100%);
+						background: #F9EFE5;
 						box-shadow: 0px 0px 20px rgba(249, 220, 164, 0.51);
 						img{
 							margin: 23px 0 0 17px;
@@ -310,12 +370,13 @@
 				line-height: 25px;
 				text-transform: uppercase;
 				padding-top: 31px;
+				color: #0D113B;
 			}
 			#form-contact form{
 				padding: 20px 24px 56px 24px;
 				display: block;
 				input, textarea {
-		            background: rgba(211, 211, 211, 0.5);
+		            background: rgba(255, 255, 255, 0.8);
 		            mix-blend-mode: normal;
 		            backdrop-filter: blur(4px);
 		            border-radius: 16px;
@@ -340,7 +401,7 @@
 					display: block;
 					width: 180px;
 					height: 42px;
-					background: linear-gradient(180deg, #FEE7B5 0%, #E5B15C 100%);
+					background: linear-gradient(180deg, #0D113B 0%, #454A82 0.01%, #0D113B 100%);
 					box-shadow: 0px 0px 20px rgba(249, 220, 164, 0.51);
 					border-radius: 100px;
 					font-family: 'SVN-Aptima';
@@ -349,7 +410,7 @@
 					line-height: 22px;
 					letter-spacing: 0.875px;
 					text-transform: uppercase;
-					color: #0B1D26
+					color: #fff;
 		        }
 				.input-placeholder {
 		            position: relative;
@@ -382,13 +443,13 @@
 	}
 }
 @media all and (min-width: 521px){
-	.tru-cot-da-all{
+	.cau-thang-all{
 		width: 480px;
 		margin: 0 auto;
 	}
 }
 /*@media all and (min-width: 1201px){
-	.tru-cot-da-all{
+	.cau-thang-all{
 		width: 1200px;
 		margin: 0 auto;
 	}

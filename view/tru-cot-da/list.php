@@ -164,6 +164,17 @@
         nav:true,
         autoplay: true,
         autoplayTimeout:5000,
-        items: 1
+        responsive:{
+            0:{
+                items: 1,
+                nav:false,
+                margin: -70,                
+            },
+            1200:{
+                items: 5,
+                nav:true,
+                // margin: -25
+            }
+        }
     })
 </script>

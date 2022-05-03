@@ -124,15 +124,27 @@
 				}
 			}
 			.content-third{
-				.noibat{
-					color: #FFE3A1;
-					font-family: 'SVN-Aptima';
-					font-weight: 700;
-					font-size: 16px;
-					line-height: 22px;
-					text-align: justify;
-					letter-spacing: 0.875px;
-					padding: 8px 21px 25px 21px;
+				.text-noibat{
+					display: flex;
+					span{
+						width: 3px;
+						height: 44px;
+						background-color: #FFE3A1;
+						position: absolute;
+						z-index: 9;
+					}
+					.noibat{
+						    color: #FFE3A1;
+						    font-family: 'SVN-Aptima';
+						    font-weight: 700;
+						    font-size: 16px;
+						    line-height: 22px;
+						     text-align: justify; 
+						    letter-spacing: 0.875px;
+						    padding: 0 21px 25px 21px;
+						    position: absolute;
+						    z-index: 9;
+					}
 				}
 				p{
 					font-family: 'SVN-Aptima';
@@ -173,7 +185,7 @@
 					text-transform: uppercase;
 					&:after{
 						content:"";
-						border-bottom: 1px solid #542B1C;
+						border-bottom: 1px solid #FFE3A1;
 						width: 151px;
 						display: block;
 						margin: auto;				
