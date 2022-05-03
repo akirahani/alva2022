@@ -5,44 +5,46 @@
     use PHPMailer\PHPMailer\Exception;
     $mail = new PHPMailer(true);
 ?>
-<link rel="stylesheet" type="text/css" href="public/css/tru-cot.css?v=28042022">
-<main class="tru-cot-da-all">
-    <section class="tru-cot-da">
+<link rel="stylesheet" type="text/css" href="public/css/lat-nen.css?v=28042022">
+<main class="da-lat-nen-all">
+    <section class="da-lat-nen">
         <div class="bg-extand">
             <h1>
-                Đá tự nhiên ốp cột trụ
+                ĐÁ NGỌC TỰ NHIÊN LÁT NỀN
                 <br>
-                sang trọng, hiện đại
+                MANG LẠI VẺ ĐẸP SANG TRỌNG
+                <br>
+                CHO KHÔNG GIAN NHÀ BẠN
             </h1>
         </div>
     </section>
     <article class="content-first">
         <p>
-            Cột trụ nhà được ví như nốt nhạc hay nhất trong một bài nhạc. Cột nhà có vai trò cực kỳ quan trọng trong việc tô điểm thêm cho vẻ đẹp ngôi nhà. Chính vì vậy việc sử dụng đá ốp cột là rất cần thiết giúp tô điểm cho cột nhà thêm sang trọng hơn.
+           Đá ngọc tự nhiên lát nền phòng khách là một bề mặt sàn tự nhiên bao phủ được khai thác từ các ngọn núi, một lựa chọn cao cấp, sang trọng cho không gian phòng khách các kiến trúc nhà ở hiện đại. 
         </p>
     </article>
     <ul class="img-list owl-carousel owl-theme">
-        <li><img src="view/tru-cot-da/upload/owl-tru-cot.png" alt="Trụ cột đá tự nhiên"></li>
-        <li><img src="view/tru-cot-da/upload/tru-cot1.2.png" alt="Trụ cột đá tự nhiên"></li>
-        <li><img src="view/tru-cot-da/upload/tru-cot1.3.png" alt="Trụ cột đá tự nhiên"></li>
-        <li><img src="view/tru-cot-da/upload/tru-cot1.4.png" alt="Trụ cột đá tự nhiên"></li>
-        <li><img src="view/tru-cot-da/upload/tru-cot1.5.png" alt="Trụ cột đá tự nhiên"></li>
+        <li><img src="view/da-lat-nen/upload/bg-start.png" alt="Trụ cột đá tự nhiên"></li>
+        <li><img src="view/da-lat-nen/upload/lat-nen1.2.png" alt="Trụ cột đá tự nhiên"></li>
+        <li><img src="view/da-lat-nen/upload/lat-nen1.3.png" alt="Trụ cột đá tự nhiên"></li>
+        <li><img src="view/da-lat-nen/upload/lat-nen1.4.png" alt="Trụ cột đá tự nhiên"></li>
+        <li><img src="view/da-lat-nen/upload/lat-nen1.5.png" alt="Trụ cột đá tự nhiên"></li>
     </ul>
     <section class="description1">
         <article class="content-second">
             <p>
-               không chỉ để nâng đỡ ngôi nhà mà còn đóng vai trò trang trí tuyệt vời. Đá tự nhiên làm nổi bật sự quý phái, sang trọng cho ngôi nhà.
-               Ngoài ra, hình dáng tròn mềm mại hay vuông vững chãi cũng tạo ra nhiều lựa chọn cho bạn.
+              Nâng cao diện mạo của một không gian, mang lại sự vương giả khó bắt chước. một cái nhìn tinh tế và quyến rũ, gợi lên cảm giác thanh lịch.
+              <br><br>
+              Sàn nhà lát đá ngọc tự nhiên đẹp trở thành tâm điểm của một không gian sống hoàn mỹ.
             </p>
         </article>
-        <img src="view/tru-cot-da/upload/tru-cot-da2.png" alt="Trụ cột đá tự nhiên" class="img-2" />
+        <img src="view/da-lat-nen/upload/bg-3.png" alt="Trụ cột đá tự nhiên" class="img-2" />
         <article class="content-third">
+            <h1>ĐÁ NGỌC TỰ NHIÊN VÀ NHỮNG TÁC DỤNG TRONG PHONG THUỶ</h1>
             <p>
-                Cột đã tự nhiên có nhiều ưu điểm vượt trội so với vật liệu ốp cột thông thường.
+                Đá ngọc tự nhiên còn là sự lựa chọn đặc biệt thích hợp về phong thủy.
                 <br><br>
-                Những công trình sử dụng đá tự nhiên thì bạn sẽ yên tâm hơn về độ bền của chúng.
-                <br><br>
-                Được sử dụng phải chống chịu được các điều kiện về thời tiết, sức nặng và các lực tác động.
+                Vì đá hình thành từ tự nhiên nên rất an toàn cho sức khỏe của mọi người, sử dụng đá tự nhiên trong nhà sẽ khiến cho người sở hữu tịnh tâm, luôn cảm thấy thoải mái, tràn đầy năng lượng tích cực.
             </p>
         </article>
         <div class="group-tru-cot">
@@ -52,16 +54,14 @@
                 đưa vào không gian sống
             </h1>
             <ul class="img-list-2 owl-carousel owl-theme">
-                <li><img src="view/tru-cot-da/upload/tru-cot2.1.png" alt="Trụ cột đá tự nhiên"></li>
-                <li><img src="view/tru-cot-da/upload/tru-cot2.2.png" alt="Trụ cột đá tự nhiên"></li>
-                <li><img src="view/tru-cot-da/upload/tru-cot2.3.png" alt="Trụ cột đá tự nhiên"></li>
-                <li><img src="view/tru-cot-da/upload/tru-cot2.4.png" alt="Trụ cột đá tự nhiên"></li>
-                <li><img src="view/tru-cot-da/upload/tru-cot2.5.png" alt="Trụ cột đá tự nhiên"></li>
+                <li><img src="view/da-lat-nen/upload/lat-nen2.1.png" alt="Trụ cột đá tự nhiên"></li>
+                <li><img src="view/da-lat-nen/upload/lat-nen2.2.png" alt="Trụ cột đá tự nhiên"></li>
+                <li><img src="view/da-lat-nen/upload/lat-nen2.3.png" alt="Trụ cột đá tự nhiên"></li>
+                <li><img src="view/da-lat-nen/upload/lat-nen2.4.png" alt="Trụ cột đá tự nhiên"></li>
+                <li><img src="view/da-lat-nen/upload/lat-nen2.5.png" alt="Trụ cột đá tự nhiên"></li>
             </ul>
             <p>
-                Trụ cột ốp lát đá tự nhiên thiết kế nổi tiếng từ xưa tới giờ, luôn được sử dụng khá phổ biến trong nhiều thiết kế nhà cổ điển hay hiện đại.
-                <br><br>
-                Để công trình đá ốp cột được toàn diện hơn bạn nên chọn được đơn vị thi công chất lượng, uy tín, chuyên nghiệp.
+                Bạn là người đang muốn không gian kiến trúc chứa đựng vẻ đẹp của thiên nhiên, đồng thời giữ được vẻ đẹp ấy lâu bền thì đá tự nhiên luôn là một lựa chọn độc đáo và mới mẻ
             </p>
         </div>
     </section>
@@ -72,7 +72,7 @@
         <div class="service">
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/tru-cot-da/upload/icon1.png" alt="icon service">
+                    <img src="view/da-lat-nen/upload/icon1.png" alt="icon service">
                 </div>
                 <p>
                     Miễn phí 
@@ -82,7 +82,7 @@
             </div>
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/tru-cot-da/upload/icon2.png" alt="icon service">
+                    <img src="view/da-lat-nen/upload/icon2.png" alt="icon service">
                 </div>
                  <p>
                     Lắp đặt
@@ -92,7 +92,7 @@
             </div>
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/tru-cot-da/upload/icon3.png" alt="icon service">
+                    <img src="view/da-lat-nen/upload/icon3.png" alt="icon service">
                 </div>
                 <p>
                     Bảo hành Đá
@@ -102,7 +102,7 @@
             </div>
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/tru-cot-da/upload/icon4.png" alt="icon service">
+                    <img src="view/da-lat-nen/upload/icon4.png" alt="icon service">
                 </div>
                 <p>
                     Bảo hành đèn led
@@ -111,10 +111,10 @@
             </div>
         </div>
         <ul class="company-info">
-            <li><img src="view/tru-cot-da/upload/place.svg" alt="Showroom" /> <p>Showroom: Số 2 Mạc Đăng Doanh, Dương Kinh, Hải Phòng</p></li>
-            <li><img src="view/tru-cot-da/upload/tel.svg" alt="Hotline" /><p>Hotline: 1900 669 996</p></li>
-            <li><img src="view/tru-cot-da/upload/fb.svg" alt="Fanpage" /><p>Fanpage: Đá Tự Nhiên Titan Stone</p></li>
-            <li><img src="view/tru-cot-da/upload/mail.svg" alt="Email" /><p>Email: Titanstone@gmail.com</p></li>
+            <li><img src="view/da-lat-nen/upload/place.svg" alt="Showroom" /> <p>Showroom: Số 2 Mạc Đăng Doanh, Dương Kinh, Hải Phòng</p></li>
+            <li><img src="view/da-lat-nen/upload/tel.svg" alt="Hotline" /><p>Hotline: 1900 669 996</p></li>
+            <li><img src="view/da-lat-nen/upload/fb.svg" alt="Fanpage" /><p>Fanpage: Đá Tự Nhiên Titan Stone</p></li>
+            <li><img src="view/da-lat-nen/upload/mail.svg" alt="Email" /><p>Email: Titanstone@gmail.com</p></li>
         </ul>
     </section>
     <section class="contact">
@@ -152,7 +152,7 @@
 <script type="text/javascript">
     $('.img-list').owlCarousel({
         loop:true,
-        margin:10,
+        margin:-40,
         nav:true,
         autoplay: false,
         autoplayTimeout:5000,
@@ -161,8 +161,8 @@
 
     $('.img-list-2').owlCarousel({
         loop:true,
-        margin: -70,
-        nav:true,
+        margin: -110,
+        nav: false,
         autoplay: true,
         autoplayTimeout:5000,
         items: 1
