@@ -59,7 +59,7 @@
 			position: relative;
 			li{
 				img{
-					padding:  130px 28px 0 28px;
+					padding:  0 28px 0 28px;
 					width: 100%;
 					display: block;
 					margin: 0 auto;
@@ -68,19 +68,19 @@
 			.owl-nav{
 				.owl-prev{
 					position: absolute;
-					background-image: url(../../public/image/prev.png)!important;
+					background-image: url(../../view/tru-cot-da/upload/prev.png)!important;
 					left: 0;
 					width: 49px;
 					height: 49px;
-					top: 50%;
+					top: 40%;
 					span{
 						display: none;
 					}
 				}
 				.owl-next{
-					background-image: url(../../public/image/next.png)!important;
+					background-image: url(../../view/tru-cot-da/upload/next.png)!important;
 					position: absolute;
-					top: 50%;
+					top: 40%;
 					right: 0;
 					width: 49px;
 					height: 49px;
@@ -149,12 +149,11 @@
 				h1{
 					font-family: 'SVN-Aptima';
 					text-align: center;
-					font-weight: 700;
 					color: #542B1C;
-					line-height: 24px;
+					font-weight: 700;
 					font-size: 18px;
-					padding: 148px 42px 0 42px;
-
+					line-height: 24px;
+					padding-top: 200px;
 					text-transform: uppercase;
 					&:after{
 						content:"";
@@ -168,10 +167,11 @@
 				.img-list-2{
 					list-style: none;
 					margin-top: 28px;
-					padding-left: 56px;
+					padding-left: 35px;
 					li{
 						img{
-							width: 70%;
+							padding-right: 30px;
+							width: 80%;
 							display: block;
 						}
 					}
@@ -190,19 +190,19 @@
 					.owl-nav{
 						.owl-prev{
 							position: absolute;
-							background-image: url(../../public/image/prev.png)!important;
+							background-image: url(../../view/tru-cot-da/upload/prev.png)!important;
 							left: 0;
 							width: 49px;
 							height: 49px;
-							top: 50%;
+							top: 40%;
 							span{
 								display: none;
 							}
 						}
 						.owl-next{
-							background-image: url(../../public/image/next.png)!important;
+							background-image: url(../../view/tru-cot-da/upload/next.png)!important;
 							position: absolute;
-							top: 50%;
+							top: 40%;
 							right: 0;
 							width: 49px;
 							height: 49px;
@@ -228,7 +228,7 @@
 		.social{
 			background-image: url('../../view/tru-cot-da/upload/social.png');
 			width: 100%;
-			height: auto;
+			background-size: 100% auto;
 			background-repeat: no-repeat;
 			background-position: top center;
 			margin: auto;
@@ -381,13 +381,10 @@
 		}
 	}
 }
-@media all and (min-width: 520px){
+@media all and (min-width: 521px){
 	.tru-cot-da-all{
 		width: 480px;
 		margin: 0 auto;
-		.social{
-			background-size: 100% auto;
-		}
 	}
 }
 @media all and (min-width: 1201px){
