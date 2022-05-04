@@ -36,6 +36,13 @@
 
 		.carousel1{
 			.content-first{
+				display: flex;
+				.active{
+					margin: 30px 0 0 22px;
+					width: 1px;
+					background-color: #A48579;
+					height: 35px;
+				}
 				p{
 					font-family: 'SVN-Aptima';
 					font-weight: 400;
@@ -45,12 +52,6 @@
 					letter-spacing: 0.875px;
 					color: #490912;
 					margin: 26px 21px 0 21px;
-					&:before{
-						margin-right: 16px;
-						content: "";
-						border-left: 1px solid  #A48579;
-						height: 35px; 
-					}
 				}
 			}
 			.bg-second{
@@ -197,10 +198,8 @@
 			}
 			.group-nha-tam{
 				background-image: url('../../view/nha-tam/upload/bg-four.png');
-				width: 100%;
 				background-size: 100% auto;
 				background-repeat: no-repeat;
-				height: 790px;
 				margin: 0 auto;
 				display: block;
 				h1{
@@ -279,7 +278,6 @@
 		.social{
 			background-image: url('../../view/nha-tam/upload/social.png');
 			width: 100%;
-			/*background-size: 100% auto;*/
 			background-repeat: no-repeat;
 			background-position: top center;
 			margin: auto;

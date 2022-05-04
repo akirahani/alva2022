@@ -68,15 +68,14 @@
 			}
 			.img-list{
 				list-style: none;
-				position: relative;
+				margin-top: 8px;
 				padding-left: 76px;
+				margin-top: 10px;
 				li{
-					margin-left: -26px;
 					img{
-						padding-right: 75px;
+						padding-right: 35px;
 						width: 70%;
 						display: block;
-						margin: 0 auto;
 					}
 				}
 				.owl-nav{
@@ -120,7 +119,7 @@
 		}
 		
 		.description1{
-			margin-top: -32%;
+			margin-top: -40%;
 			h1{
 				font-family: 'SVN-Aptima';
 				font-weight: 700;
@@ -181,7 +180,7 @@
 				background-image: url('../../view/tranh-da-tu-nhien/upload/bg-third.png');
 				background-size: 100% auto;
 				background-repeat: no-repeat;
-				margin: 70px auto 20px auto;
+				margin: 120px auto 20px auto;
 				display: block;
 				h1{
 					font-family: 'SVN-Aptima';
@@ -278,7 +277,6 @@
 		.social{
 			background-image: url('../../view/tranh-da-tu-nhien/upload/social.png');
 			width: 100%;
-			background-size: 100% auto;
 			background-repeat: no-repeat;
 			background-position: top center;
 			margin: auto;

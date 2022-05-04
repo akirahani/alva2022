@@ -19,6 +19,7 @@
    
     <section class="carousel1">
         <article class="content-first">
+            <div class="active"></div>
             <p>Phòng tắm không chỉ phục vụ cho nhu cầu sinh hoạt thường ngày. Nó còn ảnh hưởng đến đời sống tinh thần, phản ánh gu thẩm mỹ của người sở hữu.</p>
         </article>
         <div class="bg-second">

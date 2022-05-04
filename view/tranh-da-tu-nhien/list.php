@@ -162,7 +162,7 @@
             0:{
                 items: 1,
                 // nav:false,
-                margin: -120,                
+                margin: -110,                
             },
             1200:{
                 items: 5,
