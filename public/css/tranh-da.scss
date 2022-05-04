@@ -1,6 +1,6 @@
 @media all and (min-width: 0){
 	.tranh-da-tu-nhien-all{
-		background-color: #423B3B;;
+		background-color: #191313;
 		.tranh-da-tu-nhien{
 			background-image: url('../../view/tranh-da-tu-nhien/upload/bg-start.png');
 			background-size: 100% auto;
@@ -19,90 +19,131 @@
 				display: block;
 				position: absolute;
 				z-index: 2;
-				top: 250px;
+				top: 260px;
 				width: 100%;
 				h1{
 					font-family: 'SVN-Aptima';
 					text-align: center;
 					font-weight: 700;
-					color: #542B1C;
+					background: linear-gradient(90deg, #CAA090 0%, #D5CDC2 49.01%, #CAA090 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-clip: text;
+					text-fill-color: transparent;
+					text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.25);
 					line-height: 32px;
 					font-size: 23px;
-					padding-top: 88px;
+					padding-top: 120px;
 					text-transform: uppercase;
 					&:after{
 						content:"";
-						border-bottom: 1px solid #542B1C;
+						border-bottom: 1px solid  #CAA090 ;
 						width: 151px;
 						display: block;
 						margin: auto;				
-						padding-top: 13px;
+						padding-top: 14px;
 					}
 				}
 			}
 		}	
-		.content-first{
-			p{
-				font-family: 'SVN-Aptima';
-				font-weight: 400;
-				font-size: 16px;
-				line-height: 22px;
-				text-align: justify;
-				letter-spacing: 0.875px;
-				color: #000000;
-				padding: 14px 21px 0 21px;
-			}
-		}
-		.img-list{
-			margin-top: 8px;
-			list-style: none;
-			position: relative;
-			li{
-				img{
-					padding:  0 28px 0 28px;
-					width: 100%;
-					display: block;
-					margin: 0 auto;
+		.bg-second{
+			background-image: url('../../view/tranh-da-tu-nhien/upload/bg-second.png');
+			background-repeat: no-repeat;
+			background-position: top center;
+			background-size: 100% auto;
+			height: 627px;
+			padding-top: 20%; 
+			.content-first{
+				p{
+					font-family: 'SVN-Aptima';
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 22px;
+					text-align: justify;
+					letter-spacing: 0.875px;
+					color: #fff;
+					margin-top: -15%;
+					padding: 0 21px 20px 21px;
 				}
 			}
-			.owl-nav{
-				.owl-prev{
-					position: absolute;
-					background-image: url(../../view/tranh-da-tu-nhien/upload/prev.png)!important;
-					left: 0;
-					width: 49px;
-					height: 49px;
-					top: 40%;
-					span{
-						display: none;
+			.img-list{
+				list-style: none;
+				position: relative;
+				padding-left: 76px;
+				li{
+					margin-left: -26px;
+					img{
+						padding-right: 75px;
+						width: 70%;
+						display: block;
+						margin: 0 auto;
 					}
 				}
-				.owl-next{
-					background-image: url(../../view/tranh-da-tu-nhien/upload/next.png)!important;
-					position: absolute;
-					top: 40%;
-					right: 0;
-					width: 49px;
-					height: 49px;
-					span{
-						display: none;
-					}
-
-				}
-			}
-			.owl-dots{
-				padding-top: 48px;
-				.owl-dot{
-					&.active{
+				.owl-nav{
+					display: none;
+					.owl-prev{
+						position: absolute;
+						background-image: url(../../view/tranh-da-tu-nhien/upload/prev.png)!important;
+						left: 0;
+						width: 49px;
+						height: 49px;
+						top: 40%;
 						span{
-							width: 18px;
-							height: 6px;
+							display: none;
+						}
+					}
+					.owl-next{
+						background-image: url(../../view/tranh-da-tu-nhien/upload/next.png)!important;
+						position: absolute;
+						top: 40%;
+						right: 0;
+						width: 49px;
+						height: 49px;
+						span{
+							display: none;
+						}
+
+					}
+				}
+				.owl-dots{
+					padding-top: 20px;
+					.owl-dot{
+						&.active{
+							span{
+								width: 18px;
+								height: 6px;
+							}
 						}
 					}
 				}
 			}
 		}
+		
 		.description1{
+			margin-top: -32%;
+			h1{
+				font-family: 'SVN-Aptima';
+				font-weight: 700;
+				font-size: 23px;
+				line-height: 33px;
+				text-align: center;
+				letter-spacing: 0.875px;
+				text-transform: uppercase;
+				background: linear-gradient(90deg, #CAA090 0%, #D5CDC2 49.01%, #CAA090 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+				text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.25);
+				&:after{
+					content:"";
+					border-bottom: 1px solid  #CAA090 ;
+					width: 151px;
+					display: block;
+					margin: auto;				
+					padding-top: 14px;
+				}
+			}
 			.content-second{
 				p{
 					font-family: 'SVN-Aptima';
@@ -111,13 +152,17 @@
 					line-height: 22px;
 					text-align: justify;
 					letter-spacing: 0.875px;
-					color: #000000;
-					padding: 28px 21px 0 21px;
+					color: #fff;
+					padding: 14px 21px 0 21px;
 					position: absolute;
 					z-index: 8;
 				}
 			}
 			.content-third{
+				img{
+    				margin-top: 33%;
+    				width: 100%;
+				}
 				p{
 					font-family: 'SVN-Aptima';
 					font-weight: 400;
@@ -125,58 +170,59 @@
 					line-height: 22px;
 					text-align: justify;
 					letter-spacing: 0.875px;
-					color: #000000;
-					padding: 8px 21px 0 21px;
+					color: #fff;
+					margin-top: -13%;
+					padding: 0 21px 0 21px;
 					position: absolute;
 					z-index: 8;
 				}
 			}
-			.img-2{
-				width: 100%;
-				margin: 18px auto;
-				top: 100px;
-				display: block;
-				position: relative;
-				z-index: 1
-			}
 			.group-tru-cot{
-				background-image: url('../../view/tranh-da-tu-nhien/upload/tranh-da-tu-nhien3.png');
-				width: 100%;
+				background-image: url('../../view/tranh-da-tu-nhien/upload/bg-third.png');
 				background-size: 100% auto;
 				background-repeat: no-repeat;
 				margin: 70px auto 20px auto;
 				display: block;
 				h1{
 					font-family: 'SVN-Aptima';
-					text-align: center;
-					color: #542B1C;
 					font-weight: 700;
 					font-size: 18px;
-					line-height: 24px;
-					padding-top: 200px;
+					line-height: 33px;
+					text-align: center;
+					letter-spacing: 0.875px;
 					text-transform: uppercase;
+					background: linear-gradient(90deg, #CAA090 0%, #D5CDC2 49.01%, #CAA090 100%);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-clip: text;
+					text-fill-color: transparent;
+					text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.25);
+					margin-top: -25px;
 					&:after{
 						content:"";
-						border-bottom: 1px solid #542B1C;
+						border-bottom: 1px solid  #CAA090 ;
 						width: 151px;
 						display: block;
 						margin: auto;				
-						padding-top: 13px;
+						padding-top: 14px;
 					}
 				}
 				.img-list-2{
 					list-style: none;
 					margin-top: 28px;
-					padding-left: 35px;
+					padding-left: 27px;
 					li{
+
 						img{
-							padding-right: 30px;
-							width: 80%;
+							padding:  0 45px 0 5px;
+							width: 100%;
 							display: block;
+							margin: 0 auto;
 						}
 					}
 					.owl-dots
 					{
+						margin: 26px 0 28px 0; 
 						.owl-dot{
 							&.active{
 								span{
@@ -221,7 +267,11 @@
 					text-align: justify;
 					letter-spacing: 0.875px;
 					padding: 8px 21px 0 21px;
-					color: #000000;
+					color: #fff;
+					&.noibat{
+						padding-top: 15px;
+						color: #FFE3A1;
+					}
 				}
 			}
 		}
@@ -302,6 +352,7 @@
 			}
 		}
 		.contact{
+			background-image: url('../../view/tranh-da-tu-nhien/upload/contact.png');
 			h1{
 				text-align: center;
 				font-family: 'SVN-Aptima';
@@ -310,12 +361,13 @@
 				line-height: 25px;
 				text-transform: uppercase;
 				padding-top: 31px;
+				color: #fff;
 			}
 			#form-contact form{
 				padding: 20px 24px 56px 24px;
 				display: block;
 				input, textarea {
-		            background: rgba(211, 211, 211, 0.5);
+		            background: rgba(255, 255, 255, 0.8);
 		            mix-blend-mode: normal;
 		            backdrop-filter: blur(4px);
 		            border-radius: 16px;

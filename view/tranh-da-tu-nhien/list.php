@@ -6,7 +6,6 @@
     $mail = new PHPMailer(true);
 ?>
 <link rel="stylesheet" type="text/css" href="public/css/tranh-da.css?v=28042022">
-<!--  -->
 <main class="tranh-da-tu-nhien-all">
     <section class="tranh-da-tu-nhien">
         <div class="bg-extand">
@@ -17,29 +16,32 @@
             </h1>
         </div>
     </section>
-    <article class="content-first">
-        <p>
-            Tranh đá tự nhiên xuyên sáng có vẻ đẹp xuất sắc và mang nhiều ý nghĩa. Với khả năng xuyên sáng đặc biệt, đá tự nhiên xuyên sáng được ưu ái ứng dụng trong các công trình kiến trúc nội ngoại thất như ốp mặt tiền, đại sảnh, lát hành lang, quầy lễ tân, …
-        </p>
-        <p>
-            Giúp cho các thiết kế tăng thêm độ sang trọng, lung linh. Tranh Đá tự nhiên xuyên sáng chính là làn gió mới mà rất nhiều các nhà thiết kế kiến trúc ưa chuộng để tạo nên nét đặc biệt, sự nổi bật, chút xa hoa và sự tinh tế cần thiết cho không gian.
-        </p>
-    </article>
-    <ul class="img-list owl-carousel owl-theme">
-        <li><img src="view/tranh-da-tu-nhien/upload/slide1.1.png" alt="Tranh đá tự nhiên slide1.1"></li>
-        <li><img src="view/tranh-da-tu-nhien/upload/slide1.2.png" alt="Tranh đá tự nhiên slide1.2"></li>
-        <li><img src="view/tranh-da-tu-nhien/upload/slide1.3.png" alt="Tranh đá tự nhiên slide1.3"></li>
-        <li><img src="view/tranh-da-tu-nhien/upload/slide1.4.png" alt="Tranh đá tự nhiên slide1.4"></li>
-        <li><img src="view/tranh-da-tu-nhien/upload/slide1.5.png" alt="Tranh đá tự nhiên slide1.5"></li>
-    </ul>
-    <section class="description1">
-        <article class="content-second">
+    <section class="bg-second">
+         <article class="content-first">
             <p>
-               không chỉ để nâng đỡ ngôi nhà mà còn đóng vai trò trang trí tuyệt vời. Đá tự nhiên làm nổi bật sự quý phái, sang trọng cho ngôi nhà.
-               Ngoài ra, hình dáng tròn mềm mại hay vuông vững chãi cũng tạo ra nhiều lựa chọn cho bạn.
+                Tranh đá tự nhiên xuyên sáng có vẻ đẹp xuất sắc và mang nhiều ý nghĩa. Với khả năng xuyên sáng đặc biệt, đá tự nhiên xuyên sáng được ưu ái ứng dụng trong các công trình kiến trúc nội ngoại thất như ốp mặt tiền, đại sảnh, lát hành lang, quầy lễ tân, …
             </p>
         </article>
-        <img src="view/tranh-da-tu-nhien/upload/tranh-da-tu-nhien2.png" alt="Trụ cột đá tự nhiên" class="img-2" />
+        <ul class="img-list owl-carousel owl-theme">
+            <li><img src="view/tranh-da-tu-nhien/upload/slide1.1.png" alt="Tranh đá tự nhiên slide1.1"></li>
+            <li><img src="view/tranh-da-tu-nhien/upload/slide1.2.png" alt="Tranh đá tự nhiên slide1.2"></li>
+            <li><img src="view/tranh-da-tu-nhien/upload/slide1.3.png" alt="Tranh đá tự nhiên slide1.3"></li>
+            <li><img src="view/tranh-da-tu-nhien/upload/slide1.4.png" alt="Tranh đá tự nhiên slide1.4"></li>
+            <li><img src="view/tranh-da-tu-nhien/upload/slide1.5.png" alt="Tranh đá tự nhiên slide1.5"></li>
+        </ul>
+    </section>
+   
+    <section class="description1">
+        <h1>
+            Tranh ĐÁ XUYÊN SÁNG
+            <br>
+            VẺ ĐẸP KỲ BÍ TỪ THIÊN NHIÊN
+        </h1>
+        <article class="content-second">
+            <p>
+               Giúp cho các thiết kế tăng thêm độ sang trọng, lung linh. Tranh Đá tự nhiên xuyên sáng chính là làn gió mới mà rất nhiều các nhà thiết kế kiến trúc ưa chuộng để tạo nên nét đặc biệt, sự nổi bật, chút xa hoa và sự tinh tế cần thiết cho không gian.
+            </p>
+        </article>
         <article class="content-third">
             <img src="view/tranh-da-tu-nhien/upload/image-tranh-da1.png" alt="Ảnh tranh đá">
             <p class="text-in-image">
@@ -61,11 +63,8 @@
                 <li><img src="view/tranh-da-tu-nhien/upload/slide1.4.png" alt="Tranh đá tự nhiên slide1.4"></li>
                 <li><img src="view/tranh-da-tu-nhien/upload/slide1.5.png" alt="Tranh đá tự nhiên slide1.5"></li>
             </ul>
-            <p>
-                Trụ cột ốp lát đá tự nhiên thiết kế nổi tiếng từ xưa tới giờ, luôn được sử dụng khá phổ biến trong nhiều thiết kế nhà cổ điển hay hiện đại.
-                <br><br>
-                Để công trình đá ốp cột được toàn diện hơn bạn nên chọn được đơn vị thi công chất lượng, uy tín, chuyên nghiệp.
-            </p>
+            <p>Sự phối trộn hài hòa đẹp về màu sắc, ấn tượng trong từng đường vân. Thiên nhiên đã tạo ra những hình ảnh đầy bí ẩn luôn khiến người ta phải tưởng tượng hình dung đây là hình gì, bức tranh gì đây.</p>
+            <p class="noibat">Bạn là người đang muốn không gian kiến trúc chứa đựng vẻ đẹp của thiên nhiên, đồng thời giữ được vẻ đẹp ấy lâu bền thì đá xuyên sáng luôn là một lựa chọn độc đáo và mới mẻ</p>
         </div>
     </section>
     <section class="social">
@@ -154,17 +153,27 @@
 </main>
 
 <script>
-    $('.img-list').owlCarousel({
+     $('.img-list').owlCarousel({
         loop:true,
-        margin: -50,
-        nav:false,
+        nav:true,
         autoplay: true,
         autoplayTimeout:5000,
-        items: 1
+        responsive:{
+            0:{
+                items: 1,
+                // nav:false,
+                margin: -120,                
+            },
+            1200:{
+                items: 5,
+                nav:true,
+                // margin: -25
+            }
+        }
     })
     $('.img-list-2').owlCarousel({
         loop:true,
-        margin: -10,
+        margin: -40,
         nav:true,
         autoplay: true,
         autoplayTimeout:5000,

@@ -158,7 +158,7 @@
         autoplayTimeout:5000,
         items: 1,
     })
-    $('.slide2').owlCarousel({
+    $('.img-list-2').owlCarousel({
         loop:true,
         margin: -70,
         nav:true,
@@ -167,7 +167,7 @@
         responsive:{
             0:{
                 items: 1,
-                nav:false,
+                // nav:false,
                 margin: -70,                
             },
             1200:{
