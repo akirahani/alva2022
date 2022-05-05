@@ -1,8 +1,8 @@
 @media all and (min-width: 0){
-	.tru-cot-da-all{
-		background-color: #C2AC9E;
-		.tru-cot-da{
-			background-image: url('../../view/tru-cot-da/upload/bg-start.png');
+	.nha-tam-all{
+		background-color: #fff;
+		.nha-tam{
+			background-image: url('../../view/nha-tam/upload/bg-start.png');
 			background-size: 100% auto;
 			background-repeat: no-repeat;
 			height: 450px;
@@ -12,98 +12,37 @@
 			position: relative;
 			z-index: 1;
 			.bg-extand{
-				background-image: url('../../view/tru-cot-da/upload/bg-extand.png');
+				background-image: url('../../view/nha-tam/upload/bg-extand.png');
 				height: 200px;
 				background-position: top center;
 				margin: auto;
 				display: block;
 				position: absolute;
 				z-index: 2;
-				top: 250px;
+				top: 265px;
 				width: 100%;
 				h1{
 					font-family: 'SVN-Aptima';
 					text-align: center;
 					font-weight: 700;
-					color: #542B1C;
+					color: #490912;
 					line-height: 32px;
 					font-size: 23px;
-					padding-top: 88px;
+					padding: 30% 22px 0 22px;
 					text-transform: uppercase;
-					&:after{
-						content:"";
-						border-bottom: 1px solid #542B1C;
-						width: 151px;
-						display: block;
-						margin: auto;				
-						padding-top: 13px;
-					}
 				}
 			}
 		}	
-		.content-first{
-			p{
-				font-family: 'SVN-Aptima';
-				font-weight: 400;
-				font-size: 16px;
-				line-height: 22px;
-				text-align: justify;
-				letter-spacing: 0.875px;
-				color: #000000;
-				padding: 14px 21px 0 21px;
-			}
-		}
-		.img-list{
-			margin-top: 8px;
-			list-style: none;
-			position: relative;
-			li{
-				img{
-					padding:  0 28px 0 28px;
-					width: 100%;
-					display: block;
-					margin: 0 auto;
-				}
-			}
-			.owl-nav{
-				.owl-prev{
-					position: absolute;
-					background-image: url(../../view/tru-cot-da/upload/prev.png)!important;
-					left: 0;
-					width: 49px;
-					height: 49px;
-					top: 40%;
-					span{
-						display: none;
-					}
-				}
-				.owl-next{
-					background-image: url(../../view/tru-cot-da/upload/next.png)!important;
-					position: absolute;
-					top: 40%;
-					right: 0;
-					width: 49px;
-					height: 49px;
-					span{
-						display: none;
-					}
 
+		.carousel1{
+			.content-first{
+				display: flex;
+				.active{
+					margin: 30px 0 0 22px;
+					width: 1px;
+					background-color: #A48579;
+					height: 35px;
 				}
-			}
-			.owl-dots{
-				padding-top: 48px;
-				.owl-dot{
-					&.active{
-						span{
-							width: 18px;
-							height: 6px;
-						}
-					}
-				}
-			}
-		}
-		.description1{
-			.content-second{
 				p{
 					font-family: 'SVN-Aptima';
 					font-weight: 400;
@@ -111,10 +50,128 @@
 					line-height: 22px;
 					text-align: justify;
 					letter-spacing: 0.875px;
-					color: #000000;
-					padding: 28px 21px 0 21px;
-					position: absolute;
-					z-index: 8;
+					color: #490912;
+					margin: 26px 21px 0 21px;
+				}
+			}
+			.bg-second{
+				background-image: url('../../view/nha-tam/upload/bg-second.png');
+				background-size: 100% auto;
+				height: 560px;
+				background-repeat: no-repeat;
+				.text-noibat{
+					padding-top: 34px;
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+					h1{
+						color: #490912;
+						font-family: 'SVN-Aptima';
+						font-weight: 700;
+						font-size: 18px;
+						padding-right: 22px;
+						line-height: 30px;
+						text-align: right;
+						letter-spacing: 0.875px;
+						text-transform: uppercase;
+					}
+					.noibat{
+						width: 5px;
+						height: 51px;
+						background: rgba(164, 133, 121, 0.8);
+						backdrop-filter: blur(4px);
+					}
+				}
+				.img-list{
+					list-style: none;
+					margin-top: 8px;
+					padding-left: 56px;
+					margin-top: 30px;
+					li{
+						img{
+							padding-right: 35px;
+							width: 70%;
+							display: block;
+						}
+					}
+					.owl-nav{
+						.owl-prev{
+							position: absolute;
+							background-image: url(../../view/nha-tam/upload/prev.png)!important;
+							left: 0;
+							width: 49px;
+							height: 49px;
+							top: 40%;
+							span{
+								display: none;
+							}
+						}
+						.owl-next{
+							background-image: url(../../view/nha-tam/upload/next.png)!important;
+							position: absolute;
+							top: 40%;
+							right: 0;
+							width: 49px;
+							height: 49px;
+							span{
+								display: none;
+							}
+
+						}
+					}
+					.owl-dots{
+						padding-top: 14px;
+						margin-right: 20%;
+						.owl-dot{
+							&.active{
+								span{
+									width: 18px;
+									height: 6px;
+									background-color: #0D113B;
+								}
+							}
+						}
+					}
+				}
+				.content-second{
+					p{
+						font-family: 'SVN-Aptima';
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 22px;
+						text-align: justify;
+						letter-spacing: 0.875px;
+						color: #000000;
+						padding: 0 21px 17px 21px;
+						position: absolute;
+						z-index: 8;
+					}
+				}
+			}
+		
+		}
+		.description1{
+			.text-noibat2{
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				position: absolute;
+				z-index: 3;
+				.noibat2{
+					width: 5px;
+					height: 51px;
+					background-color: #A48579;
+				}
+				h1{
+					color: #490912;
+					font-family: 'SVN-Aptima';
+					font-weight: 700;
+					font-size: 18px;
+					padding-left: 22px;
+					line-height: 30px;
+					text-align: left;
+					letter-spacing: 0.875px;
+					text-transform: uppercase;
 				}
 			}
 			.content-third{
@@ -134,17 +191,16 @@
 			.img-2{
 				width: 100%;
 				margin: 18px auto;
-				top: 100px;
+				padding-top: 15px;
 				display: block;
 				position: relative;
 				z-index: 1
 			}
-			.group-tru-cot{
-				background-image: url('../../view/tru-cot-da/upload/tru-cot-da3.png');
-				width: 100%;
+			.group-nha-tam{
+				background-image: url('../../view/nha-tam/upload/bg-four.png');
 				background-size: 100% auto;
 				background-repeat: no-repeat;
-				margin: 70px auto 20px auto;
+				margin: 0 auto;
 				display: block;
 				h1{
 					font-family: 'SVN-Aptima';
@@ -153,26 +209,20 @@
 					font-weight: 700;
 					font-size: 18px;
 					line-height: 24px;
-					padding-top: 200px;
+					padding: 20px 53px 0 53px;
 					text-transform: uppercase;
-					&:after{
-						content:"";
-						border-bottom: 1px solid #542B1C;
-						width: 151px;
-						display: block;
-						margin: auto;				
-						padding-top: 13px;
-					}
 				}
 				.img-list-2{
+					padding-top: 120px;
 					list-style: none;
-					margin-top: 28px;
-					padding-left: 35px;
+					position: relative;
 					li{
+
 						img{
-							padding-right: 30px;
-							width: 80%;
+							padding:  0 45px 0 18px;
+							width: 100%;
 							display: block;
+							margin: 0 auto;
 						}
 					}
 					.owl-dots
@@ -182,7 +232,7 @@
 								span{
 									width: 18px;
 									height: 6px;
-									background-color: #fff;
+									background-color: #0D113B
 								}
 							}
 						}
@@ -190,20 +240,20 @@
 					.owl-nav{
 						.owl-prev{
 							position: absolute;
-							background-image: url(../../view/tru-cot-da/upload/prev.png)!important;
+							background-image: url(../../view/nha-tam/upload/prev.png)!important;
 							left: 0;
 							width: 49px;
 							height: 49px;
-							top: 40%;
+							top: 53%;
 							span{
 								display: none;
 							}
 						}
 						.owl-next{
-							background-image: url(../../view/tru-cot-da/upload/next.png)!important;
+							background-image: url(../../view/nha-tam/upload/next.png)!important;
 							position: absolute;
-							top: 40%;
-							right: 0;
+							top: 53%;
+							right: 4%;
 							width: 49px;
 							height: 49px;
 							span{
@@ -220,15 +270,14 @@
 					line-height: 22px;
 					text-align: justify;
 					letter-spacing: 0.875px;
-					padding: 8px 21px 0 21px;
+					padding: 7px 22px 0 22px;
 					color: #000000;
 				}
 			}
 		}
 		.social{
-			background-image: url('../../view/tru-cot-da/upload/social.png');
+			background-image: url('../../view/nha-tam/upload/social.png');
 			width: 100%;
-			background-size: 100% auto;
 			background-repeat: no-repeat;
 			background-position: top center;
 			margin: auto;
@@ -243,6 +292,7 @@
 				text-transform: uppercase;
 				text-align: center;
 				color: #fff;
+				margin-top: 62px;
 				padding-top: 42px;
 			}
 			p{
@@ -266,7 +316,7 @@
 						height: 86px;
 						width: 86px;
 						margin: 33px auto 0 auto;
-						background: linear-gradient(180deg, #FEE7B5 0%, #E5B15C 100%);
+						background: #A48579;
 						box-shadow: 0px 0px 20px rgba(249, 220, 164, 0.51);
 						img{
 							margin: 23px 0 0 17px;
@@ -310,6 +360,7 @@
 				line-height: 25px;
 				text-transform: uppercase;
 				padding-top: 31px;
+				color: #490912;
 			}
 			#form-contact form{
 				padding: 20px 24px 56px 24px;
@@ -340,7 +391,7 @@
 					display: block;
 					width: 180px;
 					height: 42px;
-					background: linear-gradient(180deg, #FEE7B5 0%, #E5B15C 100%);
+					background: linear-gradient(0deg, #A48579 44.05%, rgba(90, 72, 68, 0) 188.1%);
 					box-shadow: 0px 0px 20px rgba(249, 220, 164, 0.51);
 					border-radius: 100px;
 					font-family: 'SVN-Aptima';
@@ -349,7 +400,7 @@
 					line-height: 22px;
 					letter-spacing: 0.875px;
 					text-transform: uppercase;
-					color: #0B1D26
+					color: #fff;
 		        }
 				.input-placeholder {
 		            position: relative;
@@ -382,13 +433,13 @@
 	}
 }
 @media all and (min-width: 521px){
-	.tru-cot-da-all{
+	.nha-tam-all{
 		width: 480px;
 		margin: 0 auto;
 	}
 }
 /*@media all and (min-width: 1201px){
-	.tru-cot-da-all{
+	.nha-tam-all{
 		width: 1200px;
 		margin: 0 auto;
 	}
