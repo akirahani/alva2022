@@ -19,7 +19,7 @@
 				display: block;
 				position: absolute;
 				z-index: 2;
-				top: 265px;
+				top: 56%;
 				width: 100%;
 				h1{
 					font-family: 'SVN-Aptima';
@@ -33,12 +33,11 @@
 				}
 			}
 		}	
-
 		.carousel1{
 			.content-first{
 				display: flex;
+				padding: 26px 22px 0 22px;
 				.active{
-					margin: 30px 0 0 22px;
 					width: 1px;
 					background-color: #A48579;
 					height: 35px;
@@ -51,7 +50,7 @@
 					text-align: justify;
 					letter-spacing: 0.875px;
 					color: #490912;
-					margin: 26px 21px 0 21px;
+					padding-left: 16px;
 				}
 			}
 			.bg-second{
@@ -84,13 +83,12 @@
 				}
 				.img-list{
 					list-style: none;
-					margin-top: 8px;
 					padding-left: 56px;
 					margin-top: 30px;
 					li{
+						width: 60%;
 						img{
-							padding-right: 35px;
-							width: 70%;
+							width: 100%;
 							display: block;
 						}
 					}
@@ -143,8 +141,6 @@
 						letter-spacing: 0.875px;
 						color: #000000;
 						padding: 0 21px 17px 21px;
-						position: absolute;
-						z-index: 8;
 					}
 				}
 			}
@@ -157,6 +153,7 @@
 				justify-content: flex-start;
 				position: absolute;
 				z-index: 3;
+				padding-top: 23px;
 				.noibat2{
 					width: 5px;
 					height: 51px;
@@ -184,8 +181,6 @@
 					letter-spacing: 0.875px;
 					color: #000000;
 					padding: 8px 21px 0 21px;
-					position: absolute;
-					z-index: 8;
 				}
 			}
 			.img-2{
@@ -213,7 +208,7 @@
 					text-transform: uppercase;
 				}
 				.img-list-2{
-					padding-top: 120px;
+					padding-top: 16px;
 					list-style: none;
 					position: relative;
 					li{
@@ -244,7 +239,7 @@
 							left: 0;
 							width: 49px;
 							height: 49px;
-							top: 53%;
+							top: 40%;
 							span{
 								display: none;
 							}
@@ -252,7 +247,7 @@
 						.owl-next{
 							background-image: url(../../view/nha-tam/upload/next.png)!important;
 							position: absolute;
-							top: 53%;
+							top: 40%;
 							right: 4%;
 							width: 49px;
 							height: 49px;
@@ -438,9 +433,214 @@
 		margin: 0 auto;
 	}
 }
-/*@media all and (min-width: 1201px){
+@media all and (min-width: 1201px){
 	.nha-tam-all{
-		width: 1200px;
-		margin: 0 auto;
+		width: 100%;
+		.nha-tam{
+			background-image: url('../../view/nha-tam/upload/bg-start-desktop.png');
+			height: 539px;
+			width: 100%;
+			.bg-extand{
+				background-image: url('../../view/nha-tam/upload/bg-extand-desktop.png');
+				top: 340px;
+				h1{
+					padding: 9% 22px 0 22px;
+					&:after{
+						content:"";
+						border-bottom: 1px solid  #A48579;
+						width: 151px;
+						display: block;
+						margin: auto;				
+						padding-top: 13px;
+					}
+				}
+			}
+		}	
+		.carousel1{
+			.content-first{
+				justify-content: center;
+				padding-top: 60px;
+				.active{
+					padding-top: 23px;
+					display: none
+				}
+				p{
+					text-align: center;
+					width: 800px;
+				}
+			}
+			.bg-second{
+				background-image: none;
+				.text-noibat{
+					justify-content: center;
+					h1{
+						text-align: center;
+					}
+					.noibat{
+						display: none;
+					}
+				}
+				.img-list{
+					width: 1200px;
+					margin: 0 auto;
+					padding-left: 0;
+					margin-top: 17px;
+					li{
+						width: 100%;
+					}
+					.owl-nav{
+						.owl-prev{
+							position: absolute;
+							background-image: url(../../view/nha-tam/upload/prev.png)!important;
+							left: 0;
+							width: 49px;
+							height: 49px;
+							top: 40%;
+							span{
+								display: none;
+							}
+						}
+						.owl-next{
+							background-image: url(../../view/nha-tam/upload/next.png)!important;
+							position: absolute;
+							top: 40%;
+							right: 0;
+							width: 49px;
+							height: 49px;
+							span{
+								display: none;
+							}
+
+						}
+					}
+					.owl-dots{
+						padding-top: 14px;
+						margin-right: 20%;
+						.owl-dot{
+							&.active{
+								span{
+									width: 18px;
+									height: 6px;
+									background-color: #0D113B;
+								}
+							}
+						}
+					}
+				}
+				.content-second{
+					p{
+						text-align: center;
+					}
+				}
+			}
+		}
+		.description1{
+			.text-noibat2{
+				justify-content: center;
+				.noibat2{
+					display: none;
+				}
+				h1{
+					text-align: center;
+				}
+			}
+			.content-third{
+				p{
+					font-family: 'SVN-Aptima';
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 22px;
+					text-align: justify;
+					letter-spacing: 0.875px;
+					color: #000000;
+					padding: 8px 21px 0 21px;
+				}
+			}
+			.img-2{
+				background-image: url('../../view/nha-tam/upload/bg-second-desktop.png');
+				width: 1200px;
+				height: 682px;
+				margin: 0 auto;
+				background-repeat: no-repeat;
+			}
+			.group-nha-tam{
+				background-image: url('../../view/nha-tam/upload/bg-four.png');
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				margin: 0 auto;
+				display: block;
+				h1{
+					font-family: 'SVN-Aptima';
+					text-align: center;
+					color: #542B1C;
+					font-weight: 700;
+					font-size: 18px;
+					line-height: 24px;
+					padding: 20px 53px 0 53px;
+					text-transform: uppercase;
+				}
+				.img-list-2{
+					padding-top: 16px;
+					list-style: none;
+					position: relative;
+					li{
+
+						img{
+							padding:  0 45px 0 18px;
+							width: 100%;
+							display: block;
+							margin: 0 auto;
+						}
+					}
+					.owl-dots
+					{
+						.owl-dot{
+							&.active{
+								span{
+									width: 18px;
+									height: 6px;
+									background-color: #0D113B
+								}
+							}
+						}
+					}
+					.owl-nav{
+						.owl-prev{
+							position: absolute;
+							background-image: url(../../view/nha-tam/upload/prev.png)!important;
+							left: 0;
+							width: 49px;
+							height: 49px;
+							top: 40%;
+							span{
+								display: none;
+							}
+						}
+						.owl-next{
+							background-image: url(../../view/nha-tam/upload/next.png)!important;
+							position: absolute;
+							top: 40%;
+							right: 4%;
+							width: 49px;
+							height: 49px;
+							span{
+								display: none;
+							}
+
+						}
+					}
+				}
+				p{
+					font-family: 'SVN-Aptima';
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 22px;
+					text-align: justify;
+					letter-spacing: 0.875px;
+					padding: 7px 22px 0 22px;
+					color: #000000;
+				}
+			}
+		}
 	}
-}*/
+}

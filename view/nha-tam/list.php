@@ -167,19 +167,48 @@
 <script type="text/javascript">
     $('.img-list').owlCarousel({
         loop:true,
-        margin: -110,
-        nav: false,
-        autoplay: true,
-        autoplayTimeout:5000,
-        items: 1
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+                margin:-80,
+            },
+            480:{
+                items:1,
+                nav:false,
+                margin:-80,
+            },
+            1000:{
+                items:5,
+                nav:true,
+                loop:true,
+                margin:10,  
+            }
+        }
     })
 
     $('.img-list-2').owlCarousel({
         loop:true,
-        margin: -40,
-        nav:true,
         autoplay: true,
         autoplayTimeout:5000,
-        items: 1
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+                margin: -40,
+            },
+            480:{
+                items:1,
+                nav:false,
+                margin: -40,
+            },
+            1000:{
+                items:5,
+                nav:true,
+                loop:true,
+                margin:10,  
+            }
+        }
     })
 </script>

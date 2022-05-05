@@ -142,8 +142,6 @@
 						letter-spacing: 0.875px;
 						color: #000000;
 						padding: 0 21px 17px 21px;
-						position: absolute;
-						z-index: 8;
 					}
 				}
 			}
@@ -155,8 +153,6 @@
 				align-items: center;
 				justify-content: flex-start;
 				padding-top: 17px;
-				position: absolute;
-				z-index: 3;
 				.noibat2{
 					width: 5px;
 					height: 51px;
@@ -184,8 +180,6 @@
 					letter-spacing: 0.875px;
 					color: #000000;
 					padding: 8px 21px 0 21px;
-					position: absolute;
-					z-index: 8;
 				}
 			}
 			.img-2{
@@ -223,16 +217,14 @@
 					}
 				}
 				.img-list-2{
-					padding-top: 80px;
 					list-style: none;
 					position: relative;
 					li{
 
 						img{
-							padding:  0 45px 0 18px;
+							padding: 0 45px 0 18px;
 							width: 100%;
 							display: block;
-							margin: 0 auto;
 						}
 					}
 					.owl-dots
