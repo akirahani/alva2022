@@ -35,8 +35,6 @@
 					text-fill-color: transparent;
 					text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.25);
 					color: #542B1C;
-					line-height: 32px;
-					font-size: 23px;
 					padding-top: 58px;
 					text-transform: uppercase;
 					&:after{
@@ -63,7 +61,7 @@
 			}
 		}
 		.img-list{
-			margin-top: 8px;
+			margin-top: 17px;
 			list-style: none;
 			position: relative;
 			li{
@@ -100,7 +98,7 @@
 				}
 			}
 			.owl-dots{
-				padding-top: 48px;
+				padding-top: 28px;
 				.owl-dot{
 					&.active{
 						span{
@@ -121,7 +119,7 @@
 					text-align: justify;
 					letter-spacing: 0.875px;
 					color: #fff;
-					padding: 25px 21px 0 21px;
+					padding: 0 21px 0 21px;
 					position: absolute;
 					z-index: 8;
 				}
@@ -167,9 +165,8 @@
 			.group-tru-cot{
 				background-image: url('../../view/da-lat-nen/upload/bg-third.png');
 				background-size: 100% auto;
-				height: 586px;
 				background-repeat: no-repeat;
-				margin: 200px auto 34px auto;
+				margin: 200px auto 0 auto;
 				display: block;
 				h1{
 					font-family: 'SVN-Aptima';
@@ -181,6 +178,7 @@
 					background-clip: text;
 					text-fill-color: transparent;
 					text-shadow: 0px 4px 6px rgba(255, 255, 255, 0.25);
+					padding-top: 26px;
 					font-weight: 700;
 					font-size: 18px;
 					line-height: 33px;
@@ -250,7 +248,7 @@
 					line-height: 22px;
 					text-align: justify;
 					letter-spacing: 0.875px;
-					padding: 8px 21px 0 21px;
+					padding: 8px 21px 34px 21px;
 					color: #fff;
 				}
 			}
@@ -258,7 +256,6 @@
 		.social{
 			background-image: url('../../view/da-lat-nen/upload/social.png');
 			width: 100%;
-			background-size: 100% auto;
 			background-repeat: no-repeat;
 			background-position: top center;
 			margin: auto;

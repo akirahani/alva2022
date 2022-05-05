@@ -62,7 +62,6 @@
 				list-style: none;
 				position: relative;
 				li{
-
 					img{
 						padding:  0 45px 0 18px;
 						width: 100%;
@@ -119,7 +118,7 @@
 					text-align: justify;
 					letter-spacing: 0.875px;
 					color: #fff;
-					margin: -128px 21px 0 21px;
+					margin: -188px 21px 0 21px;
 					position: absolute;
 					z-index: 8;
 				}
@@ -133,6 +132,7 @@
 						background-color: #FFE3A1;
 						position: absolute;
 						z-index: 9;
+						margin-top: -5%;
 					}
 					.noibat{
 						    color: #FFE3A1;
@@ -140,9 +140,10 @@
 						    font-weight: 700;
 						    font-size: 16px;
 						    line-height: 22px;
-						     text-align: justify; 
+						    text-align: justify; 
 						    letter-spacing: 0.875px;
-						    padding: 0 21px 25px 21px;
+						    padding: 0 21px 0  21px;
+						    margin-top: -25px;
 						    position: absolute;
 						    z-index: 9;
 					}
@@ -155,15 +156,18 @@
 					text-align: justify;
 					letter-spacing: 0.875px;
 					color: #fff;
-					padding: 58px 21px 0 21px;
+					padding: 0 21px 0 21px;
 					position: absolute;
+					margin-top: 15px;
 					z-index: 8;
+					&.text-normal{
+						margin-top: 45px;
+					}
 				}
 			}
 			.img-2{
 				width: 100%;
-				margin: 18px auto;
-				top: 100px;
+				top: 30px;
 				display: block;
 				position: relative;
 				z-index: 1
@@ -266,7 +270,6 @@
 		.social{
 			background-image: url('../../view/lavabo-da-tu-nhien/upload/social.png');
 			width: 100%;
-			background-size: 100% auto;
 			background-repeat: no-repeat;
 			background-position: top center;
 			margin: auto;
@@ -354,7 +357,7 @@
 				padding: 20px 24px 56px 24px;
 				display: block;
 				input, textarea {
-		            background: rgba(211, 211, 211, 0.5);
+		           	background: rgba(211, 211, 211, 0.5);
 		            mix-blend-mode: normal;
 		            backdrop-filter: blur(4px);
 		            border-radius: 16px;
