@@ -34,7 +34,6 @@
                 <li><img src="view/nha-tam/upload/nha-tam1.4.png" alt="Lavabo đá tự nhiên"></li>
                 <li><img src="view/nha-tam/upload/nha-tam1.5.png" alt="Lavabo đá tự nhiên"></li>
             </ul>
-           
         </div>
     </section>
     <section class="description1">
@@ -220,12 +219,7 @@
                 nav:false,
                 margin:-80,
             },
-            480:{
-                items:1,
-                nav:false,
-                margin:-80,
-            },
-            1000:{
+            1200:{
                 items:5,
                 nav:true,
                 loop:true,
@@ -238,21 +232,15 @@
         loop:true,
         autoplay: true,
         autoplayTimeout:5000,
+        nav: true, 
+        dots: true,
         responsive:{
             0:{
                 items:1,
-                nav:false,
                 margin: -40,
             },
-            480:{
-                items:1,
-                nav:false,
-                margin: -40,
-            },
-            1000:{
+            1200:{
                 items:5,
-                nav:true,
-                loop:true,
             }
         }
     })
