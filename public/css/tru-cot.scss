@@ -132,19 +132,21 @@
 				}
 			}
 			.img-2{
-				width: 100%;
-				margin: 18px auto;
-				top: 100px;
-				display: block;
-				position: relative;
-				z-index: 1
+				img{
+					width: 100%;
+					margin: 18px auto;
+					top: 100px;
+					display: block;
+					position: relative;
+					z-index: 1;
+				}
 			}
 			.group-tru-cot{
 				background-image: url('../../view/tru-cot-da/upload/tru-cot-da3.png');
 				width: 100%;
 				background-size: 100% auto;
 				background-repeat: no-repeat;
-				margin: 70px auto 20px auto;
+				margin: 20px auto;
 				display: block;
 				h1{
 					font-family: 'SVN-Aptima';
@@ -389,54 +391,76 @@
 @media all and (min-width: 1201px){
 	.tru-cot-da-all{
 		width: 100%;
-		height: auto;
 		.tru-cot-da{
 			background-image: url('../../view/tru-cot-da/upload/desktop_trucotda.png');
-			background-size: 100% auto;
+			height: 539px;
 			.bg-extand{
+				background-image: url('../../view/tru-cot-da/upload/bg-extand-desktop.png');
+				height: 539px;
+				top: 0;
 				h1{
 					font-size: 30px;
 					line-height: 50px;
-					margin-top: -135px;
+					margin-top: 120px;
 				}
 			}
 		}
 		.content-first{
+			width: 801px;
+			margin: auto;
+			position: absolute;
+			bottom: 28%;
+			margin: 0 auto;
+			left: 0;
+			right: 0;
+			z-index: 9;
 			p{
 				text-align: center;
-				padding-left: 559px;
-				padding-right: 559px; 
 			}
 		}
 		.img-list{
 			width: 1200px;
-			margin: 0 auto;
+			margin: -80px auto 0 auto;
+			li{
+				img{
+					padding:  0 15px 0 15px;
+				}
+			}
 		}
 		.description1{
 			.content-second{
 				p{
+					margin: 0 auto;
+					left: 0;
+					right: 0;
+					width: 1200px;
 					text-align: center;
-					padding-left: 400px;
-					padding-right: 400px; 
 				}
 			}
 			.content-third{
 				p{
 					text-align: center;
-					padding-left: 400px;
-					padding-right: 400px; 
+					width: 1034px;
+					margin: 0 auto;
+					left: 0;
+					right: 0;
+					margin-top: -50px;
 				}
 			}
 			.img-2{
-				padding-left: 360px;
-				padding-right: 360px;
+				img{
+					width: 1200px;
+					position: static;
+					margin: 0 auto;
+				}
 			}
 			.group-tru-cot{
+				background-image: none;
 				display: flex;
 				flex-direction: column;
 				h1{
 					order: 2;
-					margin-top: -100px;
+					margin-top: -40px;
 					font-size: 30px;
 					line-height: 50px;
 					color: #fff;
@@ -446,35 +470,121 @@
 				}
 				.img-list-2{
 					order: 1;
-					padding-left: 360px;
-					padding-right: 360px;
-				}
+					width: 1200px;
+					margin: auto;
+					padding-left: 0;
+						li{
+							img{
+								padding: 0 2px 0 0px;
+								width: 100%;
+							}
+						}
+					}
 				p{
 					order: 3;
 					text-align: center;
-					&:after{
-						content: "";
-						border-bottom: 1px solid linear-gradient(90deg, #CAA090 0%, #D5CDC2 49.01%, #CAA090 100%);
-						width: 304px;
-						display: block;
-						margin: auto;				
-						padding-top: 13px;
-					}
+					color: #fff;
+					padding-bottom: 27px;
 				}
 			}
 		}	
 		.social{
-			width: 1200px;
+			background-image: url('../../view/tru-cot-da/upload/social-desktop.png');
+			width: 100%;
+			margin: auto;
+			display: block;
+			height: 760px;
+			margin-top: -15%;
+			h1{
+				color: #fff;
+				padding-top: 15%;
+				&:before{
+					content: "";
+					border-top: 1px solid #CAA090;
+					width: 304px;
+					display: block;
+					margin: auto;				
+					padding-bottom: 67px;
+				}
+			}
+			p{
+				&.social-article{
+					text-align: center;
+					width: 1046px;
+					margin: 0 auto;
+				}
+			}
 			.service{
 				display: flex;
-				flex-wrap: nowrap;
+				flex-flow: row nowrap;
+				padding-bottom: 56px;
+				width: 1100px;
+				margin: auto;
+				.detail-service{
+					width: 25%;
+					.icon{
+						height: 136px;
+						width: 136px;
+						margin: 33px auto 0 auto;
+						background: linear-gradient(180deg, #FEE7B5 0%, #E5B15C 100%);
+						box-shadow: 0px 0px 20px rgba(249, 220, 164, 0.51);
+						picture{
+							img{
+								margin: 38px 0 0 27px;
+							}
+						}
+					}
+					p{
+						text-align: center;
+					}
+				}
+			}
+			
+			.company-info{
+				list-style: none;
+				padding-left: 20%;
+				padding-bottom: 67px;
+				margin-top: 150px;
+				padding-right: 15px;
+				position: absolute;
+				z-index: 3;
+				li{
+					display: flex;
+					justify-content: justify;
+					align-items:center;
+					img{
+						width: 20px;
+						padding-top: 12px;
+					}
+					p{
+						font-family: 'SVN-Aptima';
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 20px;
+						text-align: justify;
+						letter-spacing: 0.875px;
+						color: #542B1C;
+					}
+				}
 			}
 		}
 		.contact{
-			width: 370px;
-			h1{
-				font-size: 16px;
-				line-height: 25px;
+			position: relative;
+			display: flex;
+			flex-direction: row-reverse;
+			.form-all{
+				margin-right: 22%;
+				width: 400px;
+				h1{
+					color: #542B1C;
+				}
+				#form-contact{
+					form{
+						input,textarea{
+							background: rgba(255, 255, 255, 0.8);
+						}
+					}
+				}
 			}
 		}
 	}
