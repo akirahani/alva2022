@@ -38,7 +38,11 @@
               Sàn nhà lát đá ngọc tự nhiên đẹp trở thành tâm điểm của một không gian sống hoàn mỹ.
             </p>
         </article>
-        <img src="view/da-lat-nen/upload/bg-3.png" alt="Trụ cột đá tự nhiên" class="img-2" />
+        <picture  class="img-2">
+            <source class="mobile" media="(max-width:1199px)" srcset="view/da-lat-nen/upload/bg-3.png">
+            <source class="desktop" media="(min-width:1200px)" srcset="view/da-lat-nen/upload/bg-second-desktop.png">
+            <img src="view/da-lat-nen/upload/bg-second-desktop.png" alt="lat-nen">
+        </picture>
         <article class="content-third">
             <h1>ĐÁ NGỌC TỰ NHIÊN VÀ NHỮNG TÁC DỤNG TRONG PHONG THUỶ</h1>
             <p>
@@ -67,12 +71,16 @@
     </section>
     <section class="social">
         <h1>Alva Stone</h1>
-        <p>Đưa tới sự khác biệt, khẳng định là đơn vị tư vấn, cung cấp và thi công lắp đặt các sản phẩm về đá tự nhiên cao cấp, ứng dụng công nghệ hiện đại và triết lý vượt qua thử thách để dẫn đầu.
-         Titan Stone quyết tâm trở thành thương hiệu uy tín tại Việt Nam.</p>
+        <p class="social-article">Đưa tới sự khác biệt, khẳng định là đơn vị tư vấn, cung cấp và thi công lắp đặt các sản phẩm về đá tự nhiên cao cấp, ứng dụng công nghệ hiện đại và triết lý vượt qua thử thách để dẫn đầu.
+        Titan Stone quyết tâm trở thành thương hiệu uy tín tại Việt Nam.</p>
         <div class="service">
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/da-lat-nen/upload/icon1.png" alt="icon service">
+                    <picture  class="pen">
+                        <source class="mobile" media="(max-width:1199px)" srcset="view/da-lat-nen/upload/icon1.png">
+                        <source class="desktop" media="(min-width:1200px)" srcset="view/da-lat-nen/upload/icon1-desktop.png">
+                        <img src="view/da-lat-nen/upload/icon1-desktop.png" alt="icon service">
+                    </picture>
                 </div>
                 <p>
                     Miễn phí 
@@ -82,7 +90,11 @@
             </div>
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/da-lat-nen/upload/icon2.png" alt="icon service">
+                    <picture  class="pen">
+                        <source class="mobile" media="(max-width:1199px)" srcset="view/da-lat-nen/upload/icon2.png">
+                        <source class="desktop" media="(min-width:1200px)" srcset="view/da-lat-nen/upload/icon2-desktop.png">
+                        <img src="view/da-lat-nen/upload/icon2-desktop.png" alt="icon service">
+                    </picture>
                 </div>
                  <p>
                     Lắp đặt
@@ -92,7 +104,11 @@
             </div>
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/da-lat-nen/upload/icon3.png" alt="icon service">
+                    <picture  class="pen">
+                        <source class="mobile" media="(max-width:1199px)" srcset="view/da-lat-nen/upload/icon3.png">
+                        <source class="desktop" media="(min-width:1200px)" srcset="view/da-lat-nen/upload/icon3-desktop.png">
+                        <img src="view/da-lat-nen/upload/icon3-desktop.png" alt="icon service">
+                    </picture>
                 </div>
                 <p>
                     Bảo hành Đá
@@ -102,10 +118,15 @@
             </div>
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/da-lat-nen/upload/icon4.png" alt="icon service">
+                    <picture  class="pen">
+                        <source class="mobile" media="(max-width:1199px)" srcset="view/da-lat-nen/upload/icon4.png">
+                        <source class="desktop" media="(min-width:1200px)" srcset="view/da-lat-nen/upload/icon4-desktop.png">
+                        <img src="view/da-lat-nen/upload/icon4-desktop.png" alt="icon service">
+                    </picture>
                 </div>
                 <p>
                     Bảo hành đèn led
+                    <br>
                     Samsung 05 năm
                 </p>
             </div>
@@ -118,53 +139,71 @@
         </ul>
     </section>
     <section class="contact">
-        <h1>
-            Gửi thông tin của bạn cho chúng tôi 
-            <br>
-            Để được tư vấn miễn phí tốt nhất
-        </h1>
-        <div class="form-contact-box" id="form-contact">
-            <form class="form-area" method="post">
-                <div class="input-placeholder">
-                    <input type="text" name="name" required spellcheck="false" autocomplete="off">
-                    <div class="placeholder-ct">
-                        Tên của bạn (<span>*</span>)
+        <div class="form-all">
+            <h1>
+                Gửi thông tin của bạn cho chúng tôi 
+                <br>
+                Để được tư vấn miễn phí tốt nhất
+            </h1>
+            <div class="form-contact-box" id="form-contact">
+                <form class="form-area" method="post">
+                    <div class="input-placeholder">
+                        <input type="text" name="name" required spellcheck="false" autocomplete="off">
+                        <div class="placeholder-ct">
+                            Tên của bạn (<span>*</span>)
+                        </div>
                     </div>
-                </div>
-                <div class="input-placeholder">
-                    <input type="text" name="email" required spellcheck="false" autocomplete="off">
-                    <div class="placeholder-ct">
-                        Email (<span>*</span>)
+                    <div class="input-placeholder">
+                        <input type="text" name="email" required spellcheck="false" autocomplete="off">
+                        <div class="placeholder-ct">
+                            Email (<span>*</span>)
+                        </div>
                     </div>
-                </div>
-                <div class="input-placeholder">
-                    <input type="text" name="phone" required spellcheck="false" autocomplete="off">
-                    <div class="placeholder-ct">
-                        Số điện thoại (<span>*</span>)
+                    <div class="input-placeholder">
+                        <input type="text" name="phone" required spellcheck="false" autocomplete="off">
+                        <div class="placeholder-ct">
+                            Số điện thoại (<span>*</span>)
+                        </div>
                     </div>
-                </div>
-                <textarea type="text" name="note" placeholder="Tin nhắn"></textarea>
-                <button type="sumbit" name="submit">Gửi liên hệ</button>
-            </form>            
+                    <textarea type="text" name="note" placeholder="Tin nhắn"></textarea>
+                    <button type="sumbit" name="submit">Gửi liên hệ</button>
+                </form>            
+            </div>
         </div>
     </section>
 </main>
 <script type="text/javascript">
     $('.img-list').owlCarousel({
         loop:true,
-        margin:-40,
         nav:true,
         autoplay: false,
         autoplayTimeout:5000,
-        items: 1,
+        responsive:{
+            0:{
+                items:1,
+                margin: -40,
+            },
+            1200:{
+                items:5,
+            }
+        }
     })
 
     $('.img-list-2').owlCarousel({
         loop:true,
-        margin: -110,
-        nav: false,
-        autoplay: true,
-        autoplayTimeout:5000,
-        items: 1
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true,
+                margin:-80,
+            },
+            1200:{
+                items:5,
+                nav:true,
+                loop:true,
+                margin:10,  
+            }
+        }
     })
 </script>
