@@ -200,7 +200,7 @@
         responsive:{
             0:{
                 items:1,
-                nav:true,
+                nav: false,
                 margin:-80,
             },
             1200:{
