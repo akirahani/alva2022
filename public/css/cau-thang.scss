@@ -445,11 +445,10 @@
 		width: 100%;
 		.cau-thang{
 			background-image: url('../../view/cau-thang/upload/bg-start-desktop.png');
-			height: 539px;
 			width: 100%;
 			.bg-extand{
 				background-image: url('../../view/cau-thang/upload/bg-extand-desktop.png');
-				top: 340px;
+				top: 250px;
 				h1{
 					padding: 9% 22px 0 22px;
 					color: #0D113B;
@@ -467,7 +466,7 @@
 		.carousel1{
 			.content-first{
 				justify-content: center;
-				padding-top: 80px;
+				padding-top: 70px;
 				p{
 					width: 895px;
 					margin: 0 auto;
@@ -502,9 +501,8 @@
 				.img-list{
 					order: 1;
 					width: 1200px;
-					margin: 0 auto;
+					margin: 45px auto;
 					padding-left: 0;
-					margin-top: 17px;
 					li{
 						width: 100%;
 					}
@@ -687,8 +685,7 @@
 				padding-top: 111px;
 				position: absolute;
 				z-index: 8;
-				padding-left: 22%;
-				padding-right: 15px;
+				padding-left: 21%;
 				width: 50%;
 				li{
 					display: flex;
@@ -709,7 +706,7 @@
 			display: flex;
 			flex-direction: row-reverse;
 			.form-all{
-				margin-right: 22%;
+				margin-right: 19%;
 				width: 400px;
 			}
 		}

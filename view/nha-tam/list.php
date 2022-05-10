@@ -79,7 +79,7 @@
         <h1>Alva Stone</h1>
         <article>
             <p>Đưa tới sự khác biệt, khẳng định là đơn vị tư vấn, cung cấp và thi công lắp đặt các sản phẩm về đá tự nhiên cao cấp, ứng dụng công nghệ hiện đại và triết lý vượt qua thử thách để dẫn đầu.
-            Titan Stone quyết tâm trở thành thương hiệu uy tín tại Việt Nam.</p> 
+            Alva Stone quyết tâm trở thành thương hiệu uy tín tại Việt Nam.</p> 
         </article>
         <div class="service">
             <div class="detail-service">
@@ -161,7 +161,7 @@
                     <source class="desktop" media="(min-width:1200px)" srcset="view/nha-tam/upload/fb-desktop.png">
                     <img src="view/nha-tam/upload/fb-desktop.png" alt="Fanpage" />
                 </picture>
-                <p>Fanpage: Đá Tự Nhiên Titan Stone</p></li>
+                <p>Fanpage: Đá Tự Nhiên Alva Stone</p></li>
             <li>
                 <picture  class="da">
                     <source class="mobile" media="(max-width:1199px)" srcset="view/nha-tam/upload/mail.svg">

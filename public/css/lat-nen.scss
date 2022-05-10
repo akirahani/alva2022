@@ -428,11 +428,11 @@
 			background-image: url('../../view/da-lat-nen/upload/bg-start-desktop.png');
 			.bg-extand{
 				background-image: none;
-				top: 105px;
+				top: 75px;
 				h1{
 					font-weight: 700;
-					font-size: 30px;
-					line-height: 50px;
+					font-size: 24px;
+					line-height: 40px;
 					color: #542B1C;
 					&:after{
 						content:"";
@@ -440,28 +440,27 @@
 						width: 151px;
 						display: block;
 						margin: auto;				
-						padding-top: 13px;
+						padding-top: 5px;
 					}
 				}
 			}
 		}	
 		.content-first{
 			position: absolute;
-			bottom: 290px;
-			margin: 0 auto;
-			left: 0;
-			right: 0;
-			z-index: 9;
+		    margin: -170px auto 0 auto;
+		    left: 0;
+		    right: 0;
+		    z-index: 9;
 			p{
 				line-height: 25px;
 				text-align: center;
-				width: 801px;
+				width: 790px;
 				margin: 0 auto;
 				padding: 0 21px 0 21px;
 			}
 		}
 		.img-list{
-			margin: -20px auto 46px auto;
+			margin: -80px auto 46px auto;
 			width: 1200px;
 			li{
 				img{
@@ -635,10 +634,9 @@
 			}
 			.company-info{
 				list-style: none;
-				padding-left: 20%;
-				padding-bottom: 67px;
+				padding-left: 21%;
+				width: 50%;
 				margin-top: 200px;
-				padding-right: 15px;
 				position: absolute;
 				z-index: 3;
 				li{
@@ -666,7 +664,7 @@
 			display: flex;
 			flex-direction: row-reverse;
 			.form-all{
-				margin-right: 22%;
+				margin-right: 19%;
 				margin-top: -120px;
 				width: 400px;
 			}

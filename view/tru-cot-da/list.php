@@ -35,13 +35,15 @@
                Ngoài ra, hình dáng tròn mềm mại hay vuông vững chãi cũng tạo ra nhiều lựa chọn cho bạn.
             </p>
         </article>
-        <img src="view/tru-cot-da/upload/tru-cot-da2.png" alt="Trụ cột đá tự nhiên" class="img-2" />
+        <picture  class="img-2">
+            <source class="mobile" media="(max-width:1199px)" srcset="view/tru-cot-da/upload/tru-cot-da2.png">
+            <source class="desktop" media="(min-width:1200px)" srcset="view/tru-cot-da/upload/bg-second-desktop.png">
+            <img src="view/tru-cot-da/upload/bg-second-desktop.png" alt="icon service">
+        </picture>
         <article class="content-third">
             <p>
                 Cột đã tự nhiên có nhiều ưu điểm vượt trội so với vật liệu ốp cột thông thường.
-                <br><br>
                 Những công trình sử dụng đá tự nhiên thì bạn sẽ yên tâm hơn về độ bền của chúng.
-                <br><br>
                 Được sử dụng phải chống chịu được các điều kiện về thời tiết, sức nặng và các lực tác động.
             </p>
         </article>
@@ -67,12 +69,16 @@
     </section>
     <section class="social">
         <h1>Alva Stone</h1>
-        <p>Đưa tới sự khác biệt, khẳng định là đơn vị tư vấn, cung cấp và thi công lắp đặt các sản phẩm về đá tự nhiên cao cấp, ứng dụng công nghệ hiện đại và triết lý vượt qua thử thách để dẫn đầu.
-         Titan Stone quyết tâm trở thành thương hiệu uy tín tại Việt Nam.</p>
+        <p class="social-article">Đưa tới sự khác biệt, khẳng định là đơn vị tư vấn, cung cấp và thi công lắp đặt các sản phẩm về đá tự nhiên cao cấp, ứng dụng công nghệ hiện đại và triết lý vượt qua thử thách để dẫn đầu.
+        Alva Stone quyết tâm trở thành thương hiệu uy tín tại Việt Nam.</p>
         <div class="service">
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/tru-cot-da/upload/icon1.png" alt="icon service">
+                    <picture  class="pen">
+                        <source class="mobile" media="(max-width:1199px)" srcset="view/tru-cot-da/upload/icon1.png">
+                        <source class="desktop" media="(min-width:1200px)" srcset="view/tru-cot-da/upload/icon1-desktop.png">
+                        <img src="view/tru-cot-da/upload/icon1-desktop.png" alt="icon service">
+                    </picture>
                 </div>
                 <p>
                     Miễn phí 
@@ -82,7 +88,11 @@
             </div>
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/tru-cot-da/upload/icon2.png" alt="icon service">
+                    <picture  class="pen">
+                        <source class="mobile" media="(max-width:1199px)" srcset="view/tru-cot-da/upload/icon2.png">
+                        <source class="desktop" media="(min-width:1200px)" srcset="view/tru-cot-da/upload/icon2-desktop.png">
+                        <img src="view/tru-cot-da/upload/icon2-desktop.png" alt="icon service">
+                    </picture>
                 </div>
                  <p>
                     Lắp đặt
@@ -92,7 +102,11 @@
             </div>
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/tru-cot-da/upload/icon3.png" alt="icon service">
+                    <picture  class="pen">
+                        <source class="mobile" media="(max-width:1199px)" srcset="view/tru-cot-da/upload/icon3.png">
+                        <source class="desktop" media="(min-width:1200px)" srcset="view/tru-cot-da/upload/icon3-desktop.png">
+                        <img src="view/tru-cot-da/upload/icon3-desktop.png" alt="icon service">
+                    </picture>
                 </div>
                 <p>
                     Bảo hành Đá
@@ -102,78 +116,118 @@
             </div>
             <div class="detail-service">
                 <div class="icon">
-                    <img src="view/tru-cot-da/upload/icon4.png" alt="icon service">
+                    <picture  class="pen">
+                        <source class="mobile" media="(max-width:1199px)" srcset="view/tru-cot-da/upload/icon4.png">
+                        <source class="desktop" media="(min-width:1200px)" srcset="view/tru-cot-da/upload/icon4-desktop.png">
+                        <img src="view/tru-cot-da/upload/icon4-desktop.png" alt="icon service">
+                    </picture>
                 </div>
                 <p>
                     Bảo hành đèn led
+                    <br>
                     Samsung 05 năm
                 </p>
             </div>
         </div>
         <ul class="company-info">
-            <li><img src="view/tru-cot-da/upload/place.svg" alt="Showroom" /> <p>Showroom: Số 2 Mạc Đăng Doanh, Dương Kinh, Hải Phòng</p></li>
-            <li><img src="view/tru-cot-da/upload/tel.svg" alt="Hotline" /><p>Hotline: 1900 669 996</p></li>
-            <li><img src="view/tru-cot-da/upload/fb.svg" alt="Fanpage" /><p>Fanpage: Đá Tự Nhiên Titan Stone</p></li>
-            <li><img src="view/tru-cot-da/upload/mail.svg" alt="Email" /><p>Email: Titanstone@gmail.com</p></li>
+            <li>
+                <picture class="da">
+                    <source class="mobile" media="(max-width:1199px)" srcset="view/tru-cot-da/upload/place.svg">
+                    <source class="desktop" media="(min-width:1200px)" srcset="view/tru-cot-da/upload/place-desktop.png">
+                    <img src="view/tru-cot-da/upload/place-desktop.png" alt="Showroom" />
+                </picture>
+                <p>Showroom: Số 2 Mạc Đăng Doanh, Dương Kinh, Hải Phòng</p>
+            </li>
+            <li>
+                <picture class="da">
+                    <source class="mobile" media="(max-width:1199px)" srcset="view/tru-cot-da/upload/tel.svg">
+                    <source class="desktop" media="(min-width:1200px)" srcset="view/tru-cot-da/upload/tel-desktop.png">
+                    <img src="view/tru-cot-da/upload/tel-desktop.png" alt="tel" />
+                </picture>
+                <p>Hotline: 1900 669 996</p></li>
+            <li>
+                <picture class="da">
+                    <source class="mobile" media="(max-width:1199px)" srcset="view/tru-cot-da/upload/fb.svg">
+                    <source class="desktop" media="(min-width:1200px)" srcset="view/tru-cot-da/upload/fb-desktop.png">
+                    <img src="view/tru-cot-da/upload/fb-desktop.png" alt="Fanpage" />
+                </picture>
+                <p>Fanpage: Đá Tự Nhiên Alva Stone</p></li>
+            <li>
+                <picture  class="da">
+                    <source class="mobile" media="(max-width:1199px)" srcset="view/tru-cot-da/upload/mail.svg">
+                    <source class="desktop" media="(min-width:1200px)" srcset="view/tru-cot-da/upload/mail-desktop.png">
+                    <img src="view/tru-cot-da/upload/mail-desktop.png" alt="Email" />
+                </picture>
+                <p>Email: Alvastone@gmail.com</p>
+            </li>
         </ul>
     </section>
     <section class="contact">
-        <h1>
-            Gửi thông tin của bạn cho chúng tôi 
-            <br>
-            Để được tư vấn miễn phí tốt nhất
-        </h1>
-        <div class="form-contact-box" id="form-contact">
-            <form class="form-area" method="post">
-                <div class="input-placeholder">
-                    <input type="text" name="name" required spellcheck="false" autocomplete="off">
-                    <div class="placeholder-ct">
-                        Tên của bạn (<span>*</span>)
+        <div class="form-all">
+            <h1>
+                Gửi thông tin của bạn cho chúng tôi 
+                <br>
+                Để được tư vấn miễn phí tốt nhất
+            </h1>
+            <div class="form-contact-box" id="form-contact">
+                <form class="form-area" method="post">
+                    <div class="input-placeholder">
+                        <input type="text" name="name" required spellcheck="false" autocomplete="off">
+                        <div class="placeholder-ct">
+                            Tên của bạn (<span>*</span>)
+                        </div>
                     </div>
-                </div>
-                <div class="input-placeholder">
-                    <input type="text" name="email" required spellcheck="false" autocomplete="off">
-                    <div class="placeholder-ct">
-                        Email (<span>*</span>)
+                    <div class="input-placeholder">
+                        <input type="text" name="email" required spellcheck="false" autocomplete="off">
+                        <div class="placeholder-ct">
+                            Email (<span>*</span>)
+                        </div>
                     </div>
-                </div>
-                <div class="input-placeholder">
-                    <input type="text" name="phone" required spellcheck="false" autocomplete="off">
-                    <div class="placeholder-ct">
-                        Số điện thoại (<span>*</span>)
+                    <div class="input-placeholder">
+                        <input type="text" name="phone" required spellcheck="false" autocomplete="off">
+                        <div class="placeholder-ct">
+                            Số điện thoại (<span>*</span>)
+                        </div>
                     </div>
-                </div>
-                <textarea type="text" name="note" placeholder="Tin nhắn"></textarea>
-                <button type="sumbit" name="submit">Gửi liên hệ</button>
-            </form>            
+                    <textarea type="text" name="note" placeholder="Tin nhắn"></textarea>
+                    <button type="sumbit" name="submit">Gửi liên hệ</button>
+                </form>            
+            </div>
         </div>
     </section>
 </main>
 <script type="text/javascript">
     $('.img-list').owlCarousel({
         loop:true,
-        margin:10,
-        nav:true,
         autoplay: false,
-        autoplayTimeout:5000,
-        items: 1,
-    })
-    $('.img-list-2').owlCarousel({
-        loop:true,
-        margin: -70,
-        nav:true,
-        autoplay: true,
         autoplayTimeout:5000,
         responsive:{
             0:{
                 items: 1,
-                // nav:false,
-                margin: -70,                
+                nav:true,
+                margin: 10,                
+            },
+            1000:{
+                items: 5,
+                nav:false,
+                margin: -15
+            }
+        }
+    })
+    $('.img-list-2').owlCarousel({
+        loop:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+                margin:-80,
             },
             1200:{
-                items: 5,
-                nav:true,
-                // margin: -25
+                items:5,
+                loop:true,
+                margin:10,  
+                nav:true
             }
         }
     })

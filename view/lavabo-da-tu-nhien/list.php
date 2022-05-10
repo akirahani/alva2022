@@ -66,14 +66,14 @@
                 <li><img src="view/lavabo-da-tu-nhien/upload/lava2.5.png" alt="Lavabo đá tự nhiên"></li>
             </ul>
             <p>Lavabo đá tự nhiên thiết kế nổi vài năm trở lại đây được sử dụng khá phổ biến trong nhiều thiết kế nhà hiện đại.</p>
-            <p class="noibat2">Bạn đang muốn làm mới không gian hay băn khoăn loại vật liệu nào tốt để làm lavabo ? Titan Stone sẽ giải đáp mọi thắc mắc của bạn.</p>
+            <p class="noibat2">Bạn đang muốn làm mới không gian hay băn khoăn loại vật liệu nào tốt để làm lavabo ? Alva Stone sẽ giải đáp mọi thắc mắc của bạn.</p>
         </div>
     </section>
 
     <section class="social">
         <h1>Alva Stone</h1>
         <p class="social-article">Đưa tới sự khác biệt, khẳng định là đơn vị tư vấn, cung cấp và thi công lắp đặt các sản phẩm về đá tự nhiên cao cấp, ứng dụng công nghệ hiện đại và triết lý vượt qua thử thách để dẫn đầu.
-        Titan Stone quyết tâm trở thành thương hiệu uy tín tại Việt Nam.</p>
+        Alva Stone quyết tâm trở thành thương hiệu uy tín tại Việt Nam.</p>
         <div class="service">
             <div class="detail-service">
                 <div class="icon">
@@ -135,8 +135,8 @@
         <ul class="company-info">
             <li><img src="view/lavabo-da-tu-nhien/upload/place.svg" alt="Showroom" /> <p>Showroom: Số 2 Mạc Đăng Doanh, Dương Kinh, Hải Phòng</p></li>
             <li><img src="view/lavabo-da-tu-nhien/upload/tel.svg" alt="Hotline" /><p>Hotline: 1900 669 996</p></li>
-            <li><img src="view/lavabo-da-tu-nhien/upload/fb.svg" alt="Fanpage" /><p>Fanpage: Đá Tự Nhiên Titan Stone</p></li>
-            <li><img src="view/lavabo-da-tu-nhien/upload/mail.svg" alt="Email" /><p>Email: Titanstone@gmail.com</p></li>
+            <li><img src="view/lavabo-da-tu-nhien/upload/fb.svg" alt="Fanpage" /><p>Fanpage: Đá Tự Nhiên Alva Stone</p></li>
+            <li><img src="view/lavabo-da-tu-nhien/upload/mail.svg" alt="Email" /><p>Email: Alvastone@gmail.com</p></li>
         </ul>
     </section>
 
@@ -200,7 +200,7 @@
         responsive:{
             0:{
                 items:1,
-                nav:true,
+                nav: false,
                 margin:-80,
             },
             1200:{
