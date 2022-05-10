@@ -220,7 +220,7 @@
 					.owl-nav{
 						.owl-prev{
 							position: absolute;
-							background-image: url(../../view/da-lat-nen/upload/prev.png)!important;
+							/*background-image: url(../../view/da-lat-nen/upload/prev.png)!important;*/
 							left: 0;
 							width: 49px;
 							height: 49px;
@@ -230,7 +230,7 @@
 							}
 						}
 						.owl-next{
-							background-image: url(../../view/da-lat-nen/upload/next.png)!important;
+							/*background-image: url(../../view/da-lat-nen/upload/next.png)!important;*/
 							position: absolute;
 							top: 40%;
 							right: 0;
@@ -428,11 +428,11 @@
 			background-image: url('../../view/da-lat-nen/upload/bg-start-desktop.png');
 			.bg-extand{
 				background-image: none;
-				top: 105px;
+				top: 75px;
 				h1{
 					font-weight: 700;
-					font-size: 30px;
-					line-height: 50px;
+					font-size: 24px;
+					line-height: 40px;
 					color: #542B1C;
 					&:after{
 						content:"";
@@ -440,28 +440,27 @@
 						width: 151px;
 						display: block;
 						margin: auto;				
-						padding-top: 13px;
+						padding-top: 5px;
 					}
 				}
 			}
 		}	
 		.content-first{
 			position: absolute;
-			bottom: 31%;
-			margin: 0 auto;
-			left: 0;
-			right: 0;
-			z-index: 9;
+		    margin: -170px auto 0 auto;
+		    left: 0;
+		    right: 0;
+		    z-index: 9;
 			p{
 				line-height: 25px;
 				text-align: center;
-				width: 801px;
+				width: 790px;
 				margin: 0 auto;
 				padding: 0 21px 0 21px;
 			}
 		}
 		.img-list{
-			margin: -20px auto 46px auto;
+			margin: -80px auto 46px auto;
 			width: 1200px;
 			li{
 				img{
@@ -536,41 +535,15 @@
 							width: 100%;
 						}
 					}
-					.owl-dots
-					{
-						.owl-dot{
-							&.active{
-								span{
-									width: 18px;
-									height: 6px;
-									background-color: #fff;
-								}
-							}
-						}
-					}
 					.owl-nav{
+						display: block;
 						.owl-prev{
-							position: absolute;
+							left: -30px;
 							background-image: url(../../view/da-lat-nen/upload/prev.png)!important;
-							left: 0;
-							width: 49px;
-							height: 49px;
-							top: 40%;
-							span{
-								display: none;
-							}
 						}
 						.owl-next{
+							right: -30px;
 							background-image: url(../../view/da-lat-nen/upload/next.png)!important;
-							position: absolute;
-							top: 40%;
-							right: 0;
-							width: 49px;
-							height: 49px;
-							span{
-								display: none;
-							}
-
 						}
 					}
 				}
@@ -635,10 +608,9 @@
 			}
 			.company-info{
 				list-style: none;
-				padding-left: 20%;
-				padding-bottom: 67px;
+				padding-left: 21%;
+				width: 50%;
 				margin-top: 200px;
-				padding-right: 15px;
 				position: absolute;
 				z-index: 3;
 				li{
@@ -666,7 +638,7 @@
 			display: flex;
 			flex-direction: row-reverse;
 			.form-all{
-				margin-right: 22%;
+				margin-right: 19%;
 				margin-top: -120px;
 				width: 400px;
 			}

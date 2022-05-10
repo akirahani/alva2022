@@ -54,7 +54,7 @@
 				background-position: top center;
 				background-size: 100% auto;
 				height: 627px;
-				padding-top: 20%; 
+				margin-top: 20%; 
 				.content-first{
 					p{
 						font-family: 'SVN-Aptima';
@@ -81,29 +81,6 @@
 					}
 					.owl-nav{
 						display: none;
-						.owl-prev{
-							position: absolute;
-							background-image: url(../../view/tranh-da-tu-nhien/upload/prev.png)!important;
-							left: 0;
-							width: 49px;
-							height: 49px;
-							top: 40%;
-							span{
-								display: none;
-							}
-						}
-						.owl-next{
-							background-image: url(../../view/tranh-da-tu-nhien/upload/next.png)!important;
-							position: absolute;
-							top: 40%;
-							right: 0;
-							width: 49px;
-							height: 49px;
-							span{
-								display: none;
-							}
-
-						}
 					}
 					.owl-dots{
 						padding-top: 20px;
@@ -236,7 +213,7 @@
 						.owl-nav{
 							.owl-prev{
 								position: absolute;
-								background-image: url(../../view/tranh-da-tu-nhien/upload/prev.png)!important;
+								background-image: url(../../view/tranh-da-tu-nhien/upload/prev1.png)!important;
 								left: 0;
 								width: 49px;
 								height: 49px;
@@ -246,7 +223,7 @@
 								}
 							}
 							.owl-next{
-								background-image: url(../../view/tranh-da-tu-nhien/upload/next.png)!important;
+								background-image: url(../../view/tranh-da-tu-nhien/upload/next1.png)!important;
 								position: absolute;
 								top: 40%;
 								right: 0;
@@ -255,7 +232,6 @@
 								span{
 									display: none;
 								}
-
 							}
 						}
 					}
@@ -445,10 +421,8 @@
 		width: 100%;
 		.tranh-da-tu-nhien{
 			background-image: url('../../view/tranh-da-tu-nhien/upload/bg-start-desktop.png');
-			height: 539px;
 			.bg-extand{
 				background-image: url('../../view/tranh-da-tu-nhien/upload/bg-extand-desktop.png');
-				top: 360px;
 				h1{
 					font-size: 30px;
 					line-height: 50px;
@@ -458,16 +432,14 @@
 		.background-desktop{
 			background-image: url('../../view/tranh-da-tu-nhien/upload/background-desktop.png');
 			width: 100%;
-			/*height: 3383px;*/
 			.bg-second{
-				padding-top: 10%;
+				margin-top: 12%;
 				background-image: none;
 				.content-first{
 					width: 800px;
 					margin: 0 auto;
 					p{
 						text-align: center;
-						padding-top: 20px;
 					}
 				}
 				.img-list{
@@ -485,7 +457,7 @@
 			}		
 			.description1{
 				h1{
-					margin-top: -3%;
+					margin-top: -8%;
 					font-size: 30px;
 					line-height: 50px;
 					text-align: center;
@@ -504,6 +476,7 @@
 					display: flex;
 					flex-direction: column;
 					picture{
+						position: relative;
 						order: 2;
 						width: 1200px;
 						margin: 0 auto;
@@ -525,13 +498,17 @@
 				}
 				.group-tru-cot{
 					background-image: none;
-					margin: 10px auto 20px auto;
+					margin: -35px auto 20px auto;
 					h1{
 						font-size: 30px;
+						position: absolute;
 						line-height: 50px;
 						text-align: center;
 						width: 800px;
 						margin: 0 auto;
+						z-index: 10;
+						left :0;
+						right: 0;
 						&:after{
 							content:"";
 							border-bottom: 1px solid  #CAA090 ;
@@ -544,11 +521,24 @@
 					.img-list-2{
 						width: 1200px;
 						margin: 0 auto;
-						margin-top: 37px;
-						padding-left: 0px;
+						padding: 150px 0 0 0;
 						li{
 							img{
-								padding: 0 5px 0 0px;
+								padding: 0 15px 0 0px;
+							}
+						}
+						.owl-nav{
+							display: block;
+							.owl-prev{
+								position: absolute;
+								background-image: url(../../view/tranh-da-tu-nhien/upload/prev1.png)!important;
+								left: -30px;
+								top: 60%;
+							}
+							.owl-next{
+								background-image: url(../../view/tranh-da-tu-nhien/upload/next1.png)!important;
+								top: 60%;
+								right: -20px;
 							}
 						}
 					}
@@ -601,12 +591,11 @@
 					}
 				}
 				.company-info{
-					padding-left: 20%;
-					padding-bottom: 67px;
-					margin-top: 140px;
-					padding-right: 15px;
+					padding-left: 21%;
+					margin-top: 130px;
 					position: absolute;
 					z-index: 3;
+					width:50%;
 					li{
 						display: flex;
 						justify-content: justify;
@@ -623,8 +612,8 @@
 				display: flex;
 				flex-direction: row-reverse;
 				.form-all{
-					margin-right: 22%;
-					margin-top: 47px;
+					margin-right: 19%;
+					margin-top: 37px;
 					width: 400px;
 				}
 			}

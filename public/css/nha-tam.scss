@@ -18,7 +18,7 @@
 				margin: auto;
 				display: block;
 				position: absolute;
-				z-index: 2;
+				z-index: 5;
 				top: 56%;
 				width: 100%;
 				h1{
@@ -28,7 +28,7 @@
 					color: #490912;
 					line-height: 32px;
 					font-size: 23px;
-					padding: 30% 22px 0 22px;
+					padding: 20% 22px 0 22px;
 					text-transform: uppercase;
 				}
 			}
@@ -451,12 +451,10 @@
 	.nha-tam-all{
 		width: 100%;
 		.nha-tam{
-			background-image: url('../../view/nha-tam/upload/bg-start-desktop.png');
-			height: 539px;
+			background-image: url('../../view/nha-tam/upload/bg-start1.png');
 			width: 100%;
 			.bg-extand{
-				background-image: url('../../view/nha-tam/upload/bg-extand-desktop.png');
-				top: 340px;
+				background-image: url('../../view/nha-tam/upload/bg-extand1.png');
 				h1{
 					padding: 9% 22px 0 22px;
 					&:after{
@@ -473,7 +471,7 @@
 		.carousel1{
 			.content-first{
 				justify-content: center;
-				padding-top: 60px;
+				padding-top: 100px;
 				.active{
 					padding-top: 23px;
 					display: none
@@ -638,18 +636,12 @@
 					.owl-nav{
 						display: block;
 						.owl-prev{
-							left: -20px;
-							&:hover{
-								border-radius: 100px;
-								background-color: #fff;
-							}
+							left: -30px;
+							background-image: url(../../view/nha-tam/upload/prev.png)!important;
 						}
 						.owl-next{
-							right: -20px;
-							&:hover{
-								border-radius: 100px;
-								background-color: #fff;
-							}
+							right: -30px;
+							background-image: url(../../view/nha-tam/upload/next.png)!important;
 						}
 					}
 				}
@@ -703,8 +695,7 @@
 				padding-top: 111px;
 				position: absolute;
 				z-index: 8;
-				padding-left: 22%;
-				padding-right: 15px;
+				padding-left: 21%;
 				width: 50%;
 				li{
 					display: flex;
@@ -725,7 +716,7 @@
 			display: flex;
 			flex-direction: row-reverse;
 			.form-all{
-				margin-right: 22%;
+				margin-right: 19%;
 				width: 400px;
 			}
 		}
