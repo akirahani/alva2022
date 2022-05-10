@@ -1,10 +1,3 @@
-<?php 
-    require 'admin/lib/phpmailer/autoload.php';
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\SMTP;
-    use PHPMailer\PHPMailer\Exception;
-    $mail = new PHPMailer(true);
-?>
 <link rel="stylesheet" type="text/css" href="public/css/tru-cot.css?v=28042022">
 <main class="tru-cot-da-all">
     <section class="tru-cot-da">
@@ -16,6 +9,7 @@
             </h1>
         </div>
     </section>
+
     <article class="content-first">
         <p>
             Cột trụ nhà được ví như nốt nhạc hay nhất trong một bài nhạc. Cột nhà có vai trò cực kỳ quan trọng trong việc tô điểm thêm cho vẻ đẹp ngôi nhà. Chính vì vậy việc sử dụng đá ốp cột là rất cần thiết giúp tô điểm cho cột nhà thêm sang trọng hơn.
@@ -28,6 +22,7 @@
         <li><img src="view/tru-cot-da/upload/tru-cot1.4.png" alt="Trụ cột đá tự nhiên"></li>
         <li><img src="view/tru-cot-da/upload/tru-cot1.5.png" alt="Trụ cột đá tự nhiên"></li>
     </ul>
+
     <section class="description1">
         <article class="content-second">
             <p>
@@ -67,6 +62,7 @@
             </p>
         </div>
     </section>
+
     <section class="social">
         <h1>Alva Stone</h1>
         <p class="social-article">Đưa tới sự khác biệt, khẳng định là đơn vị tư vấn, cung cấp và thi công lắp đặt các sản phẩm về đá tự nhiên cao cấp, ứng dụng công nghệ hiện đại và triết lý vượt qua thử thách để dẫn đầu.
@@ -162,6 +158,7 @@
             </li>
         </ul>
     </section>
+    
     <section class="contact">
         <div class="form-all">
             <h1>
@@ -190,7 +187,7 @@
                         </div>
                     </div>
                     <textarea type="text" name="note" placeholder="Tin nhắn"></textarea>
-                    <button type="sumbit" name="submit">Gửi liên hệ</button>
+                    <button type="button" name="submit">Gửi liên hệ</button>
                 </form>            
             </div>
         </div>
@@ -230,5 +227,65 @@
                 nav:true
             }
         }
-    })
+    });
+    $('button[name="submit"]').click(function(){
+        var name= $('input[name="name"]').val();
+        var email = $('input[name="email"]').val();
+        var phone = $('input[name="phone"]').val();
+        var note = $('textarea').val();
+        if(name != ''){
+            if(email != ''){
+                if(phone != ''){
+                    $.ajax({
+                        type : "POST",
+                        url: "view/tru-cot-da/lien-he.php",
+                        data: {
+                            name: name,
+                            email: email,
+                            phone: phone,
+                            note: note,
+                        },
+                        success:function(data){
+                            var info = JSON.parse(data);
+                            if(info.status == 'success'){
+                                Swal.fire(
+                                    'THÀNH CÔNG!',
+                                    'Cảm ơn bạn, Alvastone sẽ liên hệ với bạn sớm nhất!',
+                                    'success'
+                                );
+                            }
+                            else{
+                                Swal.fire(
+                                    "",
+                                    "Có lỗi trong quá trình nhận tư vấn!",
+                                    "error"
+                                );
+                            }
+                        }
+                    });
+                }
+                else{
+                    Swal.fire(
+                        "",
+                        "Bạn chưa nhập số điện thoại !",
+                        "error"
+                    );
+                }
+            }
+            else{
+                Swal.fire(
+                    "",
+                    "Bạn chưa nhập email !",
+                    "error"
+                );
+            }
+        }
+        else{
+            Swal.fire(
+                "",
+                "Bạn chưa nhập tên !",
+                "error"
+            );
+        }
+    });
 </script>

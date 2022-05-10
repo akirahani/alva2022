@@ -18,6 +18,7 @@
             </h1>
         </div>
     </section>
+    
     <article class="content-first">
         <p>
            Đá ngọc tự nhiên lát nền phòng khách là một bề mặt sàn tự nhiên bao phủ được khai thác từ các ngọn núi, một lựa chọn cao cấp, sang trọng cho không gian phòng khách các kiến trúc nhà ở hiện đại. 
@@ -30,6 +31,7 @@
         <li><img src="view/da-lat-nen/upload/lat-nen1.4.png" alt="Trụ cột đá tự nhiên"></li>
         <li><img src="view/da-lat-nen/upload/lat-nen1.5.png" alt="Trụ cột đá tự nhiên"></li>
     </ul>
+
     <section class="description1">
         <article class="content-second">
             <p>
@@ -69,6 +71,7 @@
             </p>
         </div>
     </section>
+
     <section class="social">
         <h1>Alva Stone</h1>
         <p class="social-article">Đưa tới sự khác biệt, khẳng định là đơn vị tư vấn, cung cấp và thi công lắp đặt các sản phẩm về đá tự nhiên cao cấp, ứng dụng công nghệ hiện đại và triết lý vượt qua thử thách để dẫn đầu.
@@ -138,6 +141,7 @@
             <li><img src="view/da-lat-nen/upload/mail.svg" alt="Email" /><p>Email: Titanstone@gmail.com</p></li>
         </ul>
     </section>
+
     <section class="contact">
         <div class="form-all">
             <h1>
@@ -175,23 +179,24 @@
 <script type="text/javascript">
     $('.img-list').owlCarousel({
         loop:true,
-        nav:true,
         autoplay: false,
         autoplayTimeout:5000,
         responsive:{
             0:{
                 items:1,
+                nav:true,
                 margin: -40,
+                navText:["<img src='view/da-lat-nen/upload/prev.png'>", "<img src='view/da-lat-nen/upload/next.png'>"]
             },
             1200:{
                 items:5,
+                nav: false,
             }
         }
     })
-
     $('.img-list-2').owlCarousel({
         loop:true,
-        responsiveClass:true,
+        autoplay: false,
         responsive:{
             0:{
                 items:1,
@@ -201,6 +206,7 @@
             1200:{
                 items:5,
                 nav:true,
+                dots: true,
                 loop:true,
                 margin:10,  
             }
