@@ -36,6 +36,7 @@
             </ul>
         </div>
     </section>
+    
     <section class="description1">
         <article class="content-second">
             <p>
@@ -203,7 +204,7 @@
                     <div class="input-placeholder">
                         <textarea type="text" name="note" placeholder="Tin nhắn"></textarea>
                     </div>
-                    <button type="sumbit" name="submit">Gửi liên hệ</button>
+                    <button type="button" name="submit" trang="<?=$p?>">Gửi liên hệ</button>
                 </form>            
             </div>
         </div>
@@ -244,4 +245,69 @@
             }
         }
     })
+    $('button[name="submit"]').click(function(){
+        var name= $('input[name="name"]').val();
+        var email = $('input[name="email"]').val();
+        var phone = $('input[name="phone"]').val();
+        var note = $('textarea').val();
+        var trang = $(this).attr('trang');
+        if(name != ''){
+            if(email != ''){
+                if(phone != ''){
+                    $(".loading-popup").css("display", "flex");
+                    $.ajax({
+                        type : "POST",
+                        url: "view/nha-tam/lien-he.php",
+                        data: {
+                            name: name,
+                            email: email,
+                            phone: phone,
+                            note: note,
+                            trang: trang
+                        },
+                        success:function(data){
+                            var info = JSON.parse(data);
+                            if(info.status == 'success'){
+                                $(".loading-popup").hide();
+                                Swal.fire(
+                                    'THÀNH CÔNG!',
+                                    'Cảm ơn bạn, Alvastone sẽ liên hệ với bạn sớm nhất!',
+                                    'success'
+                                );
+                            }
+                            else{
+                                $(".loading-popup").hide();
+                                Swal.fire(
+                                    "",
+                                    "Có lỗi trong quá trình nhận tư vấn!",
+                                    "error"
+                                );
+                            }
+                        }
+                    });
+                }
+                else{
+                    Swal.fire(
+                        "",
+                        "Bạn chưa nhập số điện thoại !",
+                        "error"
+                    );
+                }
+            }
+            else{
+                Swal.fire(
+                    "",
+                    "Bạn chưa nhập email !",
+                    "error"
+                );
+            }
+        }
+        else{
+            Swal.fire(
+                "",
+                "Bạn chưa nhập tên !",
+                "error"
+            );
+        }
+    });
 </script>

@@ -220,7 +220,7 @@
 					.owl-nav{
 						.owl-prev{
 							position: absolute;
-							background-image: url(../../view/da-lat-nen/upload/prev.png)!important;
+							/*background-image: url(../../view/da-lat-nen/upload/prev.png)!important;*/
 							left: 0;
 							width: 49px;
 							height: 49px;
@@ -230,7 +230,7 @@
 							}
 						}
 						.owl-next{
-							background-image: url(../../view/da-lat-nen/upload/next.png)!important;
+							/*background-image: url(../../view/da-lat-nen/upload/next.png)!important;*/
 							position: absolute;
 							top: 40%;
 							right: 0;
@@ -535,41 +535,15 @@
 							width: 100%;
 						}
 					}
-					.owl-dots
-					{
-						.owl-dot{
-							&.active{
-								span{
-									width: 18px;
-									height: 6px;
-									background-color: #fff;
-								}
-							}
-						}
-					}
 					.owl-nav{
+						display: block;
 						.owl-prev{
-							position: absolute;
+							left: -30px;
 							background-image: url(../../view/da-lat-nen/upload/prev.png)!important;
-							left: 0;
-							width: 49px;
-							height: 49px;
-							top: 40%;
-							span{
-								display: none;
-							}
 						}
 						.owl-next{
+							right: -30px;
 							background-image: url(../../view/da-lat-nen/upload/next.png)!important;
-							position: absolute;
-							top: 40%;
-							right: 0;
-							width: 49px;
-							height: 49px;
-							span{
-								display: none;
-							}
-
 						}
 					}
 				}

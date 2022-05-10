@@ -81,29 +81,6 @@
 					}
 					.owl-nav{
 						display: none;
-						.owl-prev{
-							position: absolute;
-							background-image: url(../../view/tranh-da-tu-nhien/upload/prev.png)!important;
-							left: 0;
-							width: 49px;
-							height: 49px;
-							top: 40%;
-							span{
-								display: none;
-							}
-						}
-						.owl-next{
-							background-image: url(../../view/tranh-da-tu-nhien/upload/next.png)!important;
-							position: absolute;
-							top: 40%;
-							right: 0;
-							width: 49px;
-							height: 49px;
-							span{
-								display: none;
-							}
-
-						}
 					}
 					.owl-dots{
 						padding-top: 20px;
@@ -236,7 +213,7 @@
 						.owl-nav{
 							.owl-prev{
 								position: absolute;
-								background-image: url(../../view/tranh-da-tu-nhien/upload/prev.png)!important;
+								background-image: url(../../view/tranh-da-tu-nhien/upload/prev1.png)!important;
 								left: 0;
 								width: 49px;
 								height: 49px;
@@ -246,7 +223,7 @@
 								}
 							}
 							.owl-next{
-								background-image: url(../../view/tranh-da-tu-nhien/upload/next.png)!important;
+								background-image: url(../../view/tranh-da-tu-nhien/upload/next1.png)!important;
 								position: absolute;
 								top: 40%;
 								right: 0;
@@ -548,6 +525,20 @@
 						li{
 							img{
 								padding: 0 15px 0 0px;
+							}
+						}
+						.owl-nav{
+							display: block;
+							.owl-prev{
+								position: absolute;
+								background-image: url(../../view/tranh-da-tu-nhien/upload/prev1.png)!important;
+								left: -30px;
+								top: 60%;
+							}
+							.owl-next{
+								background-image: url(../../view/tranh-da-tu-nhien/upload/next1.png)!important;
+								top: 60%;
+								right: -20px;
 							}
 						}
 					}

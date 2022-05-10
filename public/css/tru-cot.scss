@@ -1,3 +1,4 @@
+@import 'sweetalert2';
 @media all and (min-width: 0){
 	.tru-cot-da-all{
 		background-color: #C2AC9E;
@@ -474,6 +475,15 @@
 							img{
 								padding: 0 5px 0 0px;
 								width: 100%;
+							}
+						}
+						.owl-nav{
+							display: block;
+							.owl-prev{
+								left: -30px;
+							}	
+							.owl-next{
+								right: -30px;
 							}
 						}
 					}

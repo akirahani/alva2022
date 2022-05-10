@@ -16,6 +16,7 @@
             </h1>
         </div>
     </section>
+    
     <div class="background-desktop">
         <section class="bg-second">
             <article class="content-first">
@@ -31,6 +32,7 @@
                 <li><img src="view/tranh-da-tu-nhien/upload/slide1.5.png" alt="Tranh đá tự nhiên slide1.5"></li>
             </ul>
         </section>
+
         <section class="description1">
             <h1>
                 Tranh ĐÁ XUYÊN SÁNG
@@ -65,6 +67,7 @@
                 <p class="noibat">Bạn là người đang muốn không gian kiến trúc chứa đựng vẻ đẹp của thiên nhiên, đồng thời giữ được vẻ đẹp ấy lâu bền thì đá xuyên sáng luôn là một lựa chọn độc đáo và mới mẻ</p>
             </div>
         </section>
+
         <section class="social">
             <h1>Alva Stone</h1>
             <p class="social-text">Đưa tới sự khác biệt, khẳng định là đơn vị tư vấn, cung cấp và thi công lắp đặt các sản phẩm về đá tự nhiên cao cấp, ứng dụng công nghệ hiện đại và triết lý vượt qua thử thách để dẫn đầu.
@@ -134,6 +137,7 @@
                 <li><img src="view/tranh-da-tu-nhien/upload/mail.svg" alt="Email" /><p>Email: Alvastone@gmail.com</p></li>
             </ul>
         </section>
+
         <section class="contact">
             <div class="form-all">
                 <h1>
@@ -162,7 +166,7 @@
                             </div>
                         </div>
                         <textarea type="text" name="note" placeholder="Tin nhắn"></textarea>
-                        <button type="sumbit" name="submit">Gửi liên hệ</button>
+                        <button type="button" name="submit" trang="<?=$p?>">Gửi liên hệ</button>
                     </form>            
                 </div>
             </div>
@@ -191,17 +195,82 @@
 
     $('.img-list-2').owlCarousel({
         loop:true,
-        nav:true,
-        autoplay: false,
         autoplayTimeout:5000,
         responsive:{
             0:{
                 items:1,
+                nav:true,
                 margin: -40,
             },
             1200:{
                 items:5,
+                nav:true,
             }
         }
     })
+    $('button[name="submit"]').click(function(){
+        var name= $('input[name="name"]').val();
+        var email = $('input[name="email"]').val();
+        var phone = $('input[name="phone"]').val();
+        var note = $('textarea').val();
+        var trang = $(this).attr('trang');
+        if(name != ''){
+            if(email != ''){
+                if(phone != ''){
+                    $(".loading-popup").css("display", "flex");
+                    $.ajax({
+                        type : "POST",
+                        url: "view/tranh-da-tu-nhien/lien-he.php",
+                        data: {
+                            name: name,
+                            email: email,
+                            phone: phone,
+                            note: note,
+                            trang: trang
+                        },
+                        success:function(data){
+                            var info = JSON.parse(data);
+                            if(info.status == 'success'){
+                                $(".loading-popup").hide();
+                                Swal.fire(
+                                    'THÀNH CÔNG!',
+                                    'Cảm ơn bạn, Alvastone sẽ liên hệ với bạn sớm nhất!',
+                                    'success'
+                                );
+                            }
+                            else{
+                                $(".loading-popup").hide();
+                                Swal.fire(
+                                    "",
+                                    "Có lỗi trong quá trình nhận tư vấn!",
+                                    "error"
+                                );
+                            }
+                        }
+                    });
+                }
+                else{
+                    Swal.fire(
+                        "",
+                        "Bạn chưa nhập số điện thoại !",
+                        "error"
+                    );
+                }
+            }
+            else{
+                Swal.fire(
+                    "",
+                    "Bạn chưa nhập email !",
+                    "error"
+                );
+            }
+        }
+        else{
+            Swal.fire(
+                "",
+                "Bạn chưa nhập tên !",
+                "error"
+            );
+        }
+    });
 </script>

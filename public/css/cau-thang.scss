@@ -1,6 +1,6 @@
 @media all and (min-width: 0){
 	.cau-thang-all{
-		background-color: rgba(249, 239, 229, 0.7);
+		background-color: rgba(249, 239, 229, 0.9);
 		.cau-thang{
 			background-image: url('../../view/cau-thang/upload/bg-start.png');
 			background-size: 100% auto;
@@ -610,18 +610,12 @@
 					.owl-nav{
 						display: block;
 						.owl-prev{
-							left: -20px;
-							&:hover{
-								border-radius: 100px;
-								background-color: #fff;
-							}
+							left: -30px;
+							background-image: url(../../view/cau-thang/upload/prev.png)!important;
 						}
 						.owl-next{
-							right: -20px;
-							&:hover{
-								border-radius: 100px;
-								background-color: #fff;
-							}
+							right: -30px;
+							background-image: url(../../view/cau-thang/upload/next.png)!important;
 						}
 					}
 				}
