@@ -66,7 +66,7 @@
     <section class="social">
         <h1>Alva Stone</h1>
         <p class="social-article">Đưa tới sự khác biệt, khẳng định là đơn vị tư vấn, cung cấp và thi công lắp đặt các sản phẩm về đá tự nhiên cao cấp, ứng dụng công nghệ hiện đại và triết lý vượt qua thử thách để dẫn đầu.
-        Titan Stone quyết tâm trở thành thương hiệu uy tín tại Việt Nam.</p>
+        Alva Stone quyết tâm trở thành thương hiệu uy tín tại Việt Nam.</p>
         <div class="service">
             <div class="detail-service">
                 <div class="icon">
@@ -147,7 +147,7 @@
                     <source class="desktop" media="(min-width:1200px)" srcset="view/tru-cot-da/upload/fb-desktop.png">
                     <img src="view/tru-cot-da/upload/fb-desktop.png" alt="Fanpage" />
                 </picture>
-                <p>Fanpage: Đá Tự Nhiên Titan Stone</p></li>
+                <p>Fanpage: Đá Tự Nhiên Alva Stone</p></li>
             <li>
                 <picture  class="da">
                     <source class="mobile" media="(max-width:1199px)" srcset="view/tru-cot-da/upload/mail.svg">
@@ -187,7 +187,7 @@
                         </div>
                     </div>
                     <textarea type="text" name="note" placeholder="Tin nhắn"></textarea>
-                    <button type="button" name="submit">Gửi liên hệ</button>
+                    <button type="button" name="submit" trang="<?=$p?>">Gửi liên hệ</button>
                 </form>            
             </div>
         </div>
@@ -233,9 +233,11 @@
         var email = $('input[name="email"]').val();
         var phone = $('input[name="phone"]').val();
         var note = $('textarea').val();
+        var trang = $(this).attr('trang');
         if(name != ''){
             if(email != ''){
                 if(phone != ''){
+                    $(".loading-popup").css("display", "flex");
                     $.ajax({
                         type : "POST",
                         url: "view/tru-cot-da/lien-he.php",
@@ -244,10 +246,12 @@
                             email: email,
                             phone: phone,
                             note: note,
+                            trang: trang
                         },
                         success:function(data){
                             var info = JSON.parse(data);
                             if(info.status == 'success'){
+                                $(".loading-popup").hide();
                                 Swal.fire(
                                     'THÀNH CÔNG!',
                                     'Cảm ơn bạn, Alvastone sẽ liên hệ với bạn sớm nhất!',
@@ -255,6 +259,7 @@
                                 );
                             }
                             else{
+                                $(".loading-popup").hide();
                                 Swal.fire(
                                     "",
                                     "Có lỗi trong quá trình nhận tư vấn!",

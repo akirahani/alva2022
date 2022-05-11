@@ -39,7 +39,7 @@
 		$mail->addAddress('minhvu21091@gmail.com');         
 		$mail->Subject = $_POST['name'].' gửi thông tin nhận tư vấn #'.date("d-m-Y H:i:s");
 		$mail->Body    = '
-			<h2>Khách yêu cầu tư vấn Trụ cột đá</h2>
+			<h2>Khách yêu cầu tư vấn về Nhà tắm với đá tự nhiên</h2>
 			<p>Tên: '.$_POST["name"].'</p>
 			<p>Điện thoại: '.$_POST["phone"].'</p>
 			<p>Email: '.$_POST["email"].'</p>

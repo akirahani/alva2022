@@ -75,7 +75,7 @@
     <section class="social">
         <h1>Alva Stone</h1>
         <p class="social-article">Đưa tới sự khác biệt, khẳng định là đơn vị tư vấn, cung cấp và thi công lắp đặt các sản phẩm về đá tự nhiên cao cấp, ứng dụng công nghệ hiện đại và triết lý vượt qua thử thách để dẫn đầu.
-        Titan Stone quyết tâm trở thành thương hiệu uy tín tại Việt Nam.</p>
+        Alva Stone quyết tâm trở thành thương hiệu uy tín tại Việt Nam.</p>
         <div class="service">
             <div class="detail-service">
                 <div class="icon">
@@ -137,8 +137,8 @@
         <ul class="company-info">
             <li><img src="view/da-lat-nen/upload/place.svg" alt="Showroom" /> <p>Showroom: Số 2 Mạc Đăng Doanh, Dương Kinh, Hải Phòng</p></li>
             <li><img src="view/da-lat-nen/upload/tel.svg" alt="Hotline" /><p>Hotline: 1900 669 996</p></li>
-            <li><img src="view/da-lat-nen/upload/fb.svg" alt="Fanpage" /><p>Fanpage: Đá Tự Nhiên Titan Stone</p></li>
-            <li><img src="view/da-lat-nen/upload/mail.svg" alt="Email" /><p>Email: Titanstone@gmail.com</p></li>
+            <li><img src="view/da-lat-nen/upload/fb.svg" alt="Fanpage" /><p>Fanpage: Đá Tự Nhiên Alva Stone</p></li>
+            <li><img src="view/da-lat-nen/upload/mail.svg" alt="Email" /><p>Email: Alvastone@gmail.com</p></li>
         </ul>
     </section>
 
@@ -152,25 +152,25 @@
             <div class="form-contact-box" id="form-contact">
                 <form class="form-area" method="post">
                     <div class="input-placeholder">
-                        <input type="text" name="name" required spellcheck="false" autocomplete="off">
+                        <input type="text" name="name" spellcheck="false" autocomplete="off">
                         <div class="placeholder-ct">
                             Tên của bạn (<span>*</span>)
                         </div>
                     </div>
                     <div class="input-placeholder">
-                        <input type="text" name="email" required spellcheck="false" autocomplete="off">
+                        <input type="text" name="email" spellcheck="false" autocomplete="off">
                         <div class="placeholder-ct">
                             Email (<span>*</span>)
                         </div>
                     </div>
                     <div class="input-placeholder">
-                        <input type="text" name="phone" required spellcheck="false" autocomplete="off">
+                        <input type="text" name="phone" spellcheck="false" autocomplete="off">
                         <div class="placeholder-ct">
                             Số điện thoại (<span>*</span>)
                         </div>
                     </div>
                     <textarea type="text" name="note" placeholder="Tin nhắn"></textarea>
-                    <button type="sumbit" name="submit">Gửi liên hệ</button>
+                    <button type="button" name="submit" trang="<?=$p?>">Gửi liên hệ</button>
                 </form>            
             </div>
         </div>
@@ -212,4 +212,69 @@
             }
         }
     })
+    $('button[name="submit"]').click(function(){
+        var name= $('input[name="name"]').val();
+        var email = $('input[name="email"]').val();
+        var phone = $('input[name="phone"]').val();
+        var note = $('textarea').val();
+        var trang = $(this).attr('trang'); 
+        if(name != ''){
+            if(email != ''){
+                if(phone != ''){
+                    $(".loading-popup").css("display", "flex");
+                    $.ajax({
+                        type : "POST",
+                        url: "view/da-lat-nen/lien-he.php",
+                        data: {
+                            name: name,
+                            email: email,
+                            phone: phone,
+                            note: note,
+                            trang: trang
+                        },
+                        success:function(data){
+                            var info = JSON.parse(data);
+                            if(info.status == 'success'){
+                                $(".loading-popup").hide();
+                                Swal.fire(
+                                    'THÀNH CÔNG!',
+                                    'Cảm ơn bạn, Alvastone sẽ liên hệ với bạn sớm nhất!',
+                                    'success'
+                                );
+                            }
+                            else{
+                                $(".loading-popup").hide();
+                                Swal.fire(
+                                    "",
+                                    "Có lỗi trong quá trình nhận tư vấn!",
+                                    "error"
+                                );
+                            }
+                        }
+                    });
+                }
+                else{
+                    Swal.fire(
+                        "",
+                        "Bạn chưa nhập số điện thoại !",
+                        "error"
+                    );
+                }
+            }
+            else{
+                Swal.fire(
+                    "",
+                    "Bạn chưa nhập email !",
+                    "error"
+                );
+            }
+        }
+        else{
+            Swal.fire(
+                "",
+                "Bạn chưa nhập tên !",
+                "error"
+            );
+        }
+    });
 </script>
