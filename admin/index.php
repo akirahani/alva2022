@@ -23,6 +23,7 @@
 	<script src="lib/scrollbar/smooth-scrollbar.js"></script>
 	<script src="lib/datepicker/jquery-ui.min.js"></script>
 	<script src="lib/datepicker/jquery.ui.datepicker-vi-VN.js"></script>
+	<script src="lib/chart/Chart.min.js"></script>
 </head>
 <body>
 	<?php 
