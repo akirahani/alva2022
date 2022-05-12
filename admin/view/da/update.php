@@ -72,10 +72,21 @@
 		}
 	?>
 	<form method="post" enctype="multipart/form-data">
-		<button class="file-upload">
+		<!--<button class="file-upload">-->
 			Tải file Exel
     		<input type="file" name="file" required />
-  		</button>
+  		<!--</button>-->
+  		<p style="color:red">
+  		    Cột B: Mã sản phẩm
+  		    <br>  
+  		    Cột I: Số lượng 
+  		    <br>
+  		    Cột L: Giá niêm yết
+  		    <br>
+  		    Cột M: Giá chiết khấu
+  		    <br>
+  		    Cột N: Giá báo khách 
+  		</p>
   		<br>
   		<button class="get-product" type="submit" name="submit"><a>Lấy dữ liệu file</a></button>
 	</form>
