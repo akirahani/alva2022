@@ -1,5 +1,5 @@
 <?php  
-	$tit = "Trang con"
+	$tit = "Trang quản trị";
 	class Trang
 	{
 		public function CapNhat ($query,$id){

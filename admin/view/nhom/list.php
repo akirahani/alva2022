@@ -26,12 +26,11 @@
         </thead>
         <tbody>
             <?php
-            $thutu = 1;
             foreach ($data_list as $key => $value) 
             { 
                 ?>
                 <tr>
-                    <td class="can-giua"><?=$thutu?></td>
+                    <td class="can-giua"><?=$key+1?></td>
                     <td><?=$value->ten?></td>
                     <td class="can-giua">
                         <a href="nhom/edit?id=<?=$value->id?>"><i class="fal fa-edit"></i></a>
@@ -39,7 +38,6 @@
                     </td>
                 </tr>
                 <?php
-                $thutu ++;
             }
             ?>
         </tbody>

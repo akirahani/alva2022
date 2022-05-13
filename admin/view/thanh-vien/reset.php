@@ -17,7 +17,12 @@
                 "id" => $id
             ];
             $query->CapNhat("thanhvien", $fields, $condition, $post_form);
-            header("location:tai-khoan-thanh-vien");
+            if(isset($__NHOM__) && $__NHOM__ == 1 ) { 
+                header("location:list");
+            }
+            else{
+                header('location:../home/list');
+            }
         }
     }
 ?>

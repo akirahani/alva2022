@@ -12,6 +12,8 @@
 				</div>
 				<div class="blog">
 					<p><a onClick="return confirm('Bạn chắc chắn muốn thoát?')" href="logout.php">Thoát</a></p>
+					<p><a href="thanh-vien/edit?id=<?= $_SESSION['avid'] ?>">Sửa thông tin</a></p>
+					<p><a href="thanh-vien/reset?id=<?= $_SESSION['avid'] ?>">Đổi mật khẩu</a></p>
 				</div>
 			</li>
 			<li class="menu-append icon-menu"></li>
