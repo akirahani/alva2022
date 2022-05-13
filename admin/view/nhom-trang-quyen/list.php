@@ -1,32 +1,30 @@
 <?php
-	require_once "model/Nhom.php";
-	$nhom = new Nhom();
-	
-	$data_nhom = $nhom->DanhSach();
-	$table_name = "";
+    require_once "model/Query.php";
+    $query = new Query();
+    $data_nhom = $query->DanhSach('nhom');
 ?>
 <div class="row medium">
 
-	<div class="bread">
-		<h1>Phân quyền <span>| chọn nhóm người dùng</span></h1>
-		<div class="clear"></div>
-	</div>
+    <div class="bread">
+        <h1>Phân quyền <span>| chọn nhóm người dùng</span></h1>
+        <div class="clear"></div>
+    </div>
 
-	<select class="change-nhom">
-		<option value="0">Chọn nhóm</option>
+    <select class="change-nhom">
+        <option value="0">Chọn nhóm</option>
         <?php 
             foreach ($data_nhom as $key => $value) 
             {
                 echo '<option value="'.$value->id.'">'.$value->ten.'</option>';
             }
         ?>
-	</select>
+    </select>
     <br><br>
 
-	<table class="display nowrap list-table" style="width:100%">    
+    <table class="display nowrap list-table" style="width:100%">    
     </table>
 
-	<div class="clear"></div>
+    <div class="clear"></div>
 </div>
 
 <script>
@@ -51,30 +49,6 @@
         ],
         displayLength: -1,
         responsive: true,
-        language:{
-            "decimal":        "",
-            "emptyTable":     "No <?=$table_name?>",
-            "info":           "_START_ to _END_ của _TOTAL_ <?=$table_name?>",
-            "infoEmpty":      "Empty <?=$table_name?>",
-            "infoFiltered":   "(filtered from _MAX_ <?=$table_name?>)",
-            "infoPostFix":    "",
-            "thousands":      ",",
-            "lengthMenu":     "Show _MENU_ <?=$table_name?>",
-            "loadingRecords": "Loading...",
-            "processing":     "Processing...",
-            "search":         "Search:",
-            "zeroRecords":    "Not found <?=$table_name?>",
-            "paginate": {
-                "first":      "<<",
-                "last":       ">>",
-                "next":       "<i class='fa fa-chevron-right' aria-hidden='true'></i>",
-                "previous":   "<i class='fa fa-chevron-left' aria-hidden='true'></i>"
-            },
-            "aria": {
-                "sortAscending":  ": activate to sort column ascending",
-                "sortDescending": ": activate to sort column descending"
-            }
-        },
         order: [],
         ordering: false,
         searching: false, 

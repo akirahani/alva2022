@@ -34,8 +34,10 @@
 	$__FULLNAME__ = isset($_SESSION['avfullname']) ? $_SESSION['avfullname'] : '';
 	require_once "model/Query.php";
 	require_once "model/Lib.php";
+	require_once "controller/phanquyen.php";
 	$query = new Query();
 	$lib = new Lib();
+	$quyen = new PhanQuyen();
 	if($p == ''){
 		$folder = "home";
 		require_once 'controller/'.$folder.'.php';
@@ -43,10 +45,12 @@
 	}
 	else{
 		$folder = 'view/'.$p;
+		$quyen->xem($p,$__NHOM__,$query);
 		if (file_exists($folder)){
 			if($one == ''){
 				require_once "controller/".$p.".php";
 				$path = 'view/'.$p.'/list.php';
+				$quyen->xem($p,$__NHOM__,$query);
 			}
 			else{
 				require_once "controller/".$p.".php";
@@ -56,9 +60,11 @@
 					$url_full = $str_process[0];
 				}
 				$path = $url_full.'.php';
+				$quyen->tsx($one,$p,$__NHOM__,$query);
 			}
 		}
 		else{
+			$quyen->xem($p,$__NHOM__,$query);
 			$str_process = explode("?", $p);
 			if(count($str_process) != 1){
 				$folder = $str_process[0];

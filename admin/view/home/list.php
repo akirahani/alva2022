@@ -13,25 +13,32 @@
     $title4 = round( ((count($dm4)/count($data_da))*100),2 );
 ?>
 <div class="thongke-baocao">
-    <div class=""></div>
-    <canvas id="myChart" title1="<?= $title1?>" title2="<?= $title2?>" title3="<?= $title3?>" title4="<?= $title4?>" sl1="<?=count($dm1)?>" sl2="<?=count($dm2)?>" sl3="<?=count($dm3)?>" sl4="<?=count($dm4)?>"></canvas>
-    <h1 class="title-thongke">Thống kê sản phẩm</h1>
+    <div class="chart2">
+        <canvas id="pieChart" title1="<?= $title1?>" title2="<?= $title2?>" title3="<?= $title3?>" title4="<?= $title4?>" sl1="<?=count($dm1)?>" sl2="<?=count($dm2)?>" sl3="<?=count($dm3)?>" sl4="<?=count($dm4)?>"></canvas>
+        <h1 class="title-thongke">Thống kê sản phẩm</h1>
+    </div>
+    <div class="chart1">
+        <canvas id="pieChart1" title1="<?= $title1?>" title2="<?= $title2?>" title3="<?= $title3?>" title4="<?= $title4?>" sl1="<?=count($dm1)?>" sl2="<?=count($dm2)?>" sl3="<?=count($dm3)?>" sl4="<?=count($dm4)?>"></canvas>
+        <h1 class="title-thongke">Thống kê đơn hàng</h1>
+    </div>
 </div>
-
+<script type="text/javascript" src="lib/chart/utils.js"></script>
 <script>
 // const ctx = $('#myChart').getContext('2d');
-const ctx = $("#myChart")[0].getContext('2d');
+const ctx = $("#pieChart")[0].getContext('2d');
+const ctx1 = $("#pieChart1")[0].getContext('2d');
 
-var sltranhda = $('#myChart').attr('sl1');
-var sloplat = $('#myChart').attr('sl2');
-var slcotda = $('#myChart').attr('sl3');
-var sllavabo = $('#myChart').attr('sl4');
+var sltranhda = $('#pieChart').attr('sl1');
+var sloplat = $('#pieChart').attr('sl2');
+var slcotda = $('#pieChart').attr('sl3');
+var sllavabo = $('#pieChart').attr('sl4');
 
-var tltranhda = $('#myChart').attr('title1');
-var tloplat = $('#myChart').attr('title2');
-var tlcotda = $('#myChart').attr('title3');
-var tllavabo = $('#myChart').attr('title4');
-const myChart = new Chart(ctx, { 
+var tltranhda = $('#pieChart').attr('title1');
+var tloplat = $('#pieChart').attr('title2');
+var tlcotda = $('#pieChart').attr('title3');
+var tllavabo = $('#pieChart').attr('title4');
+
+const pieChart = new Chart(ctx, { 
     type: 'pie',
     data: {
         labels: ['Tranh đá: '+sltranhda+' sp', 'Đá ốp lát: '+sloplat+' sp', 'Cột đá: '+slcotda+' sp', 'Lavabo: '+sllavabo+' sp'],
@@ -62,4 +69,62 @@ const myChart = new Chart(ctx, {
         }
     }
 });
+// 
+// var sltranhda1 = $('#pieChart1').attr('sl1');
+// var sloplat1 = $('#pieChart1').attr('sl2');
+// var slcotda1 = $('#pieChart1').attr('sl3');
+// var sllavabo1 = $('#pieChart1').attr('sl4');
+
+// var tltranhda1 = $('#pieChart1').attr('title1');
+// var tloplat1 = $('#pieChart1').attr('title2');
+// var tlcotda1 = $('#pieChart1').attr('title3');
+// var tllavabo1 = $('#pieChart1').attr('title4');
+// 
+// const DATA_COUNT = 7;
+// const NUMBER_CFG = {count: DATA_COUNT, min: 0, max: 100};
+
+// const labels = Utils.months({count: 7});
+// const data = {
+//   labels: labels,
+//   datasets: [
+//     {
+//       label: 'Dataset 1',
+//       data: Utils.numbers(NUMBER_CFG),
+//       backgroundColor: Utils.CHART_COLORS.red,
+//     },
+//     {
+//       label: 'Dataset 2',
+//       data: Utils.numbers(NUMBER_CFG),
+//       backgroundColor: Utils.CHART_COLORS.blue,
+//     },
+//     {
+//       label: 'Dataset 3',
+//       data: Utils.numbers(NUMBER_CFG),
+//       backgroundColor: Utils.CHART_COLORS.green,
+//     },
+//   ]
+// };
+
+// const config = new Chart(ctx1, {
+//     type: 'bar',
+//     data: data,
+//     options: {
+//     plugins: {
+//     title: {
+//         display: true,
+//         text: 'Chart.js Bar Chart - Stacked'
+//       },
+//     },
+//     responsive: true,
+//     scales: {
+//       x: {
+//         stacked: true,
+//       },
+//       y: {
+//         stacked: true
+//       }
+//     }
+//   }
+// });
+
 </script>

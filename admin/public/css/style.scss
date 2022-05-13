@@ -481,12 +481,29 @@ $chu:#000;
 			font-weight: bold;
 		}
 	}
-	.title-thongke{
-		text-align: center;
-		padding-top: 25px;
-		color: red;
-		text-transform: uppercase;
+	.thongke-baocao{
+		display: flex;
+		flex-direction: row;
+		.chart1{
+			width: 50%;
+			.title-thongke{
+				text-align: center;
+				padding-top: 25px;
+				color: red;
+				text-transform: uppercase;
+			}
+		}
+		.chart2{
+			width: 50%;
+			.title-thongke{
+				text-align: center;
+				padding-top: 25px;
+				color: red;
+				text-transform: uppercase;
+			}
+		}
 	}
+
 }
 @media all and (min-width: 996px)
 {
