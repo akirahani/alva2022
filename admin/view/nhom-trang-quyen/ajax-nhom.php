@@ -44,14 +44,14 @@
 		            ?>
 		           	</td>
 		           	<td class="can-giua">
-			            <?php 
-			            	if(isset($arr_trang[$value->trang][1]) && $arr_trang[$value->trang][1] =1 ){
-			            		echo '<i class="fas fa-circle" trangthai="1" quyen="them" nhom="'.$idnhom.'" trang="'.$value->trang.'" ></i>';
-			            	}
-			            	else{
-								echo '<i class="far fa-circle" trangthai="0" quyen="them" nhom="'.$idnhom.'" trang="'.$value->trang.'" ></i>';
-			            	}
-			            ?>
+		            <?php 
+		            	if(isset($arr_trang[$value->trang][1]) && $arr_trang[$value->trang][1] == 1 ){
+		            		echo '<i class="fas fa-circle"  trang="'.$value->trang.'" nhom="'.$idnhom.'" trangthai="1" quyen="them" ></i>';
+		            	}
+		            	else{
+							echo '<i class="far fa-circle"  trang="'.$value->trang.'" nhom="'.$idnhom.'" trangthai="0" quyen="them"  ></i>';
+		            	}
+		            ?>
 		            </td>
 		            <td class="can-giua">
 		            <?php 

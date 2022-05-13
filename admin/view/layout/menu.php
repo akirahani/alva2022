@@ -1,5 +1,6 @@
 <nav data-scrollbar>
 	<ul>
+		<?php if(isset($__NHOM__) && $__NHOM__ == 1 ) { ?>
 		<li class="child-one">
 		    <a class="toggle" href="#">
 		    	<i class="fal fa-map-marker-exclamation"></i>
@@ -9,7 +10,7 @@
 		      	<li <?php if($p == "info") echo 'class="active"';?>><a href="company/edit">Info</a></li>
 		    </ul>
 	  	</li>
-
+	  	<?php } ?>
 	  	<!-- Landing -->
 	  	<li class="child-one">
 		    <a class="toggle" href="#">
@@ -143,16 +144,7 @@
 			</ul>
 		</li>
 		
-        <!-- Tài khoản -->
-        <li class="child-one">
-            <a class="toggle" href="#">
-                <i class="fas fa-users"></i>
-                <span>Thành viên</span>
-            </a>
-            <ul <?php if( in_array($p, ["tai-khoan-thanh-vien", "them-tai-khoan", "cap-nhat-tai-khoan", "reset-mat-khau"]) ) echo 'class="inner show" style="display:block"'; else echo 'class="inner"';?>>
-                <li <?php if($p == "tai-khoan-thanh-vien") echo 'class="active"';?>><a href="thanh-vien">Tài khoản</a></li>
-            </ul>
-        </li>
+
 		
 		<!-- Tên miền -->
 	  	<li class="child-one">
@@ -164,26 +156,40 @@
 		      	<li <?php if(in_array($p, ["ten-mien", "sua-ten-mien"])) echo 'class="active"';?>><a href="ten-mien">Danh sách</a></li>
 		    </ul>
 	  	</li>
+	
 
-	  	<!-- Role-Permission -->
-	  	<li class="child-one">
-		    <a class="toggle" href="#">
-		    	<i class="fas fa-globe-americas"></i>
-		    	<span>Các trang quản trị</span>
-		    </a>
-		    <ul <?php if( in_array($p, ["trang", "them-trang", "sua-trang"]) && in_array($p, ["nhom", "them-nhom", "sua-nhom"]) &&in_array($p, ["nhom-trang-quyen", "them-nhom-trang-quyen", "sua-nhom-trang-quyen"]) ) echo 'class="inner show" style="display:block"'; else echo 'class="inner"';?>>
-		      	<li <?php if(in_array($p, ["trang", "sua-trang"])) echo 'class="active"';?>><a href="trang">Danh sách trang</a></li>
-		      	<li <?php if(in_array($p, ["nhom-trang-quyen", "sua-nhom-trang-quyen"])) echo 'class="active"';?>><a href="nhom-trang-quyen">Danh sách quyền</a></li>
-		      	<li <?php if(in_array($p, ["nhom", "sua-nhom"])) echo 'class="active"';?>><a href="nhom">Danh sách nhóm</a></li>
-		    </ul>
-	  	</li>
-	  	<!-- Sitemap -->
-	  	<li class="child-one">
-		    <a class="link" href="sitemap/add">
-		    	&nbsp;&nbsp;&nbsp;<i class="fal fa-globe-europe"></i>
-		    	<span>Sitemap</span>
-		    </a>
-	  	</li>
+	  	<?php if(isset($__NHOM__) && $__NHOM__ == 1 ) { ?>
+	  		<!-- Tài khoản -->
+	        <li class="child-one">
+	            <a class="toggle" href="#">
+	                <i class="fas fa-users"></i>
+	                <span>Thành viên</span>
+	            </a>
+	            <ul <?php if( in_array($p, ["tai-khoan-thanh-vien", "them-tai-khoan", "cap-nhat-tai-khoan", "reset-mat-khau"]) ) echo 'class="inner show" style="display:block"'; else echo 'class="inner"';?>>
+	                <li <?php if($p == "tai-khoan-thanh-vien") echo 'class="active"';?>><a href="thanh-vien">Tài khoản</a></li>
+	            </ul>
+	        </li>
+	  		<!-- Role-Permission -->
+	  		<li class="child-one">
+			    <a class="toggle" href="#">
+			    	<i class="fas fa-globe-americas"></i>
+			    	<span>Các trang quản trị</span>
+			    </a>
+			    <ul <?php if( in_array($p, ["trang", "them-trang", "sua-trang"]) && in_array($p, ["nhom", "them-nhom", "sua-nhom"]) &&in_array($p, ["nhom-trang-quyen", "them-nhom-trang-quyen", "sua-nhom-trang-quyen"]) ) echo 'class="inner show" style="display:block"'; else echo 'class="inner"';?>>
+			      	<li <?php if(in_array($p, ["trang", "sua-trang"])) echo 'class="active"';?>><a href="trang">Danh sách trang</a></li>
+			      	<li <?php if(in_array($p, ["nhom-trang-quyen", "sua-nhom-trang-quyen"])) echo 'class="active"';?>><a href="nhom-trang-quyen">Danh sách quyền</a></li>
+			      	<li <?php if(in_array($p, ["nhom", "sua-nhom"])) echo 'class="active"';?>><a href="nhom">Danh sách nhóm</a></li>
+			    </ul>
+	  		</li>
+
+	  		<!-- Sitemap -->
+			<li class="child-one">
+			    <a class="link" href="sitemap/add">
+			    	&nbsp;&nbsp;&nbsp;<i class="fal fa-globe-europe"></i>
+			    	<span>Sitemap</span>
+			    </a>
+		  	</li>
+	  	<?php } ?>
 	</ul>
 	<div class="clear"></div>
 </nav>

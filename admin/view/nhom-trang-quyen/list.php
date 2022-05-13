@@ -1,6 +1,4 @@
 <?php
-    require_once "model/Query.php";
-    $query = new Query();
     $data_nhom = $query->DanhSach('nhom');
 ?>
 <div class="row medium">
@@ -38,7 +36,6 @@
             success:function(dulieu)
             {
                 $(".list-table").html(dulieu);
-                $(".loading").hide();
             }
         });
     });

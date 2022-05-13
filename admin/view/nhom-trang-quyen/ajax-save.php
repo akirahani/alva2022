@@ -17,13 +17,13 @@
 			if($quyen== "xem"){
 				$query->ThemMoi('phanquyen',['nhom','trang','xem'],['nhom'=>$nhom,'trang'=>$trang,'xem'=>$save]);
 			}
-			if($quyen== "them"){
+			else if($quyen== "them"){
 				$query->ThemMoi('phanquyen',['nhom','trang','them'],['nhom'=>$nhom,'trang'=>$trang,'them'=>$save]);
 			}
-			if($quyen =="sua"){
+			else if($quyen =="sua"){
 				$query->ThemMoi('phanquyen',['nhom','trang','sua'],['nhom'=>$nhom,'trang'=>$trang,'sua'=>$save]);
 			}
-			if($quyen =="xoa"){
+			else if($quyen =="xoa"){
 				$query->ThemMoi('phanquyen',['nhom','trang','xoa'],['nhom'=>$nhom,'trang'=>$trang,'xoa'=>$save]);
 			}
 		}
@@ -37,7 +37,7 @@
 			else if($quyen =="sua"){
 				$query->CapNhat('phanquyen',['sua'],['nhom','trang'],['nhom'=>$nhom,'trang'=>$trang,'sua'=>$save]);
 			}
-			else{
+			else if($quyen =="xoa"){
 				$query->CapNhat('phanquyen',['xoa'],['nhom','trang'],['nhom'=>$nhom,'trang'=>$trang,'xoa'=>$save]);
 			}
 		}
