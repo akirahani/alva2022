@@ -6,7 +6,7 @@
 	$condition = ["id" => $id];
 	$data_detail = $query->ChiTiet("doitac", $fields, $operator, $condition);
 	#Delete
-	unlink('../uploads/doi-tac/'.$data_detail->hinh);
-	$query->Xoa("doitac", $operator, $condition);
-	header("location:list");
+	// unlink('../uploads/doi-tac/'.$data_detail->hinh);
+	// $query->Xoa("doitac", $operator, $condition);
+	// header("location:list");
 ?>
