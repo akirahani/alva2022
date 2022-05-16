@@ -23,6 +23,7 @@
                 <th>Điện thoại</th>
                 <th>Ngày đặt</th>
                 <th>Ghi chú</th>
+                <th>Thời gian hoành thành</th>
             </tr>
         </thead>
         <tbody>
@@ -33,6 +34,7 @@
 	                echo '<td>'.$value->dienthoaikhach.'</td>';
 	                echo '<td>'.$value->ngay.'</td>';
 	                echo '<td>'.$value->ghichu.'</td>';
+	                echo '<td>'.$value->hoanthanh.'</td>';
 	            echo '</tr>';
         	}
             ?>

@@ -9,7 +9,7 @@
 	if(isset($_POST['giao']))
 	{
 		// Cập nhật trạng thái đơn hàng + set người nhận đơn gọi hàng
-		$fields = ["tenkhach", "dienthoaikhach", "trangthai", "nguoigoi", "lydohuy", "ghichu"];
+		$fields = ["tenkhach", "dienthoaikhach", "trangthai", "nguoigoi", "lydohuy", "ghichu",'hoanthanh'];
         $condition = ["id"];
         $post_form = [
             'tenkhach' => $_POST['tenkhach'],
@@ -18,6 +18,7 @@
 			'nguoigoi' => $__ID__,
 			'lydohuy' => NULL,
 			'ghichu' => $_POST['ghichu'],
+			'hoanthanh'=> date("Y-m-d H:i:s"),
             "id" => $id
         ];
         $query->CapNhat("donhang", $fields, $condition, $post_form);#5 - đơn giao thành công
