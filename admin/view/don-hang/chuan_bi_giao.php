@@ -27,7 +27,7 @@
         	<?php
         	foreach ($data_donhang as $key => $value) {
         		echo '<tr>';
-	                echo '<td><a href="don-finish&id='.$value->id.'"><i class="fad fa-user-check"></i></a> '.$value->tenkhach.'</td>';
+	                echo '<td><a href="don-hang/don_finish?id='.$value->id.'"><i class="fad fa-user-check"></i></a> '.$value->tenkhach.'</td>';
 	                echo '<td>'.$value->dienthoaikhach.'</td>';
 	            echo '</tr>';
         	}

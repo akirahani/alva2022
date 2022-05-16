@@ -30,7 +30,7 @@
 	else
 	{
 		// Đơn đã có người nhận
-		header("location:don-moi");
+		header("location:don_moi");
 	}
 	if(isset($_POST['nhan']))
 	{
@@ -50,7 +50,7 @@
 	            "id" => $id
 	        ];
 	        $query->CapNhat("donhang", $fields, $condition, $post_form);#4 - hủy đơn hàng
-			header("location:don-huy");
+			header("location:don_huy");
 		}
 		if($_POST['lydohuy']==0)
 		{
@@ -66,7 +66,7 @@
 	            "id" => $id
 	        ];
 	        $query->CapNhat("donhang", $fields, $condition, $post_form);#3 - chuẩn bị giao hàng
-			header("location:don-chuan-bi-giao");
+			header("location:chuan_bi_giao");
 		}
 	}
 ?>

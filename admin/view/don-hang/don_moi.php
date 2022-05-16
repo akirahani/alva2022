@@ -13,8 +13,9 @@
 	$num_donhang_danggoi = count($data_donhang_danggoi);
 	if($num_donhang_danggoi!=0)
 	{
-		header("location: don-dang-goi");
+		header("location: don_goi");
 	}
+	// 
 	$fields = [];
     $sorts = ["id" => "DESC"];
     $limits = [];
@@ -48,7 +49,7 @@
         	{
         		echo '<tr>';
         			echo '<td class="can-giua" width="40">'.$thutu.'</td>';
-	                echo '<td><a href="goi-don-hang&id='.$value->id.'"><i class="fad fa-phone-volume"></i></a> '.$value->tenkhach.'</td>';
+	                echo '<td><a href="don-hang/goi_don?id='.$value->id.'"><i class="fad fa-phone-volume"></i></a> '.$value->tenkhach.'</td>';
 	                echo '<td>'.$value->dienthoaikhach.'</td>';
 	                echo '<td class="can-giua">'.date ("Y-m-d h:i:s", $value->gio).'</td>';
 	            echo '</tr>';

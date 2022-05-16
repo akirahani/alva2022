@@ -385,7 +385,7 @@ $chu:#000;
 			    font-size: 15px;
 			    cursor: pointer;
 			}
-			input[type="submit"]
+			input[type="submit"],input[type="button"]
 			{
 				padding: 12px 25px;
 				text-transform: uppercase;
@@ -481,9 +481,46 @@ $chu:#000;
 			font-weight: bold;
 		}
 	}
-	.thongke-baocao{
+	.click-donhang{
 		display: flex;
-		flex-direction: row-reverse ;
+		justify-content: space-around;
+		padding: 15px;
+		a{
+			text-decoration: none;
+			width: 20%;
+			height: 150px;
+			position: relative;
+			&.don-giao{
+				background-color: yellow;
+			}
+			&.don-goi{
+				background-color: red;
+			}
+			&.don-moi{
+				background-color: green;
+			}
+			&.don-hoan-thanh{
+				background-color: #c6c6f7;;
+			}
+			p{
+				font-size: 25px;
+				color: #000;
+			}
+			span{
+				i{
+					font-size: 50px;
+				    color: #fdfdfd;
+				    position: absolute;
+				    right: 0;
+				    bottom: 0;
+				}
+			}
+		}	
+	}
+	.thongke-baocao{
+		margin-top: 20px;
+		display: flex;
+		flex-direction: row-reverse;
 		.chart1{
 			width: 50%;
 			.title-thongke{
