@@ -21,11 +21,11 @@
             "id" => $id
         ];
         $query->CapNhat("donhang", $fields, $condition, $post_form);#5 - đơn giao thành công
-		header("location:don-dang-goi");
+		header("location:don_hoan_thanh");
 	}
 	if(isset($_POST['huy']))
 	{
-		header("location:don-moi");
+		header("location:don_moi");
 	}
 ?>
 <div class="blog">

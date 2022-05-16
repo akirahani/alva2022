@@ -32,7 +32,7 @@
         	{
         		echo '<tr>';
         			echo '<td class="can-giua" width="40">'.$thutu.'</td>';
-	                echo '<td><a href="chot-don&id='.$value->id.'"><i class="fad fa-user-edit"></i></a> '.$value->tenkhach.'</td>';
+	                echo '<td><a href="don-hang/chot_don?id='.$value->id.'"><i class="fad fa-user-edit"></i></a> '.$value->tenkhach.'</td>';
 	                echo '<td>'.$value->dienthoaikhach.'</td>';
 	            echo '</tr>';
 	            $thutu ++;

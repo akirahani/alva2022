@@ -31,9 +31,10 @@
 	            <tr>
 	                <th>Tên</th>
 	                <th>Điện thoại</th>
-	                <th>Thời gian</th>
+	                <th>Thời gian khách gửi</th>
 	                <th>Ghi chú</th>
 	                <th>Lý do hủy</th>
+	               	<th>Thời gian hủy</th>
 	            </tr>
 	        </thead>
 	        <tbody>
@@ -47,6 +48,7 @@
 		                echo '<td>'.$value->ngay.'</td>';
 		                echo '<td>'.$value->ghichu.'</td>';
 		                echo '<td>'.@$data_huydon->ten.'</td>';
+		                echo '<td>'.$value->thoigianhuy.'</td>';
 		            echo '</tr>';
 	        	}
 	            ?>
