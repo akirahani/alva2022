@@ -14,7 +14,7 @@
 	else
 	{
 		// Đơn đã có người nhận
-		header("location:don-moi");
+		header("location:don_moi");
 	}
 	if(isset($_POST['nhan']))
 	{
@@ -30,11 +30,24 @@
             "id" => $id
         ];
         $query->CapNhat("donhang", $fields, $condition, $post_form);#2 - đơn hàng calling
-		header("location:don-dang-goi");
+		header("location:don_goi");
 	}
 	if(isset($_POST['huy']))
-	{
-		header("location:don-moi");
+	{	
+		$fields = ["tenkhach", "dienthoaikhach", "trangthai", "nguoigoi", "lydohuy", "ghichu",'thoigianhuy'];
+        $condition = ["id"];
+        $post_form = [
+            'tenkhach' => $_POST['tenkhach'],
+			'dienthoaikhach' => $_POST['dienthoaikhach'],
+			'trangthai' => 4,
+			'nguoigoi' => $__ID__,
+			'lydohuy' => NULL,
+			'ghichu' => $data_donhang->ghichu,
+			'thoigianhuy'=> date("Y-m-d H:i:s"),
+            "id" => $id
+        ];
+        $query->CapNhat("donhang", $fields, $condition, $post_form);#4 - đơn hàng huy
+		header("location:don_moi");
 	}
 ?>
 <div class="blog">

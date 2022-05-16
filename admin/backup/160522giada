@@ -1,0 +1,2 @@
+//ALTER TABLE `da` ADD `niemyet` INT NULL DEFAULT NULL AFTER `kho`, ADD `chietkhau` INT NULL DEFAULT NULL AFTER `niemyet`, ADD `baokhach` INT NULL DEFAULT NULL AFTER `chietkhau`;
+ALTER TABLE `donhang` ADD `thoigianhuy` DATETIME NOT NULL AFTER `trang`;
