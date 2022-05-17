@@ -3,9 +3,10 @@
 	$fields = [];
     $sorts = ["id" => "DESC"];
     $limits = [];
-    $condition = ["trangthai" => "="];
+    $condition = ["trangthai" => "=","nguoigoi"=>"="];
     $forms = [
-    	"trangthai" => 2
+    	"trangthai" => 2,
+    	"nguoigoi" =>$__ID__
     ];
     $search = [];
 	$data_donhang = $query->DanhSach("donhang", [], $condition, $sorts, $limits, $forms, $search);#2 - đơn hàng đang gọi
