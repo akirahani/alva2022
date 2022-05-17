@@ -58,6 +58,9 @@
 				else{
 					require_once "controller/".$p.".php";
 					$url_full = 'view/'.$p.'/'.$one;
+					if($one== 'del'){
+						var_dump($url_full);
+					}
 					$phanquyen->quyen($one,$p,$__NHOM__,$query);
 					if (strpos($url_full, '?') !== false){
 						$url_cut = strstr($url_full, '?', true);

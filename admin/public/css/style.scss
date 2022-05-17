@@ -491,7 +491,7 @@ $chu:#000;
 			height: 150px;
 			position: relative;
 			&.don-giao{
-				background-color: yellow;
+				background-color: #ea892f;
 			}
 			&.don-goi{
 				background-color: red;
@@ -504,10 +504,18 @@ $chu:#000;
 			}
 			p{
 				font-size: 25px;
-				color: #000;
+				padding: 10px 10px;
+				color: linear-gradient(#000,#99eeb4 50%);
+				&::before{
+					content: attr(filter-content);
+  					filter: url(#motion-blur-filter);
+				}
 			}
 			span{
+				padding: 10px 10px;
+				font-size: 40px;
 				i{
+					padding: 10px 10px;
 					font-size: 50px;
 				    color: #fdfdfd;
 				    position: absolute;
@@ -520,6 +528,7 @@ $chu:#000;
 	.thongke-baocao{
 		margin-top: 20px;
 		display: flex;
+		justify-content: space-around;
 		flex-direction: row-reverse;
 		.chart1{
 			width: 50%;
