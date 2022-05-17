@@ -528,28 +528,18 @@ $chu:#000;
 	.thongke-baocao{
 		margin-top: 20px;
 		display: flex;
-		justify-content: space-around;
-		flex-direction: row-reverse;
 		.chart1{
-			width: 50%;
-			.title-thongke{
-				text-align: center;
-				padding-top: 25px;
-				color: red;
-				text-transform: uppercase;
-			}
+			width: 40%;
+			margin-top: 20px;
 		}
 		.chart2{
-			width: 50%;
-			.title-thongke{
-				text-align: center;
-				padding-top: 25px;
-				color: red;
-				text-transform: uppercase;
-			}
+			width: 40%;
+			margin-top: 20px;
 		}
 	}
-
+	.bar-chart{
+		margin: 20px 0 0 50px;
+	}
 }
 @media all and (min-width: 996px)
 {
