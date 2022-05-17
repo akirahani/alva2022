@@ -15,6 +15,10 @@
     $don_hang =  $query->DanhSach('donhang');
     $don_moi =  $query->DanhSach('donhang',['id','trangthai','ngay','lydohuy'],['trangthai'=>'='],[],[],['trangthai'=>1]);
     $don_goi = $query->DanhSach('donhang',['id','trangthai','ngay','lydohuy'],['trangthai'=>'='],[],[],['trangthai'=>2]);
+    // 
+    $don_moi_ngay = $query->DanhSach('donhang',['id','trangthai','ngay','lydohuy'],['trangthai'=>'=','ngay'=>'='],[],[],['trangthai'=>1,'ngay'=>date("Y-m-d")]);
+    $count_dmn = count($don_moi_ngay);
+    // 
     $don_giao =$query->DanhSach('donhang',['id','trangthai','ngay','lydohuy'],['trangthai'=>'='],[],[],['trangthai'=>3]);
     $don_huy =$query->DanhSach('donhang',['id','trangthai','ngay','lydohuy'],['trangthai'=>'='],[],[],['trangthai'=>4]);
     $don_hoan_thanh =$query->DanhSach('donhang',['id','trangthai','ngay','lydohuy'],['trangthai'=>'='],[],[],['trangthai'=>5]);
@@ -29,8 +33,8 @@
 <div class="click-donhang">
     <a href="don-hang/chuan_bi_giao" class="don-giao"><p>Đơn đang giao</p><span><?=$count_don_giao?><i class="fas fa-truck"></i></span></a>
     <a href="don-hang/don_goi" class="don-goi"><p>Đơn đang gọi</p><span><?=$count_don_goi?><i class="fas fa-phone"></i></span></a>
-    <a href="don-hang/don_moi" class="don-moi"><p>Đơn mới</p><span><?=$count_don_moi?><i class="fas fa-cart-plus"></i></span></a>
-    <a href="don-hang/don_hoan_thanh" class="don-hoan-thanh"><p>Đơn hoàn thành</p><span><?=$count_don_hoan_thanh?><i class="fas fa-box-circle-check"></i></span></a>
+    <a href="don-hang/don_moi" class="don-moi"><p>Đơn mới trong ngày</p><span><?=$count_dmn?><i class="fas fa-cart-plus"></i></span></a>
+    <a href="don-hang/don_hoan_thanh" class="don-hoan-thanh"><p>Đơn hoàn thành</p><span><?=$count_don_hoan_thanh?><i class="fa fa-box-check"></i></span></a>
 </div>
 <div class="thongke-baocao">
     <div class="chart2">
