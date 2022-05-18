@@ -193,10 +193,7 @@ function getValue(){
             },
             url: "view/home/thongke_donhang.php",
             success:function(data){
-                arr = [];
-                arr= data;
-                console.log(typeof(arr));
-                console.log(arr);
+                console.log(data);
                 let chart2 = new Chart(ctx2, {
                     type:'bar',
                     data:{
