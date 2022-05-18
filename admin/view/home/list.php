@@ -29,6 +29,27 @@
     $count_don_giao = count($don_giao);
     $count_don_huy = count($don_huy);
     $count_don_hoan_thanh = count($don_hoan_thanh);
+
+    if(isset($_POST['submit']) && ($_POST['ngaydau'] <= $_POST['ngaycuoi'])) {
+        $dau = $_POST['ngaydau'];
+        $cuoi = $_POST['ngaycuoi'];
+        $donmoi = $query->Chuoi("SELECT id,trangthai,ngay,lydohuy,hoanthanh,thoigianhuy FROM donhang WHERE trangthai =1 AND (ngay >= '$dau' AND ngay <= '$cuoi')");
+        $donhuy = $query->Chuoi("SELECT id,trangthai,ngay,lydohuy,hoanthanh,thoigianhuy FROM donhang WHERE trangthai =4 AND (ngay >= '$dau' AND ngay <= '$cuoi')");
+        $donhoanthanh = $query->Chuoi("SELECT id,trangthai,ngay,lydohuy,hoanthanh,thoigianhuy FROM donhang WHERE trangthai =5 AND (ngay >= '$dau' AND ngay <= '$cuoi')");
+        $countmoi = count($donmoi);
+        $counthuy = count($donhuy);
+        $countht = count($donhoanthanh);
+    }
+    else{
+        $countmoi = 0;
+        $counthuy = 0;
+        $countht = 0;
+        $dau = '-';
+        $cuoi = '-';
+        echo"<script>
+                alert('Thời gian sau phải lớn hơn hoặc bằng thời gian trước');
+            </script>";
+    }
 ?>
 <div class="click-donhang">
     <a href="don-hang/chuan_bi_giao" class="don-giao"><p>Đơn đang giao</p><span><?=$count_don_giao?><i class="fas fa-truck"></i></span></a>
@@ -44,17 +65,22 @@
         <canvas id="donhang" tongdonhang="<?=$count_tong_don?>" donmoi="<?=$count_don_moi?>" dongoi="<?=$count_don_goi?>" dongiao="<?=$count_don_giao?>" donhuy="<?= $count_don_huy?>" donhoanthanh="<?= $count_don_hoan_thanh?>"></canvas>
     </div>
 </div>
+<form action="" method="POST" class="button-info-thongke">
+    <div>
+        <p>Từ ngày</p>
+        <input type="date" name="ngaydau" id="ngaydau" required> 
+    </div>
+    <div>
+        <p>Đến ngày</p>
+        <input type="date" name="ngaycuoi" id="ngaycuoi" required>     
+    </div>
+    <div class="btn-thongke">
+        <input type="submit" name="submit" value="Thống kê">    
+    </div>
+</form>
+
 <div class="bar-chart">
-    <select name="trangthai" onchange="getValue()">
-        <option value="0">Lựa chọn</option>
-        <option value="1">Đơn mới</option>
-<!--         <option value="2">Đơn gọi</option>
-        <option value="3">Đơn giao</option> -->
-        <option value="4">Đơn hủy</option>
-        <option value="5">Đơn hoàn thành</option>
-    </select>
-    <input type="date" name="ngay" id="ngay"  onchange="getValue()">
-    <canvas id="barchart" ></canvas>
+    <canvas id="barchart" donmoi="<?=$countmoi ?>" donhuy="<?=$counthuy?>"  donhoanthanh="<?=$countht?>" dau="<?=$dau?>" cuoi="<?=$cuoi?>" ></canvas>
 </div>
 
 <script>
@@ -177,70 +203,57 @@ let massPopChart = new Chart(ctx1, {
 
 // BIỂU ĐỒ CỘT ĐƠN HÀNG THEO THỜI GIAN
 const ctx2 = $("#barchart")[0].getContext('2d');
-// var donmoi1 = $("#donhang").attr('donmoi');
-// var donhuy1 = $("#donhang").attr('donhuy');
-// var donhoanthanh1 = $("#donhang").attr('donhoanthanh');
-// var tongdonhang1 = $("#donhang").attr('tongdonhang');
-// Xử lí thời gian đơn lọc đơn hàng
-function getValue(){
-    let trangthai = $('select[name="trangthai"]').val();
-    let ngay = $('#ngay').val();
-    if(trangthai!='' && ngay!='' ){
-        $.ajax({
-            method: "GET",
-            data:{
-                trangthai: trangthai, ngay:ngay
-            },
-            url: "view/home/thongke_donhang.php",
-            success:function(data){
-                console.log(data);
-                let chart2 = new Chart(ctx2, {
-                    type:'bar',
-                    data:{
-                        labels:['Đơn mới','Đơn hủy', 'Đơn hoàn thành'],
-                        datasets:[{
-                            label:'Population',
-                            data:data,
-                            backgroundColor:[
-                                'rgba(255, 99, 132, 0.6)',
-                                'rgba(54, 162, 235, 0.6)',
-                                'rgba(255, 206, 86, 0.6)',
-                                'rgba(75, 192, 192, 0.6)',
-                            ],
-                            borderWidth:1,
-                            borderColor:'#777',
-                            hoverBorderWidth:3,
-                            hoverBorderColor:'#000'
-                        }]
-                    },
-                    options:{
-                        title:{
-                            display:true,
-                            text:'Thống kê đơn hàng theo thời gian',
-                            fontSize:25
-                        },
-                        legend:{
-                            display:true,
-                            position:'right',
-                            labels:{
-                                fontColor:'#000'
-                            }
-                        },
-                        layout:{
-                            padding:{
-                                left:0,
-                                right:0,
-                                bottom:0,
-                                top:0
-                            }
-                        },
-                        tooltips:{
-                            enabled:true
-                        }
-                    }
-                });
+
+let count_moi = $("#barchart").attr('donmoi');
+let count_huy = $("#barchart").attr('donhuy');
+let count_hoanthanh = $("#barchart").attr('donhoanthanh');
+let dau = $("#barchart").attr('dau');
+let cuoi = $("#barchart").attr('cuoi');
+let chart2 = new Chart(ctx2, {
+    type:'bar',
+    data:{
+        labels:['Đơn mới','Đơn hủy', 'Đơn hoàn thành'],
+        datasets:[{
+            label:'Population',
+            data:[
+                count_moi,count_huy,count_hoanthanh
+            ],
+            backgroundColor:[
+                'rgba(255, 99, 132, 0.6)',
+                'rgba(54, 162, 235, 0.6)',
+                'rgba(255, 206, 86, 0.6)',
+                'rgba(75, 192, 192, 0.6)',
+            ],
+            borderWidth:1,
+            borderColor:'#777',
+            hoverBorderWidth:3,
+            hoverBorderColor:'#000'
+        }]
+    },
+    options:{
+        title:{
+            display:true,
+            text:'Thống kê đơn hàng từ '+dau+' đến '+cuoi,
+            fontSize:25
+        },
+        legend:{
+            display:true,
+            position:'right',
+            labels:{
+                fontColor:'#000'
             }
-        })
+        },
+        layout:{
+            padding:{
+                left:0,
+                right:0,
+                bottom:0,
+                top:0
+            }
+        },
+        tooltips:{
+            enabled:true
+        }
     }
-}
+});
 </script>
