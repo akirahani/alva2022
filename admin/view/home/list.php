@@ -46,9 +46,6 @@
         $countht = 0;
         $dau = '-';
         $cuoi = '-';
-        echo"<script>
-                alert('Thời gian sau phải lớn hơn hoặc bằng thời gian trước');
-            </script>";
     }
 ?>
 <div class="click-donhang">
