@@ -537,6 +537,36 @@ $chu:#000;
 			margin-top: 20px;
 		}
 	}
+	.button-info-thongke{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 50px 50px;
+		div{
+			padding-left: 25px;
+			input[type="date"]{
+				margin-top: 15px;
+				border-radius: 3rem;
+				outline: none;
+				border: none;
+				width: 250px;
+				height: 40px;
+				padding: 0 25px;
+			}
+			&.btn-thongke{
+				margin-top: 40px;
+				input{
+					border: none;
+					cursor: pointer;
+					border-radius: 4rem;
+					background-color: green;
+					color: #fff;
+					height: 30px;
+					width: 100px !important;
+				}
+			}
+		}
+	}
 	.bar-chart{
 		margin: 20px 0 0 50px;
 	}
