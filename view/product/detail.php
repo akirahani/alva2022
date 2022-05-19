@@ -1,4 +1,7 @@
-
+<?php 
+	$messenger ='957208574414556'; 
+	$zalo = '0766698883' ;
+?>
 <link rel="stylesheet" type="text/css" href="public/css/product-detail.css?v=290322" />
 <main>
 	<section class="bread">
@@ -110,12 +113,10 @@
 			<div class="social">
 				<p>
 					<img src="public/image/mes.png" alt="Liên hệ Alva"/>
-					<a href="https://www.facebook.com/messages/t/">Chat Facebook</a>
-		
-				</p>
+					<a href="https://www.facebook.com/messages/t/<?=$messenger?>">Chat Facebook</a>		
 				<p>
 					<img src="public/image/zalo.png" alt="Liên hệ Alva"/>
-					<a href="https://zalo.me/">Chat Zalo</a>
+					<a href="https://zalo.me/<?=$zalo ?>">Chat Zalo</a>
 				</p>
 			</div>
 		</div>

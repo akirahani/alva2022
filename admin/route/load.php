@@ -38,73 +38,99 @@
 	$query = new Query();
 	$lib = new Lib();
 	$phanquyen = new PhanQuyen();
-		if($p == ''){
+	if($p == ''){
 		$folder = "home";
 		require_once 'controller/'.$folder.'.php';
 		$path = 'view/'.$folder.'/list.php';
 	}
+	// else{
+	// 	$folder = 'view/'.$p;
+	// 	$string_page = explode("?", $p);
+	// 	if(count($string_page) == 1)
+	// 	{
+	// 		if (file_exists($folder)){
+	// 			if($one == ''){
+	// 				require_once "controller/".$p.".php";
+	// 				$ps = $p;
+	// 				$path = 'view/'.$p.'/list.php';
+	// 				$phanquyen->quyen($one,$p,$__NHOM__,$query);
+	// 			}
+	// 			else{
+	// 				require_once "controller/".$p.".php";
+	// 				$url_full = 'view/'.$p.'/'.$one;
+	// 				if($one== 'del'){
+	// 					var_dump($url_full);
+	// 				}
+	// 				$phanquyen->quyen($one,$p,$__NHOM__,$query);
+	// 				if (strpos($url_full, '?') !== false){
+	// 					$url_cut = strstr($url_full, '?', true);
+	// 					$k = strstr($one,'?',true);
+	// 					$phanquyen->quyen($k,$p,$__NHOM__,$query);
+	// 				}
+	// 				else{
+	// 					$url_cut = $url_full;
+	// 				}
+	// 				$path = $url_cut.'.php';
+	// 			}
+	// 		}
+	// 		else{
+	// 			$folder = "home";
+	// 			require_once 'controller/'.$folder.'.php';
+	// 			$path = 'view/'.$folder.'/list.php';
+	// 		}
+	// 	}
+	// 	else{
+	// 		$folder = 'view/'.$string_page[0];
+	// 		if (file_exists($folder)){
+	// 			if($one == ''){
+	// 				require_once "controller/".$string_page[0].".php";
+	// 				$ps = $string_page[0];
+	// 				$path = 'view/'.$string_page[0].'/list.php';
+	// 			}
+	// 			else{
+	// 				require_once "controller/".$string_page[0].".php";
+	// 				$url_full = 'view/'.$string_page[0].'/'.$one;
+	// 				if (strpos($url_full, '?') !== false){
+	// 					$url_cut = strstr($url_full, '?', true);
+	// 				}
+	// 				else{
+	// 					$url_cut = $url_full;
+	// 				}
+	// 				$path = $url_cut.'.php';
+
+	// 			}
+	// 		}
+	// 		else{
+	// 			$folder = "home";
+	// 			require_once 'controller/'.$folder.'.php';
+	// 			$path = 'view/'.$folder.'/list.php';
+	// 		}
+	// 	}
+	// }
 	else{
 		$folder = 'view/'.$p;
-		$string_page = explode("?", $p);
-		if(count($string_page) == 1)
-		{
-			if (file_exists($folder)){
-				if($one == ''){
-					require_once "controller/".$p.".php";
-					$ps = $p;
-					$path = 'view/'.$p.'/list.php';
-					$phanquyen->quyen($one,$p,$__NHOM__,$query);
-				}
-				else{
-					require_once "controller/".$p.".php";
-					$url_full = 'view/'.$p.'/'.$one;
-					if($one== 'del'){
-						var_dump($url_full);
-					}
-					$phanquyen->quyen($one,$p,$__NHOM__,$query);
-					if (strpos($url_full, '?') !== false){
-						$url_cut = strstr($url_full, '?', true);
-						$k = strstr($one,'?',true);
-						$phanquyen->quyen($k,$p,$__NHOM__,$query);
-					}
-					else{
-						$url_cut = $url_full;
-					}
-					$path = $url_cut.'.php';
-				}
+		if (file_exists($folder)){
+			if($one == ''){
+				require_once "controller/".$p.".php";
+				$path = 'view/'.$p.'/list.php';
 			}
 			else{
-				$folder = "home";
-				require_once 'controller/'.$folder.'.php';
-				$path = 'view/'.$folder.'/list.php';
+				require_once "controller/".$p.".php";
+				$url_full = 'view/'.$p.'/'.$one;
+				$str_process = explode("?", $url_full);
+				if (count($str_process) != 1){
+					$url_full = $str_process[0];
+				}
+				$path = $url_full.'.php';
 			}
 		}
 		else{
-			$folder = 'view/'.$string_page[0];
-			if (file_exists($folder)){
-				if($one == ''){
-					require_once "controller/".$string_page[0].".php";
-					$ps = $string_page[0];
-					$path = 'view/'.$string_page[0].'/list.php';
-				}
-				else{
-					require_once "controller/".$string_page[0].".php";
-					$url_full = 'view/'.$string_page[0].'/'.$one;
-					if (strpos($url_full, '?') !== false){
-						$url_cut = strstr($url_full, '?', true);
-					}
-					else{
-						$url_cut = $url_full;
-					}
-					$path = $url_cut.'.php';
-
-				}
+			$str_process = explode("?", $p);
+			if(count($str_process) != 1){
+				$folder = $str_process[0];
 			}
-			else{
-				$folder = "home";
-				require_once 'controller/'.$folder.'.php';
-				$path = 'view/'.$folder.'/list.php';
-			}
+			require_once 'controller/'.$p.'.php';
+			$path = 'view/'.$p.'/list.php';
 		}
 	}
 ?>

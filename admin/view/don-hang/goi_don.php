@@ -41,7 +41,7 @@
 			'dienthoaikhach' => $_POST['dienthoaikhach'],
 			'trangthai' => 4,
 			'nguoigoi' => $__ID__,
-			'lydohuy' => NULL,
+			'lydohuy' => 10,
 			'ghichu' => $data_donhang->ghichu,
 			'thoigianhuy'=> date("Y-m-d H:i:s"),
             "id" => $id
