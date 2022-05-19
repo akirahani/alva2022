@@ -1,11 +1,4 @@
 <?php
-	//Khi nào chốt đơn
-	//Đơn hàng chỉ cốt khi đơn hàng có người gọi và trạng thái đơn hàng là 2 - đơn hàng đang gọi
-	//chuyển trạng thái sang 3 - chuẩn bị giao hàng
-	//chuyển trạng thái sang 4 - đơn hàng hủy -> và nêu lý do hủy đơn hàng
-	//chuyển trạng thái sang 5 - đơn hàng giao thành công
-?>
-<?php
 	$fields = [];
     $sorts = [];
     $limits = [];
@@ -35,38 +28,37 @@
 	if(isset($_POST['nhan']))
 	{
 		// Cập nhật trạng thái đơn hàng + set người nhận đơn gọi hàng
-		if($_POST['lydohuy']!=0)
-		{
-			//$donhang->CapNhat($_POST, $id, 4, $_SESSION['alvaid']); //4 - hủy đơn hàng
+		if($_POST['tinhtrang']==1){
+			// Cập nhật trạng thái đơn hàng + set người nhận đơn gọi hàng
 			$fields = ["tenkhach", "dienthoaikhach", "trangthai", "nguoigoi", "lydohuy", "ghichu"];
 	        $condition = ["id"];
 	        $post_form = [
 	            'tenkhach' => $_POST['tenkhach'],
 				'dienthoaikhach' => $_POST['dienthoaikhach'],
-				'trangthai' => 4,#4 - hủy đơn hàng
-				'nguoigoi' => $__ID__,
-				'lydohuy' => $_POST["lydohuy"],
-				'ghichu' => $_POST['ghichu'],
-	            "id" => $id
-	        ];
-	        $query->CapNhat("donhang", $fields, $condition, $post_form);#4 - hủy đơn hàng
-			header("location:don_huy");
-		}
-		if($_POST['lydohuy']==0)
-		{
-			$fields = ["tenkhach", "dienthoaikhach", "trangthai", "nguoigoi", "lydohuy", "ghichu"];
-	        $condition = ["id"];
-	        $post_form = [
-	            'tenkhach' => $_POST['tenkhach'],
-				'dienthoaikhach' => $_POST['dienthoaikhach'],
-				'trangthai' => 3,#3 - chuẩn bị giao hàng
+				'trangthai' => 3,#5 - đơn giao thành công
 				'nguoigoi' => $__ID__,
 				'lydohuy' => NULL,
 				'ghichu' => $_POST['ghichu'],
 	            "id" => $id
 	        ];
-	        $query->CapNhat("donhang", $fields, $condition, $post_form);#3 - chuẩn bị giao hàng
+	        $query->CapNhat("donhang", $fields, $condition, $post_form);#5 - đơn giao thành công
 			header("location:chuan_bi_giao");
+		}
+		else{
+			$fields = ["tenkhach", "dienthoaikhach", "trangthai", "nguoigoi", "lydohuy", "ghichu",'thoigianhuy'];
+	        $condition = ["id"];
+	        $post_form = [
+	            'tenkhach' => $_POST['tenkhach'],
+				'dienthoaikhach' => $_POST['dienthoaikhach'],
+				'trangthai' => 4,#5 - đơn giao huy
+				'nguoigoi' => $__ID__,
+				'thoigianhuy'=> date('Y-m-d H:i:s'),
+				'lydohuy' => $_POST['lydohuy'],
+				'ghichu' => $_POST['ghichu'],
+	            "id" => $id
+	        ];
+	        $query->CapNhat("donhang", $fields, $condition, $post_form);#5 - đơn giao thành công
+			header("location:don_huy");
 		}
 	}
 ?>
