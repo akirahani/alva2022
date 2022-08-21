@@ -6,7 +6,7 @@
 			$mail->Host='smtp.gmail.com';
 			$mail->SMTPAuth=true;
 			$mail->Username='sentmail.alva@gmail.com';
-			$mail->Password='jNPAg4CEzc97fMJ';
+			$mail->Password='ppmceuqfglzcsyxd';
 			$mail->SMTPSecure='tls';
 			$mail->Port=587;
 			$mail->SMTPOptions=array(

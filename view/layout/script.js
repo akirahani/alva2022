@@ -12,3 +12,4 @@ if($(document).width()>1200)
 $(document).on("click", ".close-form img", function(){
     $(".form-dang-ky").css("display", "none");
 });
+
