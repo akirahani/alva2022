@@ -7,13 +7,14 @@ $(document).ready(function() {
 
   sync1.owlCarousel({
     items : 1,
-    slideSpeed : 2000,
+    slideSpeed : 200,
     nav: true,
     autoplay: true,
-    dots: true,
+    dots: false,
     loop: true,
+    margin: 10,
+    navText : ['<img src="view/tranh-da-cao-cap/image/prev.svg" />','<img src="view/tranh-da-cao-cap/image/next.svg" />'],
     responsiveRefreshRate : 200,
-    navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
   }).on('changed.owl.carousel', syncPosition);
 
   sync2
@@ -24,6 +25,8 @@ $(document).ready(function() {
     items : slidesPerPage,
     dots: true,
     nav: true,
+    loop:false,
+    margin: 6,
     smartSpeed: 200,
     slideSpeed : 500,
     slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
@@ -31,10 +34,6 @@ $(document).ready(function() {
   }).on('changed.owl.carousel', syncPosition2);
 
   function syncPosition(el) {
-    //if you set loop to false, you have to restore this next line
-    //var current = el.item.index;
-    
-    //if you disable loop you have to comment this block
     var count = el.item.count-1;
     var current = Math.round(el.item.index - (el.item.count/2) - .5);
     
