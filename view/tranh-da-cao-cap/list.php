@@ -9,33 +9,16 @@
 			</h1>
 		</div>	
 
-
-		<div id="sync1" class="owl-carousel owl-theme">
-			<div class="item">
-		    	<img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/tslide1.png" alt="Tranh đá cao cấp" />
-			</div>
-		  	<div class="item">
-		    	<img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/tslide1.png" alt="Tranh đá cao cấp" />
-		    </div>
-		  	<div class="item">
-		    	<img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/tslide1.png" alt="Tranh đá cao cấp" />
-		    </div>
+		<div class="slide">
+			<ul>
+				<li><img src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" /></li>
+				<li>
+					<img src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" />
+					<img src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" />
+					<img src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" />
+				</li>
+			</ul>
 		</div>
-
-		<div id="sync2" class="owl-carousel owl-theme">
-		  	<div class="item">
-		    	<img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/tslide11.png" alt="Tranh đá cao cấp" />
-		    </div>
-		  	<div class="item">
-		    	<img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/tslide12.png" alt="Tranh đá cao cấp" />
-		    </div>
-		  	<div class="item">
-		    	<img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/tslide12.png" alt="Tranh đá cao cấp" />
-			</div>
-		</div>
-
-
-
 
 		<button>Liên hệ ngay</button>
 		<div>
@@ -167,29 +150,36 @@
 
 
 </main>
-<script src="view/tranh-da-cao-cap/tranh-da-cao-cap.js"></script>
-<!-- <script>
+<script src="view/tranh-da-cao-cap/tranh-cao-cap.js"></script>
+<script>
 	let anh = '';
 	anh += `
-		<div id="sync1" class="slide1 owl-carousel owl-theme">
+		<div id="sync1" class="owl-carousel owl-theme">
             <?php
             $str_picture = '';
-        	$str_picture .= '"'.$ROOT.'/uploads/san-pham/",';
-            echo '<div class="item"><img class="lazy" src="uploads/lazy/vuong.svg" data-src="uploads/tranh-cao-cap/img1.png" alt="Tranh đá cao cấp" /></div>';
-            echo '<div class="item"><img class="lazy" src="uploads/lazy/vuong.svg" data-src="uploads/tranh-cao-cap/img1.png" alt="Tranh đá cao cấp" /></div>';
-            echo '<div class="item"><img class="lazy" src="uploads/lazy/vuong.svg" data-src="uploads/tranh-cao-cap/img1.png" alt="Tranh đá cao cấp" /></div>';
+            for ($i= 3 ; $i<6; $i++)
+            {	
+            	$str_picture .= '"'.$ROOT.'/view/tranh-da-cao-cap/image/sync1/'.$i.'.png"';
+	            echo '<div class="item"><img  src="view/tranh-da-cao-cap/image/sync1/'.$i.'.png" alt="Tranh đá cao cấp" /></div>';
+            } 
             ?>
 		</div>
 
-		<div id="sync2" class="slide2 owl-carousel owl-theme">
+		<div id="sync2" class="owl-carousel owl-theme">
             <?php 
-        		echo '<div class="item index owl-"><img class="lazy" src="uploads/lazy/vuong.svg" data-src="uploads/tranh-cao-cap/img1.png" alt="Tranh đá cao cấp" /></div>';
-        		echo '<div class="item index owl-"><img class="lazy" src="uploads/lazy/vuong.svg" data-src="uploads/tranh-cao-cap/img1.png" alt="Tranh đá cao cấp" /></div>';
-        		echo '<div class="item index owl-"><img class="lazy" src="uploads/lazy/vuong.svg" data-src="uploads/tranh-cao-cap/img1.png" alt="Tranh đá cao cấp" /></div>';
-        	?>
+            $stt = 0;
+            for ($i= 0 ; $i<3; $i++) 
+            {
+            	if($stt==0){
+            		echo '<div class="item index'.$stt.' current owl-'.$stt.' " stt="'.$stt.'"><img src="view/tranh-da-cao-cap/image/'.$i.'.png" alt="Tranh đá cao cấp" /></div>';
+            	}
+            	else{
+            		echo '<div class="item index'.$stt.' owl-'.$stt.' " stt="'.$stt.'"><img src="view/tranh-da-cao-cap/image/'.$i.'.png" alt="Tranh đá cao cấp" /></div>';
+            	}
+            	$stt++;
+            }
+            ?>
 		</div>
 	`;
 	$(".slide").html(anh);
-	console.log(anh);
 </script>
- -->
