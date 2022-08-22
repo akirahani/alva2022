@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Horizontal &amp; Vertical Slick Slider</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" type="text/css" href="slick.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="slick-theme.css" /> -->
+        <link href="horizontal-vertical-slick-slider.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- <div class="w-container"> -->
+            <!-- <div class="wrapper"> -->
+                <!-- <div class="slider-wrapper"> -->
+                    <div class="slick-slider-grid">
+
+                        <div class="slick-slider-main">
+                            <div class="slick-slider-inner">
+                                <div class="images-list grid-main-slick">
+                                    <div class="slick-list-item">
+                                        <a href="#" class="w-inline-block w-lightbox"><img src="1.png" loading="lazy" alt="" /></a>
+                                    </div>
+                                    <div class="slick-list-item">
+                                        <a href="#" class="w-inline-block w-lightbox"><img src="1.png" loading="lazy" alt="" /></a>
+                                    </div>
+                                    <div class="slick-list-item">
+                                        <a href="#" class="w-inline-block w-lightbox"><img src="1.png" loading="lazy" alt="" /></a>
+                                    </div>
+                                    <div class="slick-list-item">
+                                        <a href="#" class="w-inline-block w-lightbox"><img src="1.png" loading="lazy" alt="" /></a>
+                                    </div>
+                                    <div class="slick-list-item">
+                                        <a href="#" class="w-inline-block w-lightbox"><img src="1.png" loading="lazy" alt="" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider-nav">
+                            <div class="slick-slider-inner _4-12">
+                                <div class="images-list grid-nav-slick">
+                                    <div class="slick-list-item vertical">
+                                        <div class="slick-list-item-inner">
+                                            <img src="1.png" loading="lazy" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="slick-list-item vertical">
+                                        <div class="slick-list-item-inner">
+                                            <img src="1.png" loading="lazy" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="slick-list-item vertical">
+                                        <div class="slick-list-item-inner">
+                                            <img src="1.png" loading="lazy" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="slick-list-item vertical">
+                                        <div class="slick-list-item-inner">
+                                            <img src="1.png" loading="lazy" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="slick-list-item vertical">
+                                        <div class="slick-list-item-inner">
+                                            <img src="1.png" loading="lazy" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
+        <script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="slick.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.grid-main-slick').slick({
+                    dots: false,
+                    infinite: false,
+                    speed: 300,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    prevArrow: $('.grid-1-prev'),
+                    nextArrow: $('.grid-1-next'),
+                    fade: false,
+                    useTransform: true,
+                    cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+                    asNavFor: '.grid-nav-slick'
+                });
+                $('.grid-nav-slick').slick({
+                    dots: false,
+                    infinite: false,
+                    speed: 300,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    revArrow: $('.grid-1-prev'),
+                    nextArrow: $('.grid-1-next'),
+                    fade: false,
+                    useTransform: false,
+                    cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+                    vertical: true,
+                    verticalSwiping: true,
+                    asNavFor: '.grid-main-slick',
+                    centerMode: true,
+                    focusOnSelect: true,
+                    centerPadding: '0px'
+                });
+            });
+        </script>
+    </body>
+</html>

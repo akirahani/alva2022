@@ -10,7 +10,7 @@
 		</div>	
 
 		<div class="slide">
-			<ul>
+			<ul class="owl-carousel owl-theme">
 				<li><img src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" /></li>
 				<li>
 					<img src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" />
@@ -20,10 +20,71 @@
 			</ul>
 		</div>
 
-		<button>Liên hệ ngay</button>
-		<div>
-			
+		<button class="lien-he1">Liên hệ ngay</button>
+	
+		<div class="slogan">
+			<h1 class="text-left">Hãy tìm cho mình</h1>
+			<h1 class="text-right">Bức tranh xứng tầm</h1>
+		</div>	
+		
+		<div class="lua-chon-van-da">
+			<div class="anh-chon">
+				<ul class="anh-ghep owl-carousel owl-theme">
+					<li><img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/anh-ghep.png" alt="Tranh đá cao cấp"></li>
+					<li><img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/anh-ghep.png" alt="Tranh đá cao cấp"></li>
+					<li><img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/anh-ghep.png" alt="Tranh đá cao cấp"></li>
+				</ul>
+			</div>
+			<div class="nut-chon">
+				<div class="tieu-de-chon">Chọn vân đá</div>
+				<div class="chon-van">
+					<button class="van-cheo">Vân chéo quả núi</button>
+					<button class="van-hoa">Vân hoa</button>
+					<button class="van-ngang">Vân ngang</button>
+				</div>
+				<div class="kich-thuoc">
+					<div class="tieu-de-kich-thuoc">Kích thước</div>
+					<div class="chi-tiet-kich-thuoc">
+						<ul class="head-title">
+							<li><p>Chiều Ngang</p></li>
+							<li><p>Chiều cao</p></li>
+							<li><p>Độ dày</p></li>
+						</ul>
+						<ul class="body-content">
+							<li><p><span>300</span> cm</p></li>
+							<li><p><span>250</span> cm</p></li>
+							<li><p><span>1.8</span> cm</p></li>
+						</ul>
+					</div>
+				</div>
+				<div class="khac">
+					<div class="co-den">
+						<button class="anh-den">Có Đèn</button>
+						<div class="chon-den">
+							<button class="samsung">Led Samsung</button>
+							<button class="china">Led Trung Quốc</button>
+						</div>
+					</div>
+					<div class="tac-vu">
+						<ul class="nut-khac">
+							<li><button>Không Đèn</button></li>
+							<li><button>Ghép Vân 2</button></li>
+							<li><button>Ghép Vân 4</button></li>
+							<li><button>Một Bức</button></li>
+							<li><button>Song Song</button></li>
+						</ul>
+						<ul class="doi-xung">
+							<li><button>Đối Xứng 1</button></li>
+							<li><button>Đối Xứng 2</button></li>
+							<li><button>Đối Xứng 3</button></li>
+							<li><button>Đối Xứng 4</button></li>
+						</ul>
+					</div>
+		
+				</div>
+			</div>
 		</div>
+
 	</section>
 
 
@@ -170,13 +231,7 @@
             $stt = 0;
             for ($i= 0 ; $i<3; $i++) 
             {
-            	if($stt==0){
-            		echo '<div class="item index'.$stt.' current owl-'.$stt.' " stt="'.$stt.'"><img src="view/tranh-da-cao-cap/image/'.$i.'.png" alt="Tranh đá cao cấp" /></div>';
-            	}
-            	else{
-            		echo '<div class="item index'.$stt.' owl-'.$stt.' " stt="'.$stt.'"><img src="view/tranh-da-cao-cap/image/'.$i.'.png" alt="Tranh đá cao cấp" /></div>';
-            	}
-            	$stt++;
+            	echo '<div class="item index'.$stt.' owl-'.$stt.' " stt="'.$stt.'"><img src="view/tranh-da-cao-cap/image/'.$i.'.png" alt="Tranh đá cao cấp" /></div>';
             }
             ?>
 		</div>
