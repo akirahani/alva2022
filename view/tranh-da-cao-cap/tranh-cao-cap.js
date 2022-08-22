@@ -1,3 +1,12 @@
+$('.anh-ghep').owlCarousel({
+    items : 1,
+    slideSpeed : 200,
+    nav: false,
+    autoplay: true,
+    dots: false,
+    loop: false,
+    margin: 10,
+});
 $(document).ready(function() {
 
   var sync1 = $("#sync1");
