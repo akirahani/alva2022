@@ -1,4 +1,7 @@
 <link rel="stylesheet" type="text/css" href="public/css/tranh-da-cao-cap.css?v=200822">
+<link rel="stylesheet" type="text/css" href="view/tranh-da-cao-cap/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="view/tranh-da-cao-cap/slick/slick-theme.css" />
+<link href="view/tranh-da-cao-cap/slick/horizontal-vertical-slick-slider.css" rel="stylesheet" type="text/css" />
 <main>
 	<section class="anh-da">
 		<div class="tieu-de-tranh-da">
@@ -237,4 +240,43 @@
 		</div>
 	`;
 	$(".slide").html(anh);
+
+</script>
+<script type="text/javascript" src="view/tranh-da-cao-cap/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.grid-main-slick').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            prevArrow: $('.grid-1-prev'),
+            nextArrow: $('.grid-1-next'),
+            fade: false,
+            useTransform: true,
+            cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+            asNavFor: '.grid-nav-slick'
+        });
+        $('.grid-nav-slick').slick({
+            dots: false,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: true,
+            revArrow: $('.grid-1-prev'),
+            nextArrow: $('.grid-1-next'),
+            fade: false,
+            useTransform: false,
+            cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+            vertical: true,
+            verticalSwiping: true,
+            asNavFor: '.grid-main-slick',
+            centerMode: true,
+            focusOnSelect: true,
+            centerPadding: '0px'
+        });
+    });
 </script>
