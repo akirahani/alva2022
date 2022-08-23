@@ -14,7 +14,7 @@
 
 		<div class="slide">
 			<ul class="owl-carousel owl-theme">
-				<li><img src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" /></li>
+				<li><img class="lazy" src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" /></li>
 				<li>
 					<img src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" />
 					<img src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" />
@@ -23,7 +23,46 @@
 			</ul>
 		</div>
 
-		<button class="lien-he1">Liên hệ ngay</button>
+		<div class="slide1">
+			<div class="w-container">
+	            <div class="wrapper">
+	                <div class="slider-wrapper">
+	                    <div class="slick-slider-grid">
+	                        <div class="slick-slider-main">
+	                            <div class="slick-slider-inner">
+	                                <div class="images-list grid-main-slick">
+	                                	<?php for ($i= 3 ; $i<6; $i++){ ?>
+	                                    <div class="slick-list-item">
+	                                        <a href="#" class="w-inline-block w-lightbox"><img src="view/tranh-da-cao-cap/image/sync1/<?=$i?>.png" loading="lazy" alt="" /></a>
+	                                    </div>
+	                                	<?php } ?>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="slick-slider-nav">
+	                            <div class="slick-slider-inner _4-12">
+	                                <div class="images-list grid-nav-slick">
+	                                	<?php for ($i= 0 ; $i<3; $i++){ ?>
+	                                    <div class="slick-list-item vertical">
+	                                        <div class="slick-list-item-inner">
+	                                            <img src="view/tranh-da-cao-cap/image/<?=$i?>.png" loading="lazy" alt="" />
+	                                        </div>
+	                                    </div>
+	             						<?php } ?>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+		</div>
+
+
+
+		<div class="nut-lien-he">
+			<button class="lien-he1">Liên hệ ngay</button>
+		</div>
 	
 		<div class="slogan">
 			<h1 class="text-left">Hãy tìm cho mình</h1>
@@ -104,6 +143,10 @@
             </picture>
 		</div>
 		<div class="lien-he-dau">
+			<div class="tieu-de-hang-dau">
+				<h1 class="td1">TRANH ĐÁ XUYÊN SÁNG</h1>
+				<h1 class="td2">VẺ ĐẸP KÌ BÍ TỪ THIÊN NHIÊN</h1>
+			</div>
 			<article>
 				<p>Vân đá xuyên sáng tự nhiên  mang đến những nét chấm phá mềm mại như những bức tranh thiên nhiên sống động. Nhiều người nhìn vào tranh đá tự nhiên không khỏi giật mình khi biết đây là bức tranh thiên nhiên ban tặng, bởi vì nó quá giống một bức tranh do một họa sỹ vẽ phong cảnh núi non hùng vỹ.</p>
 				<br>
@@ -127,6 +170,11 @@
             </picture>
 		</div>
 		<div class="lien-he-hai">
+			<div class="tieu-de-hang-hai">
+				<h1 class="td3">ĐƯỢC NHIỀU GIA CHỦ </h1>
+				<h1 class="td4">LỰA CHỌN ĐƯA VÀO</h1>
+				<h1 class="td5">KHÔNG GIAN SỐNG</h1>
+			</div>
 			<article>
 				<p>Sự tuyệt vời của các tấm đá tự nhiên,chúng sẽ hiện thị rõ nhất trên những khu vực rộng lớn,cũng sẽ là nơi tất cả hiệu ứng,sự sắp xếp của đá và ý đồ nhà lắp đặp muốn thể hiện rõ ràng, biến không gian phòng khách nhà bạn trở nên phá cách hơn bao giờ hết.</p>
 				<br>
@@ -185,6 +233,12 @@
 					</li>
 				</ul>
 			</div>			
+		</div>
+		<div class="gioi-thieu">
+			<div class="img-logo">
+				<img class="lazy" src="view/tranh-da-cao-cap/image/logo.png" alt="Logo" />
+			</div>
+			<p>Alva luôn cam kết cung cấp đá Marble – thạch anh tự nhiên xuyên sáng với chất lượng tốt nhất, giá cả cạnh tranh, hỗ trợ khách hàng nhiệt tình, luôn đặt chất lượng sản phẩm lên hàng đầu. Liên hệ với chúng tôi ngay hôm nay để nhận được báo giá tốt nhất cho bạn, sẵn sàng tư vấn bất kì thời gian nào cho Quý khách.</p>
 		</div>
 		<div class="lien-he">
 			<div class="form">
