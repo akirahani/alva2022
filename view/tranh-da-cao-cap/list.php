@@ -33,7 +33,7 @@
 	                                <div class="images-list grid-main-slick">
 	                                	<?php for ($i= 3 ; $i<6; $i++){ ?>
 	                                    <div class="slick-list-item">
-	                                        <a href="#" class="w-inline-block w-lightbox"><img src="view/tranh-da-cao-cap/image/sync1/<?=$i?>.png" loading="lazy" alt="" /></a>
+	                                        <img src="view/tranh-da-cao-cap/image/sync1/<?=$i?>.png" loading="lazy" alt="" />
 	                                    </div>
 	                                	<?php } ?>
 	                                </div>
@@ -70,59 +70,73 @@
 		</div>	
 		
 		<div class="lua-chon-van-da">
-			<div class="anh-chon">
-				<ul class="anh-ghep owl-carousel owl-theme">
-					<li><img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/anh-ghep.png" alt="Tranh đá cao cấp"></li>
-					<li><img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/anh-ghep.png" alt="Tranh đá cao cấp"></li>
-					<li><img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/anh-ghep.png" alt="Tranh đá cao cấp"></li>
-				</ul>
+			<div class="desk1">
+				<div class="btn-lien-he">
+					<button class="lien-he1">Liên hệ ngay</button>
+				</div>
+				<div class="anh-chon">
+			
+					<ul class="anh-ghep owl-carousel owl-theme">
+						<li><img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/anh-ghep.png" alt="Tranh đá cao cấp"></li>
+						<li><img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/anh-ghep.png" alt="Tranh đá cao cấp"></li>
+						<li><img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/anh-ghep.png" alt="Tranh đá cao cấp"></li>
+					</ul>
+				</div>
 			</div>
-			<div class="nut-chon">
-				<div class="tieu-de-chon">Chọn vân đá</div>
-				<div class="chon-van">
-					<button class="van-cheo">Vân chéo quả núi</button>
-					<button class="van-hoa">Vân hoa</button>
-					<button class="van-ngang">Vân ngang</button>
+
+			<div class="desk2">
+				<div class="head-nut-chon">
+					<h1 class="text-left">Hãy tìm cho mình</h1>
+					<h1 class="text-right">Bức tranh xứng tầm</h1>
 				</div>
-				<div class="kich-thuoc">
-					<div class="tieu-de-kich-thuoc">Kích thước</div>
-					<div class="chi-tiet-kich-thuoc">
-						<ul class="head-title">
-							<li><p>Chiều Ngang</p></li>
-							<li><p>Chiều cao</p></li>
-							<li><p>Độ dày</p></li>
-						</ul>
-						<ul class="body-content">
-							<li><p><span>300</span> cm</p></li>
-							<li><p><span>250</span> cm</p></li>
-							<li><p><span>1.8</span> cm</p></li>
-						</ul>
+				<div class="nut-chon">
+		
+					<div class="tieu-de-chon">Chọn vân đá</div>
+					<div class="chon-van">
+						<button class="van-cheo">Vân chéo quả núi</button>
+						<button class="van-hoa">Vân hoa</button>
+						<button class="van-ngang">Vân ngang</button>
 					</div>
-				</div>
-				<div class="khac">
-					<div class="co-den">
-						<button class="anh-den">Có Đèn</button>
-						<div class="chon-den">
-							<button class="samsung">Led Samsung</button>
-							<button class="china">Led Trung Quốc</button>
+					<div class="kich-thuoc">
+						<div class="tieu-de-kich-thuoc">Kích thước</div>
+						<div class="chi-tiet-kich-thuoc">
+							<ul class="head-title">
+								<li><p>Chiều Ngang</p></li>
+								<li><p>Chiều cao</p></li>
+								<li><p>Độ dày</p></li>
+							</ul>
+							<ul class="body-content">
+								<li><p><span>300</span> cm</p></li>
+								<li><p><span>250</span> cm</p></li>
+								<li><p><span>1.8</span> cm</p></li>
+							</ul>
 						</div>
 					</div>
-					<div class="tac-vu">
-						<ul class="nut-khac">
-							<li><button>Không Đèn</button></li>
-							<li><button>Ghép Vân 2</button></li>
-							<li><button>Ghép Vân 4</button></li>
-							<li><button>Một Bức</button></li>
-							<li><button>Song Song</button></li>
-						</ul>
-						<ul class="doi-xung">
-							<li><button>Đối Xứng 1</button></li>
-							<li><button>Đối Xứng 2</button></li>
-							<li><button>Đối Xứng 3</button></li>
-							<li><button>Đối Xứng 4</button></li>
-						</ul>
+					<div class="khac">
+						<div class="co-den">
+							<button class="anh-den">Có Đèn</button>
+							<div class="chon-den">
+								<button class="samsung">Led Samsung</button>
+								<button class="china">Led Trung Quốc</button>
+							</div>
+						</div>
+						<div class="tac-vu">
+							<ul class="nut-khac">
+								<li><button>Không Đèn</button></li>
+								<li><button>Ghép Vân 2</button></li>
+								<li><button>Ghép Vân 4</button></li>
+								<li><button>Một Bức</button></li>
+								<li><button>Song Song</button></li>
+							</ul>
+							<ul class="doi-xung">
+								<li><button>Đối Xứng 1</button></li>
+								<li><button>Đối Xứng 2</button></li>
+								<li><button>Đối Xứng 3</button></li>
+								<li><button>Đối Xứng 4</button></li>
+							</ul>
+						</div>
+			
 					</div>
-		
 				</div>
 			</div>
 		</div>
@@ -278,7 +292,7 @@
             for ($i= 3 ; $i<6; $i++)
             {	
             	$str_picture .= '"'.$ROOT.'/view/tranh-da-cao-cap/image/sync1/'.$i.'.png"';
-	            echo '<div class="item"><img  src="view/tranh-da-cao-cap/image/sync1/'.$i.'.png" alt="Tranh đá cao cấp" /></div>';
+	            echo '<div class="item"><img src="view/tranh-da-cao-cap/image/sync1/'.$i.'.png" alt="Tranh đá cao cấp" /></div>';
             } 
             ?>
 		</div>
@@ -318,19 +332,21 @@
             infinite: false,
             speed: 300,
             slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToScroll: 3,
+            asNavFor: '.slider-for',
             arrows: true,
             revArrow: $('.grid-1-prev'),
             nextArrow: $('.grid-1-next'),
             fade: false,
             useTransform: false,
+            adaptiveHeight: true,
             cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
             vertical: true,
             verticalSwiping: true,
             asNavFor: '.grid-main-slick',
             centerMode: true,
             focusOnSelect: true,
-            centerPadding: '0px'
+            centerPadding: '0px',
         });
     });
 </script>
