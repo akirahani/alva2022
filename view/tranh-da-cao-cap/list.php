@@ -14,7 +14,7 @@
 
 		<div class="slide">
 			<ul class="owl-carousel owl-theme">
-				<li><img class="lazy" src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" /></li>
+				<li><img  src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" /></li>
 				<li>
 					<img src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" />
 					<img src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" />
