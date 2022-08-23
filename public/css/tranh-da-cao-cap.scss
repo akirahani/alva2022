@@ -167,8 +167,12 @@
 
 			.lua-chon-van-da{
 				padding: 0 22px;
+				.btn-lien-he{
+					display: none;
+				}
 				.anh-chon{
 					padding: 25px 0;
+		
 					ul{
 						list-style: none;
 						li{
@@ -178,7 +182,11 @@
 						}
 					}
 				}
+				.head-nut-chon{
+					display: none;
+				}
 				.nut-chon{
+
 					.tieu-de-chon{
 						background: #9B351F;
 						box-shadow: 0px 8.40812px 7.64375px rgba(241, 184, 149, 0.46);
@@ -720,9 +728,15 @@
 			width: 100%;
 			background-image: url('../../view/tranh-da-cao-cap/image/anh-da-desk.png');
 			.tieu-de-tranh-da{
-				background-image: url('../../view/tranh-da-cao-cap/image/tieu-de-desk.png');
-				background-size: 100%;
-				height: 328px;
+				background-image: url(../../view/tranh-da-cao-cap/image/tieu-de-desk.png);
+			    width: 1485px;
+			    height: 347px;
+			    margin: auto;
+			    display: block;
+			    position: absolute;
+			    left: 0;
+			    right: 70px;
+			    top: 260px;
 				h1{
 					font-weight: 700;
 					font-size: 44.2377px;
@@ -737,6 +751,306 @@
 
 			.slide1{
 				display: block;
+				background-image: url('../../view/tranh-da-cao-cap/image/back-ht.png');
+				background-repeat: no-repeat;
+				position: relative;
+    			top: 300px;
+				height: 1131px;
+				width: 1440px;
+				padding-top: 68px;
+				margin: auto;
+			}
+
+			.nut-lien-he{
+				display: none;
+			}
+
+			.slogan{
+				display: none;
+			
+	
+				h1{
+					font-family: 'Open Sans';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 18px;
+					line-height: 25px;
+					color: #86121A;
+					text-transform: uppercase;
+					padding: 0 51px;
+					&.text-left{
+						text-align: left;
+						padding-top: 21px;
+					}
+					&.text-right{
+						text-align: right;
+						padding-bottom: 21px;
+						padding-top: 2px;
+					}
+				}
+			}
+
+			.lua-chon-van-da{
+				width: 1191px;
+				margin: auto;
+				display: flex;
+				padding: 0;
+				.desk1{
+					width: 50%;
+					order: 2;
+					padding: 25px 0;
+					.btn-lien-he{
+						display: block;
+						background-image: url('../../view/tranh-da-cao-cap/image/back-button-desk.png');
+						background-size: 100% 100%;
+						button{
+							background: #EC411B;
+							border: 1.68783px solid #FFD48F;
+							box-shadow: 0px 19.8899px 18.0817px rgba(241, 184, 149, 0.46), inset 0px 3.80309px 3.80309px #FF3939;
+							border-radius: 16.4801px;
+							width: 226px;
+							height: 56px;
+							border: none;
+							outline: none;
+							font-family: 'Open Sans';
+							font-style: normal;
+							font-weight: 600;
+							font-size: 25px;
+							line-height: 34px;
+							text-transform: uppercase;
+							color: #FFFFFF;
+
+						}
+					}
+					.anh-chon{
+
+						.btn-lien-he{
+							display: block;
+						}
+						ul{
+							list-style: none;
+							li{
+								img{
+									width: 100%;
+								}
+							}
+						}
+					}
+				}
+
+				.desk2{
+					width: 50%;
+					order: 1;
+					.head-nut-chon{
+						display: block;
+						background-image: url('../../view/tranh-da-cao-cap/image/back-slogan-desk.png');
+						background-size: 100% 100%;
+						background-repeat: no-repeat;
+						position: relative;
+						h1{
+							font-family: 'Open Sans';
+							font-style: normal;
+							font-weight: 700;
+							font-size: 25px;
+							line-height: 34px;
+							color: #86121A;
+							text-transform: uppercase;
+							padding: 0 51px;
+							&.text-left{
+								text-align: left;
+								padding-top: 27px;
+							}
+							&.text-right{
+								text-align: right;
+								padding-bottom: 14px;
+								padding-top: 2px;
+							}
+						}
+					}
+					.nut-chon{
+						padding:40px  50px 0 50px;
+						background: linear-gradient(179.2deg, rgba(255, 255, 255, 0.52) 8.96%, rgba(217, 217, 217, 0) 109.45%);
+						backdrop-filter: blur(4px);
+						.head-nut-chon{
+							display: block;
+						}
+						.tieu-de-chon{
+							background: #9B351F;
+							box-shadow: 0px 8.40812px 7.64375px rgba(241, 184, 149, 0.46);
+							border-radius: 10px;
+							font-family: 'Open Sans';
+							font-style: normal;
+							font-weight: 600;
+							font-size: 14px;
+							line-height: 19px;
+							color: #FFFFFF;
+							text-align: center;
+							margin: 0 auto;
+	    					display: block;
+	    					padding: 10px 0;
+	    					width: 125px;
+						}
+						.chon-van{
+							display: flex;
+							justify-content: space-between;
+							margin-top: 17px;
+							button{
+								background: $trang;
+								color: #9B351F;
+								border-radius: 10px;
+								font-family: 'Open Sans';
+								font-style: normal;
+								font-weight: 600;
+								font-size: 12px;
+								line-height: 16px;
+								border:none;
+								outline: none;
+								padding: 8px 15px;
+								&.active{
+									box-shadow: 0px 9px 8px rgba(241, 184, 149, 0.46);
+									color: $trang;
+									background: #9B351F;
+								}
+							}
+						}
+						.kich-thuoc{
+							margin-top: 27px;
+							display: flex;
+							justify-content: space-between;
+							align-items: center;
+							.tieu-de-kich-thuoc{
+								font-family: 'Open Sans';
+								font-style: normal;
+								font-weight: 600;
+								font-size: 14px;
+								line-height: 19px;
+								background: #9B351F;
+								box-shadow: 0px 8px 8px rgba(241, 184, 149, 0.46);
+								border-radius: 10px;
+								padding: 8px 15px;
+								color: #FFFFFF;
+							}	
+							.chi-tiet-kich-thuoc{
+								background: #FFFAF7;
+								border: 0.764375px solid #9B351F;
+								border-radius: 10px;
+								padding: 4px;
+								font-family: 'Open Sans';
+								font-style: normal;
+								font-weight: 400;
+								font-size: 12px;
+								line-height: 16px;
+								color: #45372D;
+								ul{
+									list-style: none;
+									&.head-title{
+										display: flex;
+										justify-content: space-around;
+									}
+									&.body-content{
+										padding-top: 4px;
+										display: flex;
+										justify-content: space-around;
+										li{
+											p{
+												span{
+													background: #F1B895;
+													border-radius: 5px;
+													padding: 3px 2px;
+												}
+											}
+										}
+									}
+									li{
+										padding-right: 10px;
+										p{
+											text-align: center;
+										}
+									}
+								}
+							}
+						}
+						.khac{
+							.co-den{
+								margin-top: 25px;
+								display: flex;
+								justify-content: space-between;
+								align-items: center;
+								.anh-den{
+									background: #FFFAF7;
+									color: #9B351F;
+									border-radius: 10px;
+									font-family: 'Open Sans';
+									font-style: normal;
+									font-weight: 600;
+									font-size: 14px;
+									line-height: 19px;
+									border:none;
+									outline: none;
+									padding: 8px 23px;
+									border: 0.764375px solid #9B351F;
+									&.active{
+										box-shadow: 0px 9px 8px rgba(241, 184, 149, 0.46);
+										color: $trang;
+										background: #9B351F;
+									}
+								}
+								.chon-den{
+									button{
+										font-family: 'Open Sans';
+										font-style: normal;
+										font-weight: 400;
+										font-size: 12px;
+										line-height: 16px;	
+										color: #45372D;
+										background: #FFFAF7;
+										border-radius: 10px;
+										border:none;
+										outline: none;
+										padding: 6px 8px;
+										&.active{
+											box-shadow: 0px 9px 8px rgba(241, 184, 149, 0.46);
+											color: $trang;
+											background: #9B351F;
+										}
+									}
+								}
+							}
+							.tac-vu{
+								padding: 26px 0 35px 0;
+								display: flex;
+								justify-content: space-between;
+								ul{
+									list-style:none;
+									li{
+										margin-bottom: 25px;
+										button{
+											background: #FFFAF7;
+											border: 0.764375px solid #9B351F;
+											border-radius: 10px;
+											font-family: 'Open Sans';
+											font-style: normal;
+											font-weight: 600;
+											font-size: 14px;
+											line-height: 19px;
+											color: #9B351F;
+											padding: 8px 23px;
+											&.active{
+												color: $trang;
+												background: #9B351F;
+											}
+										}
+										&:last-child{
+											margin-bottom: 0;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			
+				
 			}
 		}
 
