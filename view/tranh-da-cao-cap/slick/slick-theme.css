@@ -53,6 +53,11 @@
     opacity: .25;
 }
 
+.slick-disabled{
+    opacity: 0.44;
+
+}
+
 .slick-prev:before,
 .slick-next:before
 {

@@ -38,6 +38,10 @@
 	                                	<?php } ?>
 	                                </div>
 	                            </div>
+	                            <div class="slider-controls project-page">
+	              					<a href="#" class="slider-control slider-control-prev grid-1-prev w-inline-block"></a>
+	              					<a href="#" class="slider-control slider-control-next grid-1-next w-inline-block"></a>
+	            				</div>
 	                        </div>
 	                        <div class="slick-slider-nav">
 	                            <div class="slick-slider-inner _4-12">
@@ -75,10 +79,7 @@
 					<button class="lien-he1">Liên hệ ngay</button>
 				</div>
 				<div class="anh-chon">
-			
 					<ul class="anh-ghep owl-carousel owl-theme">
-						<li><img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/anh-ghep.png" alt="Tranh đá cao cấp"></li>
-						<li><img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/anh-ghep.png" alt="Tranh đá cao cấp"></li>
 						<li><img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/anh-ghep.png" alt="Tranh đá cao cấp"></li>
 					</ul>
 				</div>
@@ -90,12 +91,12 @@
 					<h1 class="text-right">Bức tranh xứng tầm</h1>
 				</div>
 				<div class="nut-chon">
-		
+					<div class="toggle"></div>
 					<div class="tieu-de-chon">Chọn vân đá</div>
 					<div class="chon-van">
-						<button class="van-cheo">Vân chéo quả núi</button>
-						<button class="van-hoa">Vân hoa</button>
-						<button class="van-ngang">Vân ngang</button>
+						<button class="kieu-van" kieu="cheo">Vân chéo</button>
+						<button class="kieu-van" kieu="hoa">Vân hoa</button>
+						<button class="kieu-van" kieu="ngang">Vân ngang</button>
 					</div>
 					<div class="kich-thuoc">
 						<div class="tieu-de-kich-thuoc">Kích thước</div>
@@ -114,25 +115,29 @@
 					</div>
 					<div class="khac">
 						<div class="co-den">
-							<button class="anh-den">Có Đèn</button>
-							<div class="chon-den">
-								<button class="samsung">Led Samsung</button>
-								<button class="china">Led Trung Quốc</button>
+							<div class="lua-chon-den">
+								<button class="chon-den" chon="co" kieu="">Có Đèn</button>
+								<button class="chon-den" chon="khong" kieu="">Không Đèn</button>
+							</div>	
+							<div class="hang-led">
+								<button class="led ngang" loai="samsung" >Led Samsung</button>
+								<button class="led ngang" loai="china">Led Trung Quốc</button>
 							</div>
+
 						</div>
+
 						<div class="tac-vu">
 							<ul class="nut-khac">
-								<li><button>Không Đèn</button></li>
-								<li><button>Ghép Vân 2</button></li>
-								<li><button>Ghép Vân 4</button></li>
-								<li><button>Một Bức</button></li>
-								<li><button>Song Song</button></li>
+								<li><button class="ghep-van ngang" loai="g2" kieu="" chon="">Ghép Vân 2</button></li>
+								<li><button class="ghep-van ngang" loai="g4" kieu="" chon="">Ghép Vân 4</button></li>
+								<li><button class="ghep-van ngang" loai="1b" kieu="" chon="">Một Bức</button></li>
+								<li><button class="ghep-van ngang" loai="ss" kieu="" chon="">Song Song</button></li>
 							</ul>
 							<ul class="doi-xung">
-								<li><button>Đối Xứng 1</button></li>
-								<li><button>Đối Xứng 2</button></li>
-								<li><button>Đối Xứng 3</button></li>
-								<li><button>Đối Xứng 4</button></li>
+								<li><button class="tranh-doi-xung ngang" doixung="dx1" loai="" kieu="" chon="">Đối Xứng 1</button></li>
+								<li><button class="tranh-doi-xung ngang" doixung="dx2" loai="" kieu="" chon="">Đối Xứng 2</button></li>
+								<li><button class="tranh-doi-xung dx3 ngang" doixung="dx3" loai="" kieu="" chon="">Đối Xứng 3</button></li>
+								<li><button class="tranh-doi-xung dx4 ngang" doixung="dx4" loai="" kieu="" chon="">Đối Xứng 4</button></li>
 							</ul>
 						</div>
 			
@@ -150,11 +155,15 @@
 				<h1 class="td1">TRANH ĐÁ XUYÊN SÁNG</h1>
 				<h1 class="td2">VẺ ĐẸP KÌ BÍ TỪ THIÊN NHIÊN</h1>
 			</div>
-		    <picture  class="img1">
-                <source class="mobile" media="(max-width:1199px)" srcset="view/tranh-da-cao-cap/image/img1.png">
-                <source class="desktop" media="(min-width:1200px)" srcset="view/tranh-da-cao-cap/image/img1-desk.png">
-                <img src="view/tranh-da-cao-cap/image/img1-desk.png" alt="Ảnh tranh đá cao cấp">
-            </picture>
+			<div class="img1">
+				<div class="anh-tranh-da">
+				    <picture>
+		                <source class="mobile" media="(max-width:1199px)" srcset="view/tranh-da-cao-cap/image/img1.png">
+		                <source class="desktop" media="(min-width:1200px)" srcset="view/tranh-da-cao-cap/image/img1-desk.png">
+		                <img src="view/tranh-da-cao-cap/image/img1-desk.png" alt="Ảnh tranh đá cao cấp">
+		            </picture>
+	            </div>
+            </div>
 		</div>
 		<div class="lien-he-dau">
 			<div class="tieu-de-hang-dau">
@@ -166,7 +175,7 @@
 				<br>
 				<p>Dưới sự vận động không ngừng của trái đất, sự nâng lên hạ xuống của thềm lục địa, núi lửa phun trào... Những hoạt động địa chất đó đã hình thành những loại đá tự nhiên với những đặc tính, màu sắc, đặc biệt là những đường vân đặc trưng khác nhau.</p>
 			</article>
-			<button>Liên Hệ Ngay</button>
+			<button class="lien-he1">Liên Hệ Ngay</button>
 		</div>
 	</section>
 
@@ -177,24 +186,30 @@
 				<h1 class="td4">LỰA CHỌN ĐƯA VÀO</h1>
 				<h1 class="td5">KHÔNG GIAN SỐNG</h1>
 			</div>
-			<picture  class="img2">
-                <source class="mobile" media="(max-width:1199px)" srcset="view/tranh-da-cao-cap/image/img2.png">
-                <source class="desktop" media="(min-width:1200px)" srcset="view/tranh-da-cao-cap/image/img2-desk.png">
-                <img src="view/tranh-da-cao-cap/image/img2-desk.png" alt="Ảnh tranh đá cao cấp">
-            </picture>
+			<div class="img2">
+				<picture >
+	                <source class="mobile" media="(max-width:1199px)" srcset="view/tranh-da-cao-cap/image/img2.png">
+	                <source class="desktop" media="(min-width:1200px)" srcset="view/tranh-da-cao-cap/image/img2-desk.png">
+	                <img src="view/tranh-da-cao-cap/image/img2-desk.png" alt="Ảnh tranh đá cao cấp">
+	            </picture>
+            </div>
 		</div>
 		<div class="lien-he-hai">
-			<div class="tieu-de-hang-hai">
-				<h1 class="td3">ĐƯỢC NHIỀU GIA CHỦ </h1>
-				<h1 class="td4">LỰA CHỌN ĐƯA VÀO</h1>
-				<h1 class="td5">KHÔNG GIAN SỐNG</h1>
+			<div class="detail-hang-hai">
+				<div class="tieu-de-hang-hai">
+					<h1 class="td3">ĐƯỢC NHIỀU GIA CHỦ </h1>
+					<h1 class="td4">LỰA CHỌN ĐƯA VÀO</h1>
+					<h1 class="td5">KHÔNG GIAN SỐNG</h1>
+				</div>
+				<article>
+					<p>Sự tuyệt vời của các tấm đá tự nhiên,chúng sẽ hiện thị rõ nhất trên những khu vực rộng lớn,cũng sẽ là nơi tất cả hiệu ứng,sự sắp xếp của đá và ý đồ nhà lắp đặp muốn thể hiện rõ ràng, biến không gian phòng khách nhà bạn trở nên phá cách hơn bao giờ hết.</p>
+					<br>
+					<p>Sự phối trộn hài hòa đẹp về màu sắc, ấn tượng trong từng đường vân. Thiên nhiên đã tạo ra những kiệt tác nghệ thuật mà khi sở hữu gia chủ sẽ gặp được nhiều may mắn và bình an.</p>
+				</article>			
+				<div class="nut-lh">
+					<button class="lien-he1">Liên Hệ Ngay</button>
+				</div>
 			</div>
-			<article>
-				<p>Sự tuyệt vời của các tấm đá tự nhiên,chúng sẽ hiện thị rõ nhất trên những khu vực rộng lớn,cũng sẽ là nơi tất cả hiệu ứng,sự sắp xếp của đá và ý đồ nhà lắp đặp muốn thể hiện rõ ràng, biến không gian phòng khách nhà bạn trở nên phá cách hơn bao giờ hết.</p>
-				<br>
-				<p>Sự phối trộn hài hòa đẹp về màu sắc, ấn tượng trong từng đường vân. Thiên nhiên đã tạo ra những kiệt tác nghệ thuật mà khi sở hữu gia chủ sẽ gặp được nhiều may mắn và bình an.</p>
-			</article>			
-			<button>Liên Hệ Ngay</button>
 		</div>
 
 	</section>
@@ -222,7 +237,7 @@
 						<img src="view/tranh-da-cao-cap/image/qt4.png">
 						<p>
 							Lắp đặt tại nhà khách hoàn thiện chỉ trong
-							<span>7 ngày</span>
+							<span>3 ngày</span>
 						</p>
 					</li>
 				</ul>
@@ -252,7 +267,7 @@
 			<div class="img-logo">
 				<img class="lazy" src="view/tranh-da-cao-cap/image/logo.png" alt="Logo" />
 			</div>
-			<p>Alva luôn cam kết cung cấp đá Marble – thạch anh tự nhiên xuyên sáng với chất lượng tốt nhất, giá cả cạnh tranh, hỗ trợ khách hàng nhiệt tình, luôn đặt chất lượng sản phẩm lên hàng đầu. Liên hệ với chúng tôi ngay hôm nay để nhận được báo giá tốt nhất cho bạn, sẵn sàng tư vấn bất kì thời gian nào cho Quý khách.</p>
+			<p>Alva luôn cam kết cung cấp đá Tera – thạch anh tự nhiên xuyên sáng với chất lượng tốt nhất, giá cả cạnh tranh, hỗ trợ khách hàng nhiệt tình, luôn đặt chất lượng sản phẩm lên hàng đầu. Liên hệ với chúng tôi ngay hôm nay để nhận được báo giá tốt nhất cho bạn, sẵn sàng tư vấn bất kì thời gian nào cho Quý khách.</p>
 		</div>
 		<div class="lien-he">
 			<div class="form">
@@ -263,16 +278,16 @@
 				</h1>
 				<form>
 					<div>
-						<input type="text" name="" placeholder="Họ và tên" spellcheck="false" autocomplete="off">
+						<input type="text" name="name" placeholder="Họ và tên" spellcheck="false" autocomplete="off">
 					</div>
 					<div>
-						<input type="text" name="" placeholder="Số điện thoại" spellcheck="false" autocomplete="off">
+						<input type="text" name="phone" placeholder="Số điện thoại" spellcheck="false" autocomplete="off">
 					</div>
 					<div>
-						<input type="text" name="" placeholder="Nội dung" spellcheck="false" autocomplete="off">
+						<input type="text" name="noidung" placeholder="Nội dung" spellcheck="false" autocomplete="off">
 					</div>
 					<div class="button-lien-he">
-						<input type="button" name="lienhe" value="Liên Hệ Ngay" />	
+						<input type="button" name="lienhe" value="Liên Hệ Ngay" trang="<?=$p?>" />	
 					</div>
 				</form>	
 			</div>
@@ -349,4 +364,82 @@
             centerPadding: '0px',
         });
     });
+</script>
+<script>
+	$('.toggle').click(function(){
+		if($('.nut-chon').css("margin-left") == "-600px"){
+			$('.nut-chon').animate({"margin-left": '+=600'});
+			$(this).removeClass('show');
+		}
+		else{
+			$('.nut-chon').animate({"margin-left": '-=600'});
+	     	$(this).addClass('show');   
+		}
+
+	});
+
+	$('input[type="button"]').click(function(){
+        var name= $('input[name="name"]').val();
+        var phone = $('input[name="phone"]').val();
+        var note = $('input[name="noidung"]').val();
+        var trang = $(this).attr('trang');
+        if(name != ''){
+            if(phone != ''){
+                $(".loading-popup").css("display", "flex");
+                $.ajax({
+                    type : "POST",
+                    url: "view/tranh-da-cao-cap/lien-he.php",
+                    data: {
+                        name: name,
+                        phone: phone,
+                        note: note,
+                        trang: trang
+                    },
+                    success:function(data){
+                        var info = JSON.parse(data);
+                        if(info.status == 'success'){
+                            $(".loading-popup").hide();
+                            Swal.fire(
+                                'THÀNH CÔNG!',
+                                'Cảm ơn bạn, Alvastone sẽ liên hệ với bạn sớm nhất!',
+                                'success'
+                            );
+                        }
+                        else{
+                            $(".loading-popup").hide();
+                            Swal.fire(
+                                "",
+                                "Có lỗi trong quá trình nhận tư vấn!",
+                                "error"
+                            );
+                        }
+                    }
+                });
+            }
+            else{
+                Swal.fire(
+                    "",
+                    "Bạn chưa nhập số điện thoại !",
+                    "error"
+                );
+            }
+        }
+        else{
+            Swal.fire(
+                "",
+                "Bạn chưa nhập tên !",
+                "error"
+            );
+        }
+    });
+
+    // kéo xuống phần form khách hàng
+    $('button.lien-he1').click(function(){
+    	window.scrollTo({
+			top: $('.lien-he form').offset().top,
+			behavior: 'smooth'
+		});
+    });
+
+    // $('.lazy').Lazy();
 </script>
