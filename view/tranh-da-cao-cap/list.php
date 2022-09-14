@@ -171,9 +171,9 @@
 				<h1 class="td2">VẺ ĐẸP KÌ BÍ TỪ THIÊN NHIÊN</h1>
 			</div>
 			<article>
-				<p>Vân đá xuyên sáng tự nhiên  mang đến những nét chấm phá mềm mại như những bức tranh thiên nhiên sống động. Nhiều người nhìn vào tranh đá tự nhiên không khỏi giật mình khi biết đây là bức tranh thiên nhiên ban tặng, bởi vì nó quá giống một bức tranh do một họa sỹ vẽ phong cảnh núi non hùng vỹ.</p>
+				<p>		Bàn tay kỳ diệu của tạo hóa qua hàng triệu năm đã làm nên những bức tranh đá tự nhiên với khả năng xuyên sáng cùng màu sắc, đường vân uyển chuyển, mềm mại khác nhau. Mỗi bức tranh có thể đưa người xem về một không gian rộng mở, huyển ảo, khi thì như kể về câu chuyện của những ngày xa xưa, khi lại đưa người xem bay đến những chân trời hoa mĩ mới.</p>
 				<br>
-				<p>Dưới sự vận động không ngừng của trái đất, sự nâng lên hạ xuống của thềm lục địa, núi lửa phun trào... Những hoạt động địa chất đó đã hình thành những loại đá tự nhiên với những đặc tính, màu sắc, đặc biệt là những đường vân đặc trưng khác nhau.</p>
+				<p>Với mỗi một dạng vân, mỗi một cách bài trí đèn, mỗi một không gian nội thất khác nhau hay thậm trí mỗi một tâm trạng của gia chủ cũng có thể làm bức tranh đá xuyên sáng mang ý nghĩa thay đổi. Bởi vậy sở hữu bức tranh đá xuyên sáng trong nhà không chỉ thể hiện khả năng duy mỹ tối thượng của gia chủ mà còn thỏa mãn trí tưởng tượng không giới hạn cho bất cứ ai nhìn thấy bức tranh.</p>
 			</article>
 			<button class="lien-he1">Liên Hệ Ngay</button>
 		</div>
@@ -182,9 +182,7 @@
 	<section class="hang-hai">
 		<div class="anh-hang-hai">
 			<div class="tieu-de-hang-hai">
-				<h1 class="td3">ĐƯỢC NHIỀU GIA CHỦ </h1>
-				<h1 class="td4">LỰA CHỌN ĐƯA VÀO</h1>
-				<h1 class="td5">KHÔNG GIAN SỐNG</h1>
+				<h1 class="td3">KIẾN TẠO KHÔNG GIAN VƯỢNG TÀI VƯỢNG LỘC</h1>
 			</div>
 			<div class="img2">
 				<picture >
@@ -197,14 +195,12 @@
 		<div class="lien-he-hai">
 			<div class="detail-hang-hai">
 				<div class="tieu-de-hang-hai">
-					<h1 class="td3">ĐƯỢC NHIỀU GIA CHỦ </h1>
-					<h1 class="td4">LỰA CHỌN ĐƯA VÀO</h1>
-					<h1 class="td5">KHÔNG GIAN SỐNG</h1>
+					<h1 class="td3">KIẾN TẠO KHÔNG GIAN VƯỢNG TÀI VƯỢNG LỘC</h1>
 				</div>
 				<article>
-					<p>Sự tuyệt vời của các tấm đá tự nhiên,chúng sẽ hiện thị rõ nhất trên những khu vực rộng lớn,cũng sẽ là nơi tất cả hiệu ứng,sự sắp xếp của đá và ý đồ nhà lắp đặp muốn thể hiện rõ ràng, biến không gian phòng khách nhà bạn trở nên phá cách hơn bao giờ hết.</p>
+					<p>Sự phối trộn hài hòa đẹp về màu sắc, ấn tượng trong từng đường vân của tranh đá xuyên sáng không đơn thuần chỉ tạo nên những bức tranh đẹp mà nó có còn khả năng nâng tầm phong thủy, hút tài, hút lộc cho chính chủ sở hữu ngôi nhà. </p>
 					<br>
-					<p>Sự phối trộn hài hòa đẹp về màu sắc, ấn tượng trong từng đường vân. Thiên nhiên đã tạo ra những kiệt tác nghệ thuật mà khi sở hữu gia chủ sẽ gặp được nhiều may mắn và bình an.</p>
+					<p>Tranh vân đá với nhiều màu sắc đa dạng như vàng nâu, trắng kem, vàng đậm, vàng nhạt, xanh đậm, đỏ, hổ phách…có thể đáp ứng nhu cầu phong thủy cho mọi độ tuổi hay giới tính, bồi đắp thêm vượng khí căn nhà, giúp gia chủ kinh doanh phát đạt, gặp nhiều may mắn, vạn sự hanh thông, tiền tài rộng mở.</p>
 				</article>			
 				<div class="nut-lh">
 					<button class="lien-he1">Liên Hệ Ngay</button>
