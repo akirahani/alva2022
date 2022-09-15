@@ -4,148 +4,147 @@
 <link href="view/tranh-da-cao-cap/slick/horizontal-vertical-slick-slider.css" rel="stylesheet" type="text/css" />
 <main>
 	<section class="anh-da">
-		<div class="tieu-de-tranh-da">
-	    	<h1>
-				TINH HOA ĐÁ VIỆT
-				<br>
-				TRANH ĐÁ CAO CẤP ALVA
-			</h1>
-		</div>	
+		<div class="head-anh-da">
+			<div class="tieu-de-tranh-da">
+		    	<h1>
+					TINH HOA ĐÁ VIỆT
+					<br>
+					TRANH ĐÁ CAO CẤP ALVA
+				</h1>
+			</div>	
 
-		<div class="slide">
-			<ul class="owl-carousel owl-theme">
-				<li><img  src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" /></li>
-				<li>
-					<img src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" />
-					<img src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" />
-					<img src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" />
-				</li>
-			</ul>
-		</div>
-
-		<div class="slide1">
-			<div class="w-container">
-	            <div class="wrapper">
-	                <div class="slider-wrapper">
-	                    <div class="slick-slider-grid">
-	                        <div class="slick-slider-main">
-	                            <div class="slick-slider-inner">
-	                                <div class="images-list grid-main-slick">
-	                                	<?php for ($i= 3 ; $i<6; $i++){ ?>
-	                                    <div class="slick-list-item">
-	                                        <img src="view/tranh-da-cao-cap/image/sync1/<?=$i?>.png" loading="lazy" alt="" />
-	                                    </div>
-	                                	<?php } ?>
-	                                </div>
-	                            </div>
-	                            <div class="slider-controls project-page">
-	              					<a href="#" class="slider-control slider-control-prev grid-1-prev w-inline-block"></a>
-	              					<a href="#" class="slider-control slider-control-next grid-1-next w-inline-block"></a>
-	            				</div>
-	                        </div>
-	                        <div class="slick-slider-nav">
-	                            <div class="slick-slider-inner _4-12">
-	                                <div class="images-list grid-nav-slick">
-	                                	<?php for ($i= 0 ; $i<3; $i++){ ?>
-	                                    <div class="slick-list-item vertical">
-	                                        <div class="slick-list-item-inner">
-	                                            <img src="view/tranh-da-cao-cap/image/<?=$i?>.png" loading="lazy" alt="" />
-	                                        </div>
-	                                    </div>
-	             						<?php } ?>
-	                                </div>
-	                            </div>
-	                        </div>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-		</div>
-
-
-
-		<div class="nut-lien-he">
-			<button class="lien-he1">Liên hệ ngay</button>
-		</div>
-	
-		<div class="slogan">
-			<h1 class="text-left">Hãy tìm cho mình</h1>
-			<h1 class="text-right">Bức tranh xứng tầm</h1>
-		</div>	
-		
-		<div class="lua-chon-van-da">
-			<div class="desk1">
-				<div class="btn-lien-he">
-					<button class="lien-he1">Liên hệ ngay</button>
-				</div>
-				<div class="anh-chon">
-					<ul class="anh-ghep owl-carousel owl-theme">
-						<li><img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/anh-ghep.png" alt="Tranh đá cao cấp"></li>
-					</ul>
-				</div>
+			<div class="slide">
+				<ul class="owl-carousel owl-theme">
+					<li><img  src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" /></li>
+					<li>
+						<img src="uploads/lazy/vuong.svg" alt="Tranh đá cao cấp" />
+					</li>
+				</ul>
 			</div>
 
-			<div class="desk2">
-				<div class="head-nut-chon">
-					<h1 class="text-left">Hãy tìm cho mình</h1>
-					<h1 class="text-right">Bức tranh xứng tầm</h1>
+			<div class="slide1">
+				<div class="w-container">
+		            <div class="wrapper">
+		                <div class="slider-wrapper">
+		                    <div class="slick-slider-grid">
+		                        <div class="slick-slider-main">
+		                            <div class="slick-slider-inner">
+		                                <div class="images-list grid-main-slick">
+		                                	<?php for ($i= 3 ; $i<6; $i++){ ?>
+		                                    <div class="slick-list-item">
+		                                        <img src="view/tranh-da-cao-cap/image/sync1/<?=$i?>.png" loading="lazy" alt="" />
+		                                    </div>
+		                                	<?php } ?>
+		                                </div>
+		                            </div>
+		                            <div class="slider-controls project-page">
+		              					<a href="#" class="slider-control slider-control-prev grid-1-prev w-inline-block"></a>
+		              					<a href="#" class="slider-control slider-control-next grid-1-next w-inline-block"></a>
+		            				</div>
+		                        </div>
+		                        <div class="slick-slider-nav">
+		                            <div class="slick-slider-inner _4-12">
+		                                <div class="images-list grid-nav-slick">
+		                                	<?php for ($i= 0 ; $i<3; $i++){ ?>
+		                                    <div class="slick-list-item vertical">
+		                                        <div class="slick-list-item-inner">
+		                                            <img src="view/tranh-da-cao-cap/image/<?=$i?>.png" loading="lazy" alt="" />
+		                                        </div>
+		                                    </div>
+		             						<?php } ?>
+		                                </div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+			</div>
+
+
+
+			<div class="nut-lien-he">
+				<button class="lien-he1">Liên hệ ngay</button>
+			</div>
+		
+			<div class="slogan">
+				<h1 class="text-left">Hãy tìm cho mình</h1>
+				<h1 class="text-right">Bức tranh xứng tầm</h1>
+			</div>	
+			
+			<div class="lua-chon-van-da">
+				<div class="desk1">
+					<div class="btn-lien-he">
+						<button class="lien-he1">Liên hệ ngay</button>
+					</div>
+					<div class="anh-chon">
+						<ul class="anh-ghep owl-carousel owl-theme">
+							<li><img class="lazy" src="uploads/lazy/vuong.svg" data-src="view/tranh-da-cao-cap/image/anh-ghep.png" alt="Tranh đá cao cấp"></li>
+						</ul>
+					</div>
 				</div>
-				<div class="nut-chon">
-					<div class="toggle"></div>
-					<div class="tieu-de-chon">Chọn vân đá</div>
-					<div class="chon-van">
-						<button class="kieu-van active" kieu="cheo">Vân chéo</button>
-						<button class="kieu-van" kieu="hoa">Vân hoa</button>
-						<button class="kieu-van" kieu="ngang">Vân ngang</button>
+
+				<div class="desk2">
+					<div class="head-nut-chon">
+						<h1 class="text-left">Hãy tìm cho mình</h1>
+						<h1 class="text-right">Bức tranh xứng tầm</h1>
 					</div>
-					<div class="kich-thuoc">
-						<div class="tieu-de-kich-thuoc">Kích thước</div>
-						<div class="chi-tiet-kich-thuoc">
-							<ul class="head-title">
-								<li><p>Chiều Ngang</p></li>
-								<li><p>Chiều cao</p></li>
-								<li><p>Độ dày</p></li>
-							</ul>
-							<ul class="body-content">
-								<li><p><span>300</span> cm</p></li>
-								<li><p><span>250</span> cm</p></li>
-								<li><p><span>1.8</span> cm</p></li>
-							</ul>
+					<div class="nut-chon">
+						<div class="toggle"></div>
+						<div class="tieu-de-chon">Chọn vân đá</div>
+						<div class="chon-van">
+							<button class="kieu-van active" kieu="cheo">Vân chéo</button>
+							<button class="kieu-van" kieu="hoa">Vân hoa</button>
+							<button class="kieu-van" kieu="ngang">Vân ngang</button>
 						</div>
-					</div>
-					<div class="khac">
-						<div class="co-den">
-							<div class="lua-chon-den">
-								<button class="chon-den active" chon="co" kieu="">Có Đèn</button>
-								<button class="chon-den" chon="khong" kieu="">Không Đèn</button>
-							</div>	
-							<div class="hang-led">
-								<button class="led ngang" loai="samsung" >Led Samsung</button>
-								<button class="led ngang" loai="china">Led Trung Quốc</button>
+						<div class="kich-thuoc">
+							<div class="tieu-de-kich-thuoc">Kích thước</div>
+							<div class="chi-tiet-kich-thuoc">
+								<ul class="head-title">
+									<li><p>Chiều Ngang</p></li>
+									<li><p>Chiều cao</p></li>
+									<li><p>Độ dày</p></li>
+								</ul>
+								<ul class="body-content">
+									<li><p><span>300</span> cm</p></li>
+									<li><p><span>250</span> cm</p></li>
+									<li><p><span>1.8</span> cm</p></li>
+								</ul>
+							</div>
+						</div>
+						<div class="khac">
+							<div class="co-den">
+								<div class="lua-chon-den">
+									<button class="chon-den" chon="co" kieu="">Có Đèn</button>
+									<button class="chon-den" chon="khong" kieu="">Không Đèn</button>
+								</div>	
+								<div class="hang-led">
+									<button class="led ngang" loai="samsung" >Led Samsung</button>
+									<button class="led ngang" loai="china">Led Trung Quốc</button>
+								</div>
+
 							</div>
 
+							<div class="tac-vu">
+								<ul class="nut-khac">
+									<li><button class="ghep-van ngang" loai="g2" kieu="" chon="">Ghép Vân 2</button></li>
+									<li><button class="ghep-van ngang" loai="g4" kieu="" chon="">Ghép Vân 4</button></li>
+									<li><button class="ghep-van ngang" loai="1b" kieu="" chon="">Một Bức</button></li>
+									<li><button class="ghep-van ngang" loai="ss" kieu="" chon="">Song Song</button></li>
+								</ul>
+								<ul class="doi-xung">
+									<li><button class="tranh-doi-xung ngang" doixung="dx1" loai="" kieu="" chon="">Đối Xứng 1</button></li>
+									<li><button class="tranh-doi-xung ngang" doixung="dx2" loai="" kieu="" chon="">Đối Xứng 2</button></li>
+									<li><button class="tranh-doi-xung dx3 ngang" doixung="dx3" loai="" kieu="" chon="">Đối Xứng 3</button></li>
+									<li><button class="tranh-doi-xung dx4 ngang" doixung="dx4" loai="" kieu="" chon="">Đối Xứng 4</button></li>
+								</ul>
+							</div>
+				
 						</div>
-
-						<div class="tac-vu">
-							<ul class="nut-khac">
-								<li><button class="ghep-van ngang" loai="g2" kieu="" chon="">Ghép Vân 2</button></li>
-								<li><button class="ghep-van ngang" loai="g4" kieu="" chon="">Ghép Vân 4</button></li>
-								<li><button class="ghep-van ngang" loai="1b" kieu="" chon="">Một Bức</button></li>
-								<li><button class="ghep-van ngang" loai="ss" kieu="" chon="">Song Song</button></li>
-							</ul>
-							<ul class="doi-xung">
-								<li><button class="tranh-doi-xung ngang" doixung="dx1" loai="" kieu="" chon="">Đối Xứng 1</button></li>
-								<li><button class="tranh-doi-xung ngang" doixung="dx2" loai="" kieu="" chon="">Đối Xứng 2</button></li>
-								<li><button class="tranh-doi-xung dx3 ngang" doixung="dx3" loai="" kieu="" chon="">Đối Xứng 3</button></li>
-								<li><button class="tranh-doi-xung dx4 ngang" doixung="dx4" loai="" kieu="" chon="">Đối Xứng 4</button></li>
-							</ul>
-						</div>
-			
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</section>
 
 
@@ -209,7 +208,6 @@
 				</div>
 			</div>
 		</div>
-
 	</section>
 
 	<section class="quy-trinh">
@@ -245,7 +243,7 @@
 				<ul>
 					<li>
 						<img src="view/tranh-da-cao-cap/image/tc1.png">
-						<p>Gia công khung vỏ</p>
+						<p>Gia công <br> khung vỏ</p>
 					</li>
 					<li>
 						<img src="view/tranh-da-cao-cap/image/tc2.png">
@@ -295,8 +293,7 @@
 					</div>
 				</form>	
 			</div>
-		</div>
-		
+		</div>	
 	</section>
 
 

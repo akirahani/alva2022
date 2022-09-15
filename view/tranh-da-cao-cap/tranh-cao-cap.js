@@ -8,6 +8,20 @@ $('.anh-ghep').owlCarousel({
     margin: 10,
 });
 
+// let vanda = $('.kieu-van').hasClass('active');
+// let kieuvan = $('.kieu-van').attr('kieu');
+
+// if(vanda && kieuvan== 'cheo'){
+//   let vancheo = "";
+//   vancheo += '<ul class="anh-ghep owl-carousel owl-theme">';
+//   for(let i = 0; i < 22; i++){
+//     vancheo += '<li><img class="lazy" src="view/tranh-da-cao-cap/tranh/cheo/'+i+'.jpg" alt="Tranh đá cao cấp"></li>'  
+//   }
+//   vancheo += '</ul>';
+//   $('.anh-chon').html(vancheo);
+// }
+
+
 $('.kieu-van').click(function(){
     $('.ngang').css('opacity','1');
     let kieu = $(this).attr('kieu');
