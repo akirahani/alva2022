@@ -451,6 +451,7 @@
 				article{
 					padding-top: 24px;
 					padding-bottom: 28px;
+					text-align: justify;
 					p{
 						font-family: 'Open Sans';
 						font-style: normal;
@@ -458,23 +459,28 @@
 						font-size: 14px;
 						line-height: 22px;
 						color: #45372D;
+
 					}
 				}
-				button{
-					background: #EC411B;
-					box-shadow: 0px 11px 10px rgba(241, 184, 149, 0.46);
-					border-radius: 10px;
-					font-family: 'Open Sans';
-					font-style: normal;
-					font-weight: 600;
-					font-size: 14px;
-					line-height: 19px;
-					color: #FFFFFF;
-					border: none;
-					outline: none;
-					padding: 8px 20px;
-					white-space: nowrap;
-					margin-bottom: 42px;
+				.nut-lh{
+					display: flex;
+					justify-content: center;
+					button{
+						background: #EC411B;
+						box-shadow: 0px 11px 10px rgba(241, 184, 149, 0.46);
+						border-radius: 10px;
+						font-family: 'Open Sans';
+						font-style: normal;
+						font-weight: 600;
+						font-size: 14px;
+						line-height: 19px;
+						color: #FFFFFF;
+						border: none;
+						outline: none;
+						padding: 8px 20px;
+						white-space: nowrap;
+						margin-bottom: 42px;
+					}
 				}
 			}
 		}
@@ -524,6 +530,7 @@
 				article{
 					padding-top: 31px;
 					padding-bottom: 37px;
+					text-align: justify;
 					p{
 						font-family: 'Open Sans';
 						font-style: normal;
@@ -533,20 +540,24 @@
 						color: #45372D;
 					}
 				}
-				button{
-					background: #EC411B;
-					box-shadow: 0px 11px 10px rgba(241, 184, 149, 0.46);
-					border-radius: 10px;
-					font-family: 'Open Sans';
-					font-style: normal;
-					font-weight: 600;
-					font-size: 14px;
-					line-height: 19px;
-					color: #FFFFFF;
-					border: none;
-					outline: none;
-					padding: 8px 20px;
-					white-space: nowrap;
+				.nut-lh{
+					display: flex;
+					justify-content: center;
+					button{
+						background: #EC411B;
+						box-shadow: 0px 11px 10px rgba(241, 184, 149, 0.46);
+						border-radius: 10px;
+						font-family: 'Open Sans';
+						font-style: normal;
+						font-weight: 600;
+						font-size: 14px;
+						line-height: 19px;
+						color: #FFFFFF;
+						border: none;
+						outline: none;
+						padding: 8px 20px;
+						white-space: nowrap;
+					}
 				}
 			}
 		}
@@ -606,7 +617,7 @@
 						font-family: 'Open Sans';
 						font-style: normal;
 						font-weight: 700;
-						font-size: 18px;
+						font-size: 20px;
 						line-height: 25px;
 						color: #86121A;
 						text-align: center;
@@ -624,12 +635,13 @@
 								width: 100%;
 							}
 							p{
+								white-space: nowrap;
 								text-align: center;
 								font-family: 'Inter';
 								font-style: normal;
 								font-weight: 400;
 								font-size: 14px;
-								line-height: 17px;
+								line-height: 18px;
 								text-align: center;
 								color: #45372D;
 								padding-top: 15px;
@@ -663,11 +675,12 @@
 						padding-top: 29px;
 					}
 					form{
-						div{
-    						overflow: hidden;
+						.input-placeholder {
+							overflow: hidden;
 							padding: 0 30px 39px 30px;
-							input[type=text]{
-								border-bottom: 1px solid #45372D;
+				            position: relative;
+				            input[type=text]{
+				            	border: 2px solid rgba(69, 55, 45, 0.56);
 								width: 100%;
 								border-top: none;
 								border-right: none;
@@ -678,11 +691,34 @@
 								font-weight: 400;
 								font-size: 14px;
 								line-height: 22px;
-								color: rgba(69, 55, 45, 0.56);
+								color: #45372D;
+								&:hover{
+									border-bottom: 2px solid #45372D;
+								}
 							}
 							&:first-child{
-								padding-top: 30px;
+								margin-top: 30px;
 							}
+					        input:valid + .placeholder-ct{
+				            	display: none;
+				        	}
+				        	.placeholder-ct {
+					            position: absolute;
+					            pointer-events: none;
+					            top: 0;
+					            bottom: 50px;
+					            font-size: 1rem;
+					            line-height: 1.375rem;
+					            height: 17px;
+					            left: 30px;
+					            margin: auto;
+					           	color: rgba(69, 55, 45, 0.56);
+					            span {
+						            color: red;
+						        }
+					        }
+				    	}
+						div{
 							input[type=button]{
 								background: #EC411B;
 								box-shadow: 0px 11px 10px rgba(241, 184, 149, 0.46);
@@ -704,7 +740,8 @@
 								
 							}
 							&.button-lien-he{
-								padding-bottom: 0;
+								display: flex;
+    							justify-content: center;
 							}
 						}
 					}
@@ -743,8 +780,6 @@
 		.anh-da{
 			width: 100%;
 			background-image: url('../../view/tranh-da-cao-cap/image/anh-da-desk.png');
-			/*background-size: 100% auto;*/
-			/*background-position: top center;*/
 			.tieu-de-tranh-da{
 				background-image: url(../../view/tranh-da-cao-cap/image/tieu-de-desk.png);
 			    width: calc(100% - 437px);
@@ -916,7 +951,7 @@
 						}
 
 						.head-nut-chon{
-display: block;
+					display: block;
 						}
 						.tieu-de-chon{
 							font-size: 20px;
@@ -1024,8 +1059,6 @@ display: block;
 											border-radius: 14px;
 											font-size: 20px;
 											line-height: 27px;
-											padding: 12px 28px;
-											width: 178px;
 										}
 										&:last-child{
 											margin-bottom: 0;
@@ -1068,15 +1101,19 @@ display: block;
 				width: 50%;
 				padding: 75px 0 91px 87px;
 				.tieu-de-hang-dau{
-					width: 522px;
+					width: 500px;
+					text-align: center;
 					display: block;
 					padding-bottom: 0;
 					h1{
-						font-size: 20px;
+						font-size: 18px;
 						line-height: 27px;
 					}
 				}
 				article{
+					width: 500px;
+				}
+				.nut-lh{
 					width: 500px;
 				}
 			}
@@ -1122,7 +1159,7 @@ display: block;
 						position: relative;
 						left: 120px;
 						h1{
-							font-size: 20px;
+							font-size: 18px;
 							line-height: 27px;
 						}
 					}
@@ -1182,7 +1219,7 @@ display: block;
 				}
 				.thi-cong{
 					h1{
-						font-size: 20px;
+						font-size: 18px;
 						line-height: 27px;
 						padding-bottom: 32px;
 					}
@@ -1223,22 +1260,36 @@ display: block;
 					-webkit-box-shadow: -7px 10px 16px 0px rgba(158,158,158,0.75);
 					-moz-box-shadow: -7px 10px 16px 0px rgba(158,158,158,0.75);
 					h1{
-						font-size: 20px;
+						font-size: 18px;
 						line-height: 27px;
 						padding-top: 35px;
 					}
 					form{
 						div{
-    						overflow: hidden;
-							padding: 0 32px 39px 32px;
-							&:first-child{
-								padding-top: 34px;
-							}
+    						overflow: hidden;	
 							input[type=button]{
-								margin-top: 0;
-								margin-bottom: 42px;
+								margin: 0 25px 42px 0;
 							}
 						}
+						.input-placeholder {
+							&:first-child{
+								margin-top: 34px;
+							}
+				        	.placeholder-ct {
+					            position: absolute;
+					            pointer-events: none;
+					            bottom: 40px;
+					            font-size: 1rem;
+					            line-height: 1.375rem;
+					            height: 22px;
+					            left: 30px;
+					            margin: auto;
+					           	color: rgba(69, 55, 45, 0.56);
+					            span {
+						            color: red;
+						        }
+					        }
+				    	}
 					}
 				}
 			}

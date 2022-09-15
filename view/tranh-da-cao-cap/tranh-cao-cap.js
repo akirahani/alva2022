@@ -253,7 +253,7 @@ $('.ghep-van').click(function(){
             else{
               vancheo += '<ul class="anh-ghep owl-carousel owl-theme">';
               for(let i = 0; i < 2; i++){
-                vancheo += '<li><img class="lazy" src="view/tranh-da-cao-cap/tranh/cheo/kd/g2/'+i+'.jpg" alt="Tranh đá cao cấp"></li>'  
+                vancheo += '<li><img class="lazy" src="view/tranh-da-cao-cap/tranh/cheo/kd/ss/'+i+'.jpg" alt="Tranh đá cao cấp"></li>'  
               }
               vancheo += '</ul>';
             }
@@ -282,7 +282,7 @@ $('.ghep-van').click(function(){
             else{
               vanhoa += '<ul class="anh-ghep owl-carousel owl-theme">';
               for(let i = 0; i < 2; i++){
-                vanhoa += '<li><img class="lazy" src="view/tranh-da-cao-cap/tranh/hoa/kd/g2/'+i+'.jpg" alt="Tranh đá cao cấp"></li>'  
+                vanhoa += '<li><img class="lazy" src="view/tranh-da-cao-cap/tranh/hoa/kd/ss/'+i+'.jpg" alt="Tranh đá cao cấp"></li>'  
               }
               vanhoa += '</ul>';
             }
@@ -296,11 +296,6 @@ $('.ghep-van').click(function(){
         }
 
         if(loai=='g2'|| loai=='g4' || loai=='ss'){
-          // Swal.fire(
-          //   '',
-          //   'Vui lòng chọn loại đối xứng',
-          //   'warning'
-          // );
           $('.tranh-doi-xung').css('opacity','1');
           if(loai=='ss'){
             $('.dx3').css('opacity','0.5');

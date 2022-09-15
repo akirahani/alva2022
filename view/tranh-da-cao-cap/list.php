@@ -94,7 +94,7 @@
 					<div class="toggle"></div>
 					<div class="tieu-de-chon">Chọn vân đá</div>
 					<div class="chon-van">
-						<button class="kieu-van" kieu="cheo">Vân chéo</button>
+						<button class="kieu-van active" kieu="cheo">Vân chéo</button>
 						<button class="kieu-van" kieu="hoa">Vân hoa</button>
 						<button class="kieu-van" kieu="ngang">Vân ngang</button>
 					</div>
@@ -116,7 +116,7 @@
 					<div class="khac">
 						<div class="co-den">
 							<div class="lua-chon-den">
-								<button class="chon-den" chon="co" kieu="">Có Đèn</button>
+								<button class="chon-den active" chon="co" kieu="">Có Đèn</button>
 								<button class="chon-den" chon="khong" kieu="">Không Đèn</button>
 							</div>	
 							<div class="hang-led">
@@ -171,18 +171,20 @@
 				<h1 class="td2">VẺ ĐẸP KÌ BÍ TỪ THIÊN NHIÊN</h1>
 			</div>
 			<article>
-				<p>		Bàn tay kỳ diệu của tạo hóa qua hàng triệu năm đã làm nên những bức tranh đá tự nhiên với khả năng xuyên sáng cùng màu sắc, đường vân uyển chuyển, mềm mại khác nhau. Mỗi bức tranh có thể đưa người xem về một không gian rộng mở, huyển ảo, khi thì như kể về câu chuyện của những ngày xa xưa, khi lại đưa người xem bay đến những chân trời hoa mĩ mới.</p>
+				<p>Bàn tay kỳ diệu của tạo hóa qua hàng triệu năm đã làm nên những bức tranh đá tự nhiên với khả năng xuyên sáng cùng màu sắc, đường vân uyển chuyển, mềm mại khác nhau. Mỗi bức tranh có thể đưa người xem về một không gian rộng mở, huyển ảo, khi thì như kể về câu chuyện của những ngày xa xưa, khi lại đưa người xem bay đến những chân trời hoa mĩ mới.</p>
 				<br>
 				<p>Với mỗi một dạng vân, mỗi một cách bài trí đèn, mỗi một không gian nội thất khác nhau hay thậm trí mỗi một tâm trạng của gia chủ cũng có thể làm bức tranh đá xuyên sáng mang ý nghĩa thay đổi. Bởi vậy sở hữu bức tranh đá xuyên sáng trong nhà không chỉ thể hiện khả năng duy mỹ tối thượng của gia chủ mà còn thỏa mãn trí tưởng tượng không giới hạn cho bất cứ ai nhìn thấy bức tranh.</p>
 			</article>
-			<button class="lien-he1">Liên Hệ Ngay</button>
+			<div class="nut-lh">
+				<button class="lien-he1">Liên Hệ Ngay</button>
+			</div>
 		</div>
 	</section>
 
 	<section class="hang-hai">
 		<div class="anh-hang-hai">
 			<div class="tieu-de-hang-hai">
-				<h1 class="td3">KIẾN TẠO KHÔNG GIAN VƯỢNG TÀI VƯỢNG LỘC</h1>
+				<h1 class="td3">KIẾN TẠO KHÔNG GIAN <br>VƯỢNG TÀI - VƯỢNG LỘC</h1>
 			</div>
 			<div class="img2">
 				<picture >
@@ -195,7 +197,7 @@
 		<div class="lien-he-hai">
 			<div class="detail-hang-hai">
 				<div class="tieu-de-hang-hai">
-					<h1 class="td3">KIẾN TẠO KHÔNG GIAN VƯỢNG TÀI VƯỢNG LỘC</h1>
+					<h1 class="td3">KIẾN TẠO KHÔNG GIAN <br>VƯỢNG TÀI - VƯỢNG LỘC</h1>
 				</div>
 				<article>
 					<p>Sự phối trộn hài hòa đẹp về màu sắc, ấn tượng trong từng đường vân của tranh đá xuyên sáng không đơn thuần chỉ tạo nên những bức tranh đẹp mà nó có còn khả năng nâng tầm phong thủy, hút tài, hút lộc cho chính chủ sở hữu ngôi nhà. </p>
@@ -243,18 +245,15 @@
 				<ul>
 					<li>
 						<img src="view/tranh-da-cao-cap/image/tc1.png">
-						<p>Hàn khung</p>
+						<p>Gia công khung vỏ</p>
 					</li>
 					<li>
 						<img src="view/tranh-da-cao-cap/image/tc2.png">
 						<p>Lắp đèn led</p>
 					</li>
-					<li>
+					<li class="complete" >
 						<img src="view/tranh-da-cao-cap/image/tc3.png">
-						<p>
-							Mang đến nhà khách
-							lắp đặt
-						</p>
+						<p >Hoàn thiện <br> tại công trình</p>
 					</li>
 				</ul>
 			</div>			
@@ -273,15 +272,24 @@
 					ĐỂ ĐƯỢC TƯ VẤN MIỄN PHÍ
 				</h1>
 				<form>
-					<div>
-						<input type="text" name="name" placeholder="Họ và tên" spellcheck="false" autocomplete="off">
-					</div>
-					<div>
-						<input type="text" name="phone" placeholder="Số điện thoại" spellcheck="false" autocomplete="off">
-					</div>
-					<div>
-						<input type="text" name="noidung" placeholder="Nội dung" spellcheck="false" autocomplete="off">
-					</div>
+				    <div class="input-placeholder">
+                        <input type="text" name="name" required spellcheck="false" autocomplete="off">
+                        <div class="placeholder-ct">
+                            Họ và tên<span>*</span>
+                        </div>
+                    </div>
+                   	<div class="input-placeholder">
+                        <input type="text" name="phone" required spellcheck="false" autocomplete="off">
+                        <div class="placeholder-ct">
+                            Số điện thoại <span>*</span>
+                        </div>
+                    </div>
+                   	<div class="input-placeholder">
+                        <input type="text" name="noidung" required spellcheck="false" autocomplete="off">
+                        <div class="placeholder-ct">
+                            Nội dung
+                        </div>
+                    </div>
 					<div class="button-lien-he">
 						<input type="button" name="lienhe" value="Liên Hệ Ngay" trang="<?=$p?>" />	
 					</div>
